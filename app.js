@@ -89,7 +89,7 @@ const dayGuides = [
     ["luggage","晚上任務","武侯祠與錦里相鄰，逛到累就回飯店；今晚完成隔天返程行李。"]
   ],spot:["熊貓基地看什麼","先看成年大熊貓與幼年熊貓活動區，動物休息時就換區，不在一處久等。熊貓塔不是必去；若有高血壓、心臟病或身體不適，官方也建議不要登塔。"]},
   {effort:"輕鬆但時間重要",summary:"飯店附近 → 退房 → 12:30 前往 CTU → 15:50 飛澳門轉高雄。",facts:[
-    ["passport","文件放同一包","護照／台胞證、登機資料、澳門轉機文件與緊急聯絡方式放在隨身包，不要托運。"],
+    ["badge-check","文件放同一包","護照／台胞證、登機資料、澳門轉機文件與緊急聯絡方式放在隨身包，不要托運。"],
     ["plane","機場時間","跨境航班建議至少提前 3 小時抵達；前一晚確認 CTU 航廈與即時交通。"],
     ["luggage","行李確認","確認是否直掛高雄、每段托運限額與行動電源規則；掛行李後拍行李條。"],
     ["message-circle","分開後聯絡","約好三個報平安節點：到 CTU、到澳門、抵達高雄；手機漫遊與充電要先準備。"]
@@ -203,6 +203,7 @@ function initMap(){
   const tiles=L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',crossOrigin:true});
   tiles.addTo(travelMap);
   L.control.zoom({position:"bottomright"}).addTo(travelMap);markerLayer=L.layerGroup().addTo(travelMap);routeLayer=L.layerGroup().addTo(travelMap);
+  qsa("#travelMap .leaflet-control-attribution a").forEach(a=>{a.target="_blank";a.rel="noreferrer";});
   travelMap.on("popupopen",()=>{refreshIcons();const b=qs("[data-popup-save]");if(b)b.addEventListener("click",()=>toggleSaved(b.dataset.popupSave),{once:true});});
   const resizeMap=()=>travelMap?.invalidateSize({pan:false});
   if("ResizeObserver" in window)new ResizeObserver(resizeMap).observe(qs("#travelMap"));
@@ -229,7 +230,7 @@ function renderMapList(list){
 }
 function setActiveList(name){qsa(".map-list-item").forEach(x=>x.classList.toggle("active",x.dataset.mapPlace===name));const a=qsa(".map-list-item").find(x=>x.dataset.mapPlace===name);if(a)a.scrollIntoView({block:"nearest",behavior:"smooth"});}
 function fitVisibleMap(){if(!travelMap)return;const p=visiblePlaces();if(!p.length)return;p.length===1?travelMap.setView([p[0].lat,p[0].lng],14):travelMap.fitBounds(p.map(x=>[x.lat,x.lng]),{padding:[35,35],maxZoom:13});}
-function focusPlace(name){const p=mapPlaces.find(x=>x.name===name);if(!p)return;mapFilter="all";mapDay="all";mapQuery="";qs("#mapSearch").value="";qsa("[data-map-filter]").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter==="all"));qsa("[data-map-day]").forEach(b=>b.classList.toggle("active",b.dataset.mapDay==="all"));renderMapData(false);setTimeout(()=>{if(travelMap){travelMap.invalidateSize();travelMap.setView([p.lat,p.lng],14,{animate:true});mapMarkers.get(name)?.openPopup();setActiveList(name);}},420);}
+function focusPlace(name){const p=mapPlaces.find(x=>x.name===name);if(!p)return;mapFilter="all";mapDay="all";mapQuery="";qs("#mapSearch").value="";qs("#mapDaySelect").value="all";qsa("[data-map-filter]").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter==="all"));qsa("[data-map-day]").forEach(b=>b.classList.toggle("active",b.dataset.mapDay==="all"));renderMapData(false);setTimeout(()=>{if(travelMap){travelMap.invalidateSize();travelMap.setView([p.lat,p.lng],14,{animate:true});mapMarkers.get(name)?.openPopup();setActiveList(name);}},420);}
 function setMapDay(day){mapDay=String(day);qsa("[data-map-day]").forEach(b=>b.classList.toggle("active",b.dataset.mapDay===mapDay));qs("#mapDaySelect").value=mapDay;renderMapData(true);}
 function updateCountdown(){const days=Math.ceil((new Date("2026-09-04T00:00:00+08:00")-new Date())/86400000);qs("#countdown").textContent=days>0?`倒數 ${days} 天`:days===0?"今天出發":"旅程已開始";}
 function renderDrawer(){const list=[...saved].map(n=>mapPlaces.find(p=>p.name===n)).filter(Boolean);qs("#drawerEmpty").hidden=!!list.length;qs("#drawerSaved").hidden=!list.length;qs("#drawerSaved").innerHTML=list.map(p=>`<div class="drawer-place"><div><strong>${p.name}</strong><span>${p.area} · ${p.stay}</span></div><button type="button" data-drawer-remove="${p.name}" aria-label="移除${p.name}">${icon("x")}</button></div>`).join("");refreshIcons();}
@@ -249,6 +250,7 @@ qs("#mapSearch").addEventListener("input",e=>{
   mapQuery=e.target.value;
   if(mapQuery.trim()){
     mapFilter="all";mapDay="all";
+    qs("#mapDaySelect").value="all";
     qsa("[data-map-filter]").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter==="all"));
     qsa("[data-map-day]").forEach(b=>b.classList.toggle("active",b.dataset.mapDay==="all"));
   }
@@ -282,6 +284,6 @@ qsa("[data-trip-info]").forEach(field=>{field.value=tripInfo[field.dataset.tripI
 qs("#shareTrip").addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"四川八日行程｜成都・九寨溝",text:"2026/09/04—09/11 四川八日完整行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstallPrompt=e;});
 qs("#installTrip").addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=6").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=9").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(localStorage.getItem("sichuan-parent-mode")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDriverCards();renderDrawer();updateReadiness();updateTripInfoStatus();updateCountdown();refreshIcons();initMap();

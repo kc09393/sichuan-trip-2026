@@ -480,6 +480,7 @@ body.parent-mode .parent-guide-card .run-step-copy h4 { font-size: 26px; }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
 @media (max-width: 900px) {
+  body { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
   .site-header nav { display: none; }
   .hero { min-height: 700px; height: 90vh; }
   .trip-stamp { display: none; }
@@ -521,6 +522,10 @@ body.parent-mode .parent-guide-card .run-step-copy h4 { font-size: 26px; }
   .trip-info-section { grid-template-columns: 1fr; }
   .trip-info-copy { position: static; }
   .practical-grid { grid-template-columns: repeat(2, 1fr); }
+  .mobile-nav { position: fixed; inset: auto 0 0; z-index: 55; min-height: 64px; padding-bottom: env(safe-area-inset-bottom); background: rgba(7,22,34,.96); backdrop-filter: blur(14px); display: grid; grid-template-columns: repeat(4, 1fr); box-shadow: 0 -8px 30px rgba(4,18,30,.2); }
+  .mobile-nav a { min-height: 64px; color: rgba(255,255,255,.68); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 10px; }
+  .mobile-nav a:active { color: var(--orange-2); background: rgba(255,255,255,.06); }
+  .mobile-nav svg { width: 19px; height: 19px; }
 }
 
 @media (max-width: 620px) {
@@ -626,11 +631,7 @@ body.parent-mode .parent-guide-card .run-step-copy h4 { font-size: 26px; }
   .practical-grid { grid-template-columns: 1fr; }
   .practical-grid article { min-height: 200px; }
   footer .back-top { align-self: flex-end; }
-  .mobile-nav { position: fixed; inset: auto 0 0; z-index: 55; min-height: 64px; padding-bottom: env(safe-area-inset-bottom); background: rgba(7,22,34,.96); backdrop-filter: blur(14px); display: grid; grid-template-columns: repeat(4, 1fr); box-shadow: 0 -8px 30px rgba(4,18,30,.2); }
-  .mobile-nav a { min-height: 64px; color: rgba(255,255,255,.68); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 10px; }
-  .mobile-nav a:active { color: var(--orange-2); background: rgba(255,255,255,.06); }
   #route, #guide, #map, #booking, #prepare { scroll-margin-top: 12px; }
-  .mobile-nav svg { width: 19px; height: 19px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
