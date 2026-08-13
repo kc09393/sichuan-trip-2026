@@ -97,6 +97,59 @@ const dayGuides = [
   ],spot:["澳門轉機","下機後跟著 Transfer／轉機標示走，不要直接前往入境。先看下一段登機門與時間；若行李不是直掛，依航空公司指示提領並重新辦理。"]}
 ];
 
+const dayVisuals = [
+  {
+    src:"assets/attractions/ifs.jpg",
+    alt:"成都 IFS 屋頂的大熊貓裝置藝術",
+    caption:"IFS 屋頂熊貓",
+    highlights:["春熙路","太古里","IFS 熊貓"],
+    credit:"David Xuang／Wikimedia Commons · CC BY-SA 4.0",
+    source:"https://commons.wikimedia.org/wiki/File:The_panda_at_IFS_Chengdu.jpg"
+  },
+  null,
+  {
+    src:"assets/attractions/jiuzhai.jpg",
+    alt:"九寨溝五花海的藍綠湖水與森林棧道",
+    caption:"五花海",
+    highlights:["五花海","諾日朗瀑布","樹正群海"],
+    credit:"Shahar Wider／Wikimedia Commons · CC BY 3.0",
+    source:"https://commons.wikimedia.org/wiki/File:5_Flowers_Lake_(127556467).jpeg"
+  },
+  {
+    src:"assets/attractions/huanglong.jpg",
+    alt:"黃龍景區的鈣華彩池、森林與古寺",
+    caption:"黃龍鈣華彩池",
+    highlights:["五彩池","鈣華彩池","雪山森林"],
+    credit:"Wikimedia Commons · CC BY-SA 3.0",
+    source:"https://commons.wikimedia.org/wiki/File:Huanglonggou_Pools.jpg"
+  },
+  {
+    src:"assets/attractions/dujiangyan.jpg",
+    alt:"從高處俯瞰都江堰水利工程與岷江",
+    caption:"都江堰水利工程",
+    highlights:["魚嘴","飛沙堰","寶瓶口"],
+    credit:"BenBen／Wikimedia Commons · CC BY 1.0",
+    source:"https://commons.wikimedia.org/wiki/File:Dujiangyan.jpg"
+  },
+  {
+    src:"assets/attractions/sanxingdui.jpg",
+    alt:"三星堆博物館展出的古蜀青銅面具",
+    caption:"三星堆青銅面具",
+    highlights:["青銅大立人","青銅神樹","青銅面具"],
+    credit:"Gary Todd／Wikimedia Commons · CC0",
+    source:"https://commons.wikimedia.org/wiki/File:Sanxingdui_Bronze_Mask_(9950710845).jpg"
+  },
+  {
+    src:"assets/attractions/panda.jpg",
+    alt:"成都大熊貓繁育研究基地內的大熊貓",
+    caption:"成都熊貓基地",
+    highlights:["熊貓基地","人民公園","武侯祠／錦里"],
+    credit:"Mikael Häggström／Wikimedia Commons · 公有領域",
+    source:"https://commons.wikimedia.org/wiki/File:Giant_Panda_at_Chengdu_Panda_Base.jpg"
+  },
+  null
+];
+
 const dayFallbacks=[
   "航班延誤或抵達後太累，就只辦入住與吃晚餐；春熙路留到 9/10 再決定。",
   "動車或接駁延誤時，直接前往九寨溝飯店，不增加沿途停靠，也不安排晚間逛街。",
@@ -166,13 +219,15 @@ function renderTimeline(){
 }
 function renderParentGuide(){
   const day=itineraries[activeDay],guide=dayGuides[activeDay];
+  const visual=dayVisuals[activeDay];
+  const visualMarkup=visual?`<figure class="spot-visual"><img src="${visual.src}" alt="${visual.alt}" loading="lazy" decoding="async"><div class="spot-highlights">${visual.highlights.map(item=>`<b>${item}</b>`).join("")}</div><figcaption><span>${visual.caption}</span><a href="${visual.source}" target="_blank" rel="noreferrer">${visual.credit} ${icon("external-link")}</a></figcaption></figure>`:"";
   const large=qs("#parentGuide")?.classList.contains("large-guide");
   qs("#parentGuide").className=`parent-guide-card${large?" large-guide":""}`;
   qs("#parentGuide").innerHTML=`
     <div class="guide-summary"><div><span>DAY ${activeDay+1} · ${day.date} 星期${day.weekday}</span><h3>${day.title}</h3><p>${guide.summary}</p></div><div class="effort-pill"><small>今日體力</small><strong>${guide.effort}</strong></div></div>
     <div class="guide-body">
       <div class="run-steps"><h3 class="guide-subheading">一步一步怎麼跑</h3>${day.items.map((item,i)=>`<div class="run-step"><span class="run-step-num">${i+1}</span><div class="run-step-copy"><span>${item[0]}</span><h4>${item[1]}</h4><p>${item[2]}</p><a href="#map" data-focus-place="${item[3]}">打開位置 ${icon("navigation")}</a></div></div>`).join("")}</div>
-      <aside class="guide-sidebar"><h3 class="guide-subheading">今天要先確認</h3><div class="guide-facts">${guide.facts.map(f=>`<div class="guide-fact">${icon(f[0])}<div><strong>${f[1]}</strong><span>${f[2]}</span></div></div>`).join("")}</div><div class="spot-explainer"><span>景點重點</span><h4>${guide.spot[0]}</h4><p>${guide.spot[1]}</p></div><div class="plan-b"><span>${icon("route-off")} 臨時備案</span><p>${dayFallbacks[activeDay]}</p></div></aside>
+      <aside class="guide-sidebar"><h3 class="guide-subheading">今天要先確認</h3><div class="guide-facts">${guide.facts.map(f=>`<div class="guide-fact">${icon(f[0])}<div><strong>${f[1]}</strong><span>${f[2]}</span></div></div>`).join("")}</div>${visualMarkup}<div class="spot-explainer"><span>景點重點</span><h4>${guide.spot[0]}</h4><p>${guide.spot[1]}</p></div><div class="plan-b"><span>${icon("route-off")} 臨時備案</span><p>${dayFallbacks[activeDay]}</p></div></aside>
     </div>`;
   refreshIcons();
 }
@@ -272,6 +327,6 @@ const checkState=JSON.parse(localStorage.getItem("sichuan-checklist")||"{}");qsa
 qs("#shareTrip").addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"四川八日行程｜成都・九寨溝",text:"2026/09/04—09/11 四川八日完整行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstallPrompt=e;});
 qs("#installTrip").addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=12").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=13").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(localStorage.getItem("sichuan-parent-mode")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();initMap();

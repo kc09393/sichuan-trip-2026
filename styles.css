@@ -167,6 +167,15 @@ h1 { font-size: clamp(52px, 6.8vw, 96px); text-wrap: balance; }
 .guide-fact div { display: grid; gap: 4px; }
 .guide-fact strong { font-size: 13px; }
 .guide-fact span { color: var(--muted); font-size: 12px; line-height: 1.65; }
+.spot-visual { margin: 25px 0 0; border: 1px solid var(--line); background: #fff; overflow: hidden; }
+.spot-visual img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: #e5e1d8; }
+.spot-highlights { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 14px 0; }
+.spot-highlights b { padding: 5px 8px; background: var(--cream); color: #87513f; font-size: 9px; line-height: 1; letter-spacing: .03em; }
+.spot-visual figcaption { display: grid; gap: 5px; padding: 10px 14px 13px; }
+.spot-visual figcaption > span { font-family: "Noto Serif TC", serif; font-size: 15px; font-weight: 800; }
+.spot-visual figcaption a { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); font-size: 8px; line-height: 1.45; overflow-wrap: anywhere; }
+.spot-visual figcaption a:hover { color: var(--orange); }
+.spot-visual figcaption svg { width: 10px; height: 10px; flex: 0 0 auto; }
 .spot-explainer { margin-top: 25px; padding: 20px; background: var(--cream); }
 .spot-explainer > span { color: var(--orange); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
 .spot-explainer h4 { margin: 6px 0; font-family: "Noto Serif TC", serif; font-size: 21px; }
