@@ -112,7 +112,7 @@ h1 { font-size: clamp(52px, 6.8vw, 96px); text-wrap: balance; }
 .day-overview.star { border-color: #d49a32; background: #f6edda; }
 .day-overview.hard { border-color: #a74432; background: #f3e5df; }
 .day-overview.flex { border-color: #758c61; }
-.day-overview.panda { border-color: #2c6a52; background: #e8eee7; }
+.day-overview.city { border-color: #2c6a52; background: #e8eee7; }
 .day-overview.flight { border-color: #394f86; background: #e9ebf1; }
 .day-overview > div:first-child span { color: var(--orange); font-size: 11px; font-weight: 800; letter-spacing: .12em; }
 .day-overview h3 { margin: 4px 0 0; font-family: "Noto Serif TC", serif; font-size: 27px; }
@@ -122,7 +122,7 @@ h1 { font-size: clamp(52px, 6.8vw, 96px); text-wrap: balance; }
 .day-overview.star .day-tags b:first-child { background: #ead9b8; color: #8a6218; }
 .day-overview.hard .day-tags b:first-child { background: #e8c9be; color: #933c2c; }
 .day-overview.flex .day-tags b:first-child { background: #dce4d4; color: #536841; }
-.day-overview.panda .day-tags b:first-child { background: #cee0d4; color: #285b47; }
+.day-overview.city .day-tags b:first-child { background: #cee0d4; color: #285b47; }
 .day-overview.flight .day-tags b:first-child { background: #d8ddea; color: #394f86; }
 .day-overview > p { color: var(--muted); line-height: 1.75; margin: 0; font-size: 14px; }
 .lodging-badge { border-left: 1px solid var(--line); padding-left: 24px; display: grid; grid-template-columns: auto 1fr; column-gap: 8px; align-items: center; }

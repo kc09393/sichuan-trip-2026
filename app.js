@@ -21,20 +21,23 @@ const itineraries = [
     ["下午","前往車站搭動車","黃龍九寨站或松潘站擇一，以當日班次與接駁最順者為準。","松潘站"],
     ["晚上","回成都，只休息","抵達飯店後不排宵夜、不逛街，讓體力完整恢復。","成都住宿區"]
   ]},
-  { date:"9/8", weekday:"二", title:"都江堰彈性日", city:"都江堰", lodging:"成都", tone:"flex", note:"戶外但可自由縮短。累的話晚點出發、只看核心區，或提早回成都休息。", items:[
-    ["09:30","成都出發","依體力選動車或包車；不追求早起，先讓前一天的疲勞恢復。","成都住宿區"],
-    ["11:00","都江堰景區","魚嘴、飛沙堰、寶瓶口擇重點走；多用景區交通，少走回頭路。","都江堰景區"],
-    ["16:00","返回成都","若已經疲累就更早走，晚上只在飯店附近用餐。","成都住宿區"]
+  { date:"9/8", weekday:"二", title:"成都 → 都江堰", city:"都江堰", lodging:"都江堰", tone:"flex", note:"前一天最累，今天睡飽再出發。下午完整看水利工程，傍晚逛灌縣古城與南橋，住一晚避免來回折返。", items:[
+    ["09:30","成都出發前往都江堰","依體力選城際列車或包車。只帶一晚輕便行李；其餘行李能否寄放，要先向成都住宿確認。","成都住宿區"],
+    ["12:00","都江堰水利景區","預留約 3 小時，依序理解魚嘴分水、飛沙堰排沙與寶瓶口控水；使用觀光車減少步行。","都江堰景區"],
+    ["17:00","灌縣古城・南橋","景區結束後慢慢吃晚餐、看岷江夜景；南橋在景區外，不必趕著離開。","南橋"],
+    ["晚上","住都江堰","今晚不回成都，隔天可直接前往青城山，少一次長距離往返。","都江堰住宿區"]
   ]},
-  { date:"9/9", weekday:"三", title:"三星堆完整一天", city:"廣漢", lodging:"成都", tone:"star", note:"第二個重點日。三星堆獨立安排，不與樂山混搭；預留足夠時間慢慢看展。", items:[
-    ["08:00","從成都出發","依預約時段選動車＋接駁或包車，提前準備入館證件。","成都住宿區"],
-    ["09:30","三星堆博物館","新館展品密度高，先看核心展廳，中間安排坐下休息與午餐。","三星堆博物館"],
-    ["16:30","回成都","不再加樂山或遠程景點；若尚有體力，晚餐後飯店附近散步。","成都住宿區"]
+  { date:"9/9", weekday:"三", title:"青城山前山 → 成都", city:"青城山", lodging:"成都", tone:"star", note:"從都江堰直接去青城山前山，只走道教文化主線；以渡船、索道省力，下午下山回成都。", items:[
+    ["08:30","都江堰前往青城山","退房後出發。不要帶大件行李上山；前一晚先確認寄存或包車載運方式。","都江堰住宿區"],
+    ["09:30","青城山前山","建福宮進山，經月城湖搭渡船與索道；上清宮、老君閣依體力決定，不走後山。","青城山前山"],
+    ["15:30","下山前往青城山站","預留觀光車、接駁與進站時間；城際列車實際班次以 12306 為準。","青城山站"],
+    ["晚上","回成都休息","抵達後只吃晚餐，不再增加景點，讓雙腿休息。","成都住宿區"]
   ]},
-  { date:"9/10", weekday:"四", title:"成都完整一天", city:"成都", lodging:"成都", tone:"panda", note:"熊貓基地早上優先，下午與晚上只選最想去的區域；人民公園、寬窄巷子、錦里與武侯祠不必全收。", items:[
-    ["07:30","成都熊貓基地","越早越有機會看到熊貓活動；園區大，先選必看區域與接駁方式。","成都熊貓基地"],
-    ["13:30","人民公園／寬窄巷子","想放鬆就人民公園喝茶；想逛街再去寬窄巷子，兩者可二選一。","人民公園"],
-    ["17:30","武侯祠／錦里","兩處相鄰。依體力取捨，晚上提早回飯店整理行李。","武侯祠"]
+  { date:"9/10", weekday:"四", title:"成都慢遊・整理行李", city:"成都", lodging:"成都", tone:"city", note:"登機前一天不再跑遠。人民公園與寬窄巷子相近，武侯祠與錦里相連；任何一段累了都能直接刪除。", items:[
+    ["10:00","人民公園喝茶","睡飽再出門，在鶴鳴茶社一帶坐下休息，感受成都的慢生活。","人民公園"],
+    ["13:00","寬窄巷子","從人民公園前往很近；以散步、吃午餐為主，人多或太商業化就縮短停留。","寬窄巷子"],
+    ["16:30","武侯祠","了解劉備、諸葛亮與蜀漢歷史；若不想進館，可直接保留外面的錦里。","武侯祠"],
+    ["18:30","錦里晚餐後回飯店","錦里就在武侯祠旁，吃完提早回去整理隔天返程行李。","錦里"]
   ]},
   { date:"9/11", weekday:"五", title:"返程・分開", city:"成都", lodging:"—", tone:"flight", note:"15:50 CTU → 澳門 → 高雄。上午不排遠程景點，預留行李、退房與跨境航班報到時間。", items:[
     ["上午","早餐與整理行李","只在飯店周邊活動，確認護照、轉機文件、行李與登機資訊。","成都住宿區"],
@@ -70,25 +73,27 @@ const dayGuides = [
     ["luggage","行李安排","早上退房後行李隨接駁車，下車前確認護照、票券與行李件數。"],
     ["bed-double","晚上安排","回成都只入住、洗澡、睡覺。不要再加火鍋、夜市或逛街。"]
   ],spot:["黃龍看什麼","黃龍以層層鈣華彩池、雪山、峽谷與森林聞名。最具代表性的是五彩池，但不必以抵達最高點為唯一目標；舒服地看風景比完成路線重要。"]},
-  {effort:"中等可縮短",summary:"睡飽再出發 → 都江堰核心區 → 下午回成都。前一天累就縮成半日。",facts:[
-    ["car-taxi-front","交通選擇","多人同行最省心是包車／叫車；若搭動車，還要計算成都端與都江堰端轉乘。"],
-    ["route","建議順序","從較高處往低處走通常較省力；現場依入口與景區交通，選魚嘴、飛沙堰、寶瓶口三個核心。"],
-    ["footprints","體力管理","景區橋樑與步道多，不走安瀾索橋也不影響理解水利工程；可利用觀光車減少步行。"],
-    ["utensils","吃飯安排","午餐不要排太晚。若已經疲累，吃完就回成都，不再加青城山。"]
+  {effort:"中等可縮短",summary:"成都 → 都江堰水利景區 → 灌縣古城／南橋 → 住都江堰。睡飽再出發，不和青城山塞在同一天。",facts:[
+    ["train-front","交通選擇","城際列車以 12306 當日班次為準；多人同行若想減少轉乘，也可直接包車到都江堰。"],
+    ["route","水利工程順序","官方建議遊覽約 3 小時。現場依入口與觀光車安排，掌握魚嘴、飛沙堰、寶瓶口三個核心即可。"],
+    ["footprints","體力管理","景區橋樑與步道較多，不走安瀾索橋也不影響理解水利工程；多用觀光車並隨時坐下休息。"],
+    ["moon-star","晚上安排","先入住再逛灌縣古城與南橋。夜景區不必久站，累了就回住宿休息。"]
   ],spot:["都江堰看什麼","兩千多年前建成、至今仍在運作的水利工程。魚嘴負責分水、飛沙堰協助排沙洩洪、寶瓶口控制進水；理解這三處，就看懂都江堰。"]},
-  {effort:"中等・室內",summary:"成都 → 三星堆博物館 → 成都。展品很多，只看三星堆，不再跨城加景點。",facts:[
-    ["ticket-check","預約入館","依官方放票批次預約，全員帶預約時使用的有效證件；成功頁面先截圖。"],
-    ["headphones","參觀方法","先租導覽或使用官方解說，從祭祀坑背景開始，再看青銅大面具、神樹與金杖。"],
-    ["armchair","休息節奏","每看完一個主要展區就坐下休息。博物館日不是步數競賽，不必逐字讀完每塊說明。"],
-    ["utensils","午餐安排","在館內或附近解決，預留完整午休；下午再補上午沒看完的核心展品。"]
-  ],spot:["三星堆看什麼","三星堆最迷人的是古蜀文明獨特的青銅造型。青銅大立人、青銅神樹、金杖與大型面具是理解展覽的核心，先看造型，再聽它與祭祀文化的關係。"]},
-  {effort:"中高・可取捨",summary:"早上熊貓基地 → 下午人民公園／寬窄巷子二選一 → 傍晚武侯祠／錦里。",facts:[
-    ["clock-3","熊貓要早去","9 月上午票 07:30–12:00 可入園。熊貓怕熱，越早越可能看到活動；可提前 14 天預約。"],
-    ["bus-front","園內省力","基地很大，園內觀光車目前 ¥30／人。遊客中心有輪椅、拐杖與雨傘等便民借用。"],
-    ["badge-check","長者規則","依目前官方規則，60 歲以上長者可免預約，持本人有效證件入園；出發前仍需再核對公告。"],
-    ["coffee","下午二選一","想休息就人民公園喝茶；想逛街才去寬窄巷子，不要兩邊都趕。"],
-    ["luggage","晚上任務","武侯祠與錦里相鄰，逛到累就回飯店；今晚完成隔天返程行李。"]
-  ],spot:["熊貓基地看什麼","先看成年大熊貓與幼年熊貓活動區，動物休息時就換區，不在一處久等。熊貓塔不是必去；若有高血壓、心臟病或身體不適，官方也建議不要登塔。"]},
+  {effort:"中高・可省力",summary:"都江堰 → 青城山前山 → 青城山站 → 成都。只走前山，渡船與索道能用就用。",facts:[
+    ["trees","前山不是後山","前山以道教宮觀與文化景觀為主，路線較成熟；後山更偏山林健行，這次不安排。"],
+    ["tram-front","省力走法","景區觀光車、月城湖渡船與索道皆另計費；先確認當日營運，再決定走到上清宮或老君閣。"],
+    ["footprints","體力底線","全程仍有階梯與坡道。爸爸媽媽若膝蓋不舒服，索道上站附近看完就折返，不追求登頂。"],
+    ["luggage","行李方案","包車時行李留車上最省事；搭公共交通則先確認住宿或車站寄存，無法寄存就回住宿取件後再返成都。"],
+    ["clock-3","回程時間","青城山夏季通常 17:30 閉園；預留排隊、下山、接駁與取行李時間，再銜接回成都列車。"],
+    ["cloud-rain","下雨原則","山中石階濕滑。遇大雨、雷雨或景區預警就縮短路線，安全比完成景點重要。"]
+  ],spot:["青城山前山看什麼","青城山以幽深山林與道教宮觀聞名。建福宮、月城湖、上清宮是主線重點；老君閣位置最高，但不必把登頂當作唯一目標。"]},
+  {effort:"輕鬆・可刪減",summary:"人民公園 → 寬窄巷子 → 武侯祠 → 錦里。四處分成兩組，相鄰景點一起走，不來回繞路。",facts:[
+    ["coffee","上午放慢","人民公園的重點是坐下喝茶，不是趕著拍完離開；睡飽後再出門即可。"],
+    ["route","兩組相鄰景點","人民公園與寬窄巷子排同一段；武侯祠與錦里排另一段，中間直接叫車最簡單。"],
+    ["landmark","武侯祠重點","對三國歷史有興趣再買票入館；若興趣普通，可縮短參觀，把時間留給休息。"],
+    ["utensils","晚餐安排","錦里方便但觀光客多，不必追網紅店。吃完直接回飯店，不再加夜景。"],
+    ["luggage","今晚任務","回飯店後完成行李、航廈與轉機文件確認，避免隔天早上匆忙。"]
+  ],spot:["成都慢遊看什麼","人民公園看成都人的日常，寬窄巷子看老街格局，武侯祠理解蜀漢歷史，錦里適合傍晚散步。時間不足時，優先人民公園與武侯祠。"]},
   {effort:"輕鬆但時間重要",summary:"飯店附近 → 退房 → 12:30 前往 CTU → 15:50 飛澳門轉高雄。",facts:[
     ["badge-check","文件放同一包","護照／台胞證、登機資料、澳門轉機文件與緊急聯絡方式放在隨身包，不要托運。"],
     ["plane","機場時間","跨境航班建議至少提前 3 小時抵達；前一晚確認 CTU 航廈與即時交通。"],
@@ -132,20 +137,20 @@ const dayVisuals = [
     source:"https://commons.wikimedia.org/wiki/File:Dujiangyan.jpg"
   },
   {
-    src:"assets/attractions/sanxingdui.jpg",
-    alt:"三星堆博物館展出的古蜀青銅面具",
-    caption:"三星堆青銅面具",
-    highlights:["青銅大立人","青銅神樹","青銅面具"],
-    credit:"Gary Todd／Wikimedia Commons · CC0",
-    source:"https://commons.wikimedia.org/wiki/File:Sanxingdui_Bronze_Mask_(9950710845).jpg"
+    src:"assets/attractions/qingcheng.jpg",
+    alt:"青城山前山雲霧森林中的道教宮觀",
+    caption:"青城山前山",
+    highlights:["建福宮","月城湖","上清宮"],
+    credit:"Xiquinho Silva／Wikimedia Commons · CC BY 2.0",
+    source:"https://commons.wikimedia.org/wiki/File:Mount_Qingcheng_(54531970274).jpg"
   },
   {
-    src:"assets/attractions/panda.jpg",
-    alt:"成都大熊貓繁育研究基地內的大熊貓",
-    caption:"成都熊貓基地",
-    highlights:["熊貓基地","人民公園","武侯祠／錦里"],
-    credit:"Mikael Häggström／Wikimedia Commons · 公有領域",
-    source:"https://commons.wikimedia.org/wiki/File:Giant_Panda_at_Chengdu_Panda_Base.jpg"
+    src:"assets/attractions/wuhou.jpg",
+    alt:"成都武侯祠內的傳統建築與庭院",
+    caption:"成都武侯祠",
+    highlights:["人民公園","寬窄巷子","武侯祠／錦里"],
+    credit:"Gisling／Wikimedia Commons · CC BY 2.5",
+    source:"https://commons.wikimedia.org/wiki/File:Chengdu_Wuhou_ci.jpg"
   },
   null
 ];
@@ -155,15 +160,15 @@ const dayFallbacks=[
   "動車或接駁延誤時，直接前往九寨溝飯店，不增加沿途停靠，也不安排晚間逛街。",
   "遇雨就提高觀光車比例，只選五花海、諾日朗與樹正群海等代表區域，不追求走完整條棧道。",
   "若高原不適或回程時間不足，縮短黃龍或直接前往車站；返成都動車優先於景點完整度。",
-  "下雨或前幾天太累，可以晚出發、只看魚嘴與寶瓶口，或改成成都休息日。",
-  "若未搶到三星堆票，保留成都自由日，不臨時購買來源不明的高價票券。",
-  "熊貓基地結束後只選人民公園或武侯祠其中一區；人潮太多就提早離開，不硬湊所有景點。",
+  "下雨或前幾天太累，可以晚出發、只看魚嘴與寶瓶口；古城和南橋直接刪除，提早入住休息。",
+  "若遇大雨、道路預警或雙腿不舒服，就取消青城山，從都江堰直接回成都休息；不要臨時改走後山。",
+  "若前一天青城山後仍疲累，只留人民公園喝茶與整理行李；寬窄巷子、武侯祠和錦里都可以刪除。",
   "航班日不安排遠程備案；若時間有餘，只在飯店附近吃飯、整理行李與確認報到櫃檯。"
 ];
 
 const mapPlaces = [
   {name:"成都雙流機場",area:"成都・雙流",desc:"9/4 抵達與 9/11 返程使用的機場；務必再次確認航廈。",lat:30.5785,lng:103.9471,type:"transport",days:[0,7],stay:"CTU 機場",icon:"plane"},
-  {name:"成都住宿區",area:"春熙路／天府廣場",desc:"成都五晚的建議住宿核心區，前往成都東站與市區景點方便。",lat:30.6570,lng:104.0737,type:"stay",days:[0,3,4,5,6,7],stay:"成都共 5 晚",icon:"bed-double"},
+  {name:"成都住宿區",area:"春熙路／天府廣場",desc:"成都四晚的建議住宿核心區，前往成都東站與市區景點方便。",lat:30.6570,lng:104.0737,type:"stay",days:[0,3,4,5,6,7],stay:"成都共 4 晚",icon:"bed-double"},
   {name:"成都IFS",area:"春熙路商圈",desc:"春熙路、太古里與 IFS 相鄰，抵達第一晚依體力散步。",lat:30.6543,lng:104.0815,type:"sight",days:[0],stay:"9/4 晚間",icon:"shopping-bag"},
   {name:"成都東站",area:"成華區",desc:"9/5 前往黃龍九寨的動車起點；車次以 12306 開售後為準。",lat:30.6289,lng:104.1403,type:"transport",days:[1,3],stay:"至少提早 45–60 分鐘",icon:"train-front"},
   {name:"黃龍九寨站",area:"松潘・川主寺",desc:"川青鐵路車站，可轉接駁前往九寨溝或黃龍。",lat:32.6530,lng:103.6089,type:"transport",days:[1,3],stay:"接駁轉乘點",icon:"train-front"},
@@ -172,18 +177,20 @@ const mapPlaces = [
   {name:"九寨溝景區入口",area:"九寨溝縣",desc:"9/6 建議 07:20 左右抵達，準備 08:00 第一批入園。",lat:33.2601,lng:103.9187,type:"sight",days:[2],stay:"完整一天",icon:"ticket-check"},
   {name:"五花海",area:"九寨溝・日則溝",desc:"九寨溝代表性海子之一；實際遊覽順序依景區觀光車調度。",lat:33.1599,lng:103.8794,type:"sight",days:[2],stay:"依觀光車安排",icon:"waves"},
   {name:"黃龍風景區",area:"松潘縣",desc:"9/7 高海拔重點行程；量力步行並預留前往車站時間。",lat:32.7434,lng:103.8335,type:"sight",days:[3],stay:"半天・量力而為",icon:"mountain-snow"},
-  {name:"都江堰景區",area:"都江堰市",desc:"9/8 彈性戶外日；以寶瓶口、飛沙堰、魚嘴等核心區為主。",lat:31.0045,lng:103.6050,type:"sight",days:[4],stay:"半日到一日",icon:"landmark"},
-  {name:"三星堆博物館",area:"廣漢市",desc:"9/9 獨立完整一天，不與樂山混搭，慢慢看核心展廳。",lat:31.0067,lng:104.2192,type:"sight",days:[5],stay:"建議 5–6 小時",icon:"landmark"},
-  {name:"成都熊貓基地",area:"成華區",desc:"9/10 早上優先，越早越有機會看到熊貓活動。",lat:30.7381,lng:104.1467,type:"sight",days:[6],stay:"建議 3–4 小時",icon:"trees"},
-  {name:"人民公園",area:"青羊區",desc:"喝茶、休息與感受成都日常；和寬窄巷子可依體力二選一。",lat:30.6575,lng:104.0570,type:"sight",days:[6],stay:"建議 1–2 小時",icon:"coffee"},
-  {name:"寬窄巷子",area:"青羊區",desc:"9/10 下午備選；若熊貓基地後疲累，可直接略過。",lat:30.6696,lng:104.0503,type:"sight",days:[6],stay:"彈性備選",icon:"store"},
+  {name:"都江堰景區",area:"都江堰市",desc:"9/8 下午完整理解魚嘴、飛沙堰與寶瓶口三大水利核心。",lat:31.0045,lng:103.6050,type:"sight",days:[4],stay:"官方建議約 3 小時",icon:"landmark"},
+  {name:"南橋",area:"灌縣古城",desc:"都江堰景區外的岷江廊橋；9/8 傍晚與灌縣古城一起散步。",lat:30.9949,lng:103.6162,type:"sight",days:[4],stay:"傍晚彈性停留",icon:"bridge"},
+  {name:"都江堰住宿區",area:"灌縣古城／離堆公園附近",desc:"9/8 住一晚，隔天直接前往青城山，避免連續兩天往返成都。",lat:30.9941,lng:103.6196,type:"stay",days:[4,5],stay:"都江堰共 1 晚",icon:"bed-double"},
+  {name:"青城山前山",area:"都江堰市",desc:"9/9 只走道教文化主線，利用渡船、索道與觀光車節省體力。",lat:30.9000,lng:103.5703,type:"sight",days:[5],stay:"建議半日至下午",icon:"trees"},
+  {name:"青城山站",area:"都江堰市",desc:"9/9 下山後銜接城際列車回成都；班次以 12306 為準。",lat:30.8990,lng:103.6160,type:"transport",days:[5],stay:"回成都轉乘點",icon:"train-front"},
+  {name:"人民公園",area:"青羊區",desc:"喝茶、休息與感受成都日常；9/10 睡飽後再出門。",lat:30.6575,lng:104.0570,type:"sight",days:[6],stay:"建議 1–2 小時",icon:"coffee"},
+  {name:"寬窄巷子",area:"青羊區",desc:"和人民公園排在同一段；人潮多或覺得太商業化就縮短。",lat:30.6696,lng:104.0503,type:"sight",days:[6],stay:"彈性備選",icon:"store"},
   {name:"武侯祠",area:"武侯區",desc:"與錦里相鄰，9/10 傍晚依體力選擇參觀。",lat:30.6455,lng:104.0495,type:"sight",days:[6],stay:"建議 1.5 小時",icon:"landmark"},
   {name:"錦里",area:"武侯區",desc:"晚間備選老街，前一晚要整理行李，不必逛到太晚。",lat:30.6450,lng:104.0479,type:"sight",days:[6],stay:"彈性備選",icon:"store"}
 ];
 
 const categoryLabels={sight:"景點",transport:"交通",stay:"住宿"};
 const categoryGlyphs={sight:"景",transport:"車",stay:"住"};
-const dayTypeLabels={arrival:"抵達日",move:"純移動日",star:"重點景點日",hard:"高強度日",flex:"彈性戶外日",panda:"城市景點日",flight:"返程日"};
+const dayTypeLabels={arrival:"抵達日",move:"純移動日",star:"山林景點日",hard:"高強度日",flex:"兩天一夜・第一天",city:"成都慢遊日",flight:"返程日"};
 const saved=new Set(JSON.parse(localStorage.getItem("sichuan-saved")||"[]"));
 let activeDay=0,mapFilter="all",mapDay="0",mapQuery="",travelMap,markerLayer,routeLayer;
 let deferredInstallPrompt=null;
@@ -327,6 +334,6 @@ const checkState=JSON.parse(localStorage.getItem("sichuan-checklist")||"{}");qsa
 qs("#shareTrip").addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"四川八日行程｜成都・九寨溝",text:"2026/09/04—09/11 四川八日完整行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstallPrompt=e;});
 qs("#installTrip").addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=13").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=14").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(localStorage.getItem("sichuan-parent-mode")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();initMap();
