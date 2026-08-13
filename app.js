@@ -4,10 +4,11 @@ const itineraries = [
     ["17:30","飯店 Check-in","建議住春熙路／天府廣場一帶，後續進出成都東站與市區都方便。","成都住宿區"],
     ["19:00","春熙路・太古里・IFS","三處相鄰，依體力慢慢走；累了就在附近吃飯回飯店。","成都IFS"]
   ]},
-  { date:"9/5", weekday:"六", title:"成都 → 九寨溝", city:"移動日", lodging:"九寨溝", tone:"move", note:"這天只移動，不硬塞景點。動車與接駁銜接之間保留緩衝，抵達飯店後早點休息。", items:[
+  { date:"9/5", weekday:"六", title:"成都 → 九寨溝", city:"移動日", lodging:"九寨溝", tone:"move", note:"純移動日，正式景點為 0。動車與接駁之間保留緩衝，抵達後只辦入住、吃晚餐；還有精神再到溝口附近短暫散步。", items:[
     ["早上","前往成都東站","至少提前 45–60 分鐘到站，證件與車票截圖放在手機容易找到的位置。","成都東站"],
     ["動車","成都東 → 黃龍九寨","實際車次以 12306 開售後為準，不在網站寫死可能調整的時刻。","黃龍九寨站"],
-    ["下午","接駁前往九寨溝","車站到九寨溝仍有公路段；預先訂好直通車、飯店接駁或包車。","九寨溝住宿區"]
+    ["下午","接駁前往九寨溝","車站到九寨溝仍有公路段；預先訂好直通車、飯店接駁或包車。","九寨溝住宿區"],
+    ["抵達後","入住、晚餐、自由休息","今天不排正式景點。若提早抵達且精神還好，只在溝口附近散步、買隔天補給，不另外叫車跑行程。","九寨溝住宿區"]
   ]},
   { date:"9/6", weekday:"日", title:"九寨溝完整一天", city:"九寨溝", lodging:"九寨溝", tone:"star", note:"本次旅行第一個重點日。8:00 開始入園，一整天只給九寨溝；¥190 門票＋¥90 觀光車。", items:[
     ["07:20","抵達九寨溝遊客中心","帶有效證件、早餐吃飽、穿分層衣物；盡量排在第一批入園。","九寨溝景區入口"],
@@ -129,6 +130,7 @@ const mapPlaces = [
 
 const categoryLabels={sight:"景點",transport:"交通",stay:"住宿"};
 const categoryGlyphs={sight:"景",transport:"車",stay:"住"};
+const dayTypeLabels={arrival:"抵達日",move:"純移動日",star:"重點景點日",hard:"高強度日",flex:"彈性戶外日",panda:"城市景點日",flight:"返程日"};
 const driverDestinations=[
   {day:"9/4、9/11",name:"成都双流国际机场",note:"成都雙流機場 CTU"},
   {day:"9/5",name:"成都东站",note:"搭乘前往黃龍九寨方向的動車"},
@@ -163,8 +165,9 @@ function renderAllDays(){
 function selectDay(index,scroll=false){activeDay=Number(index);renderDays();setMapDay(activeDay);if(scroll)qs("#route").scrollIntoView({behavior:"smooth",block:"start"});}
 function renderTimeline(){
   const d=itineraries[activeDay];
+  const sightCount=routePlacesForDay(activeDay).filter(p=>p.type==="sight").length;
   qs("#dayOverview").className=`day-overview ${d.tone}`;
-  qs("#dayOverview").innerHTML=`<div><span>${d.date} 星期${d.weekday}</span><h3>${d.title}</h3></div><p>${d.note}</p><div class="lodging-badge">${icon("bed-double")}<span>今晚住宿</span><strong>${d.lodging}</strong></div>`;
+  qs("#dayOverview").innerHTML=`<div><span>${d.date} 星期${d.weekday}</span><h3>${d.title}</h3><div class="day-tags"><b>${dayTypeLabels[d.tone]}</b><b>${sightCount} 個主要景點</b></div></div><p>${d.note}</p><div class="lodging-badge">${icon("bed-double")}<span>今晚住宿</span><strong>${d.lodging}</strong></div>`;
   timeline.innerHTML=d.items.map((item,i)=>`<article class="timeline-item" style="animation-delay:${i*60}ms"><time>${item[0]}</time><h3>${item[1]}</h3><p>${item[2]}</p><a href="#map" data-focus-place="${item[3]}">在旅行地圖查看 ${icon("map-pin")}</a></article>`).join("");
   renderParentGuide();
   refreshIcons();
@@ -192,8 +195,8 @@ function renderMapContext(){
   if(mapDay==="all"){
     box.innerHTML=`<div class="map-context-title"><span>${icon("map")} 8 天全覽</span><strong>成都與川西主要地點</strong><small>先選日期查看當天順序，或依顏色辨認景點、交通與住宿。</small></div><div class="map-context-hint">${icon("mouse-pointer-click")} 點地圖標記或右側清單查看說明</div>`;
   }else{
-    const d=itineraries[Number(mapDay)],route=routePlacesForDay(Number(mapDay));
-    box.innerHTML=`<div class="map-context-title"><span>D${Number(mapDay)+1} · ${d.date} 星期${d.weekday}</span><strong>${d.title}</strong><small>${route.length} 個主要停靠點 · 今晚住 ${d.lodging}</small></div><div class="map-route-chain">${route.map((p,i)=>`<button type="button" data-map-context-place="${p.name}"><b>${i+1}</b><span>${p.name}</span></button>${i<route.length-1?icon("chevron-right"):""}`).join("")}</div>`;
+    const dayNumber=Number(mapDay),d=itineraries[dayNumber],route=routePlacesForDay(dayNumber),sightCount=route.filter(p=>p.type==="sight").length;
+    box.innerHTML=`<div class="map-context-title"><span>D${dayNumber+1} · ${d.date} 星期${d.weekday} · ${dayTypeLabels[d.tone]}</span><strong>${d.title}</strong><small>${route.length} 個主要停靠點 · ${sightCount} 個主要景點 · 今晚住 ${d.lodging}</small></div><div class="map-route-chain">${route.map((p,i)=>`<button type="button" data-map-context-place="${p.name}"><b>${i+1}</b><span>${p.name}</span></button>${i<route.length-1?icon("chevron-right"):""}`).join("")}</div>`;
   }
   refreshIcons();
 }
@@ -284,6 +287,6 @@ qsa("[data-trip-info]").forEach(field=>{field.value=tripInfo[field.dataset.tripI
 qs("#shareTrip").addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"四川八日行程｜成都・九寨溝",text:"2026/09/04—09/11 四川八日完整行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstallPrompt=e;});
 qs("#installTrip").addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=9").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=10").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(localStorage.getItem("sichuan-parent-mode")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDriverCards();renderDrawer();updateReadiness();updateTripInfoStatus();updateCountdown();refreshIcons();initMap();

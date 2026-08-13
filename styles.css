@@ -146,6 +146,14 @@ input[type="date"] { border: 0; background: transparent; color: var(--ink); font
 .day-overview.flight { border-color: #394f86; background: #e9ebf1; }
 .day-overview > div:first-child span { color: var(--orange); font-size: 11px; font-weight: 800; letter-spacing: .12em; }
 .day-overview h3 { margin: 4px 0 0; font-family: "Noto Serif TC", serif; font-size: 27px; }
+.day-tags { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+.day-tags b { padding: 5px 8px; background: rgba(16,32,43,.07); color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .06em; }
+.day-overview.move .day-tags b:first-child { background: #dce9ed; color: #356b7c; }
+.day-overview.star .day-tags b:first-child { background: #ead9b8; color: #8a6218; }
+.day-overview.hard .day-tags b:first-child { background: #e8c9be; color: #933c2c; }
+.day-overview.flex .day-tags b:first-child { background: #dce4d4; color: #536841; }
+.day-overview.panda .day-tags b:first-child { background: #cee0d4; color: #285b47; }
+.day-overview.flight .day-tags b:first-child { background: #d8ddea; color: #394f86; }
 .day-overview > p { color: var(--muted); line-height: 1.75; margin: 0; font-size: 14px; }
 .lodging-badge { border-left: 1px solid var(--line); padding-left: 24px; display: grid; grid-template-columns: auto 1fr; column-gap: 8px; align-items: center; }
 .lodging-badge svg { grid-row: 1 / 3; color: var(--orange); }
