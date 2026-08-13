@@ -1,0 +1,6 @@
+cloudflared.exe
+cloudflared-out.log
+cloudflared-error.log
+.vercel/
+node_modules/
+

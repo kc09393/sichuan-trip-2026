@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="108" fill="#0c2031"/>
+  <path d="M72 374 190 188l66 92 60-88 124 182H72Z" fill="#88aabd"/>
+  <path d="M58 402c78-38 139-53 217-39 61 11 113 9 179-24v63H58Z" fill="#45a993"/>
+  <circle cx="390" cy="112" r="42" fill="#e76f3d"/>
+  <text x="256" y="318" text-anchor="middle" font-family="serif" font-size="178" font-weight="700" fill="#fff">川</text>
+</svg>
