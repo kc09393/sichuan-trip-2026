@@ -8,12 +8,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="description" content="2026 年 9 月 4 日至 11 日，成都、九寨溝、黃龍、都江堰與三星堆 8 天旅行行程。">
   <title>四川八日行程｜成都・九寨溝</title>
-  <link rel="manifest" href="manifest.webmanifest?v=11">
+  <link rel="manifest" href="manifest.webmanifest?v=12">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=11">
-  <link rel="stylesheet" href="styles.css?v=11">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=12">
+  <link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -25,7 +25,7 @@
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero" id="overview" aria-labelledby="hero-title">
       <img src="assets/chengdu-jiuzhai-hero.png" alt="四川山谷、九寨溝碧綠湖水與遠方城市晨光">
       <div class="hero-overlay"></div>
       <div class="hero-content">
@@ -37,37 +37,20 @@
       <div class="trip-stamp" aria-label="旅行摘要"><span>四川八日</span><strong id="countdown">準備出發</strong><small>成都 5 晚 · 九寨溝 2 晚</small></div>
     </section>
 
-    <section class="quick-plan family-summary" aria-label="旅行摘要">
-      <div><span class="field-label">旅行日期</span><strong>9/4 五 — 9/11 五</strong><small>共 8 天 7 夜</small></div>
-      <div><span class="field-label">住宿分配</span><strong>成都 5 晚</strong><small>九寨溝 2 晚</small></div>
-      <div class="weather-note"><i data-lucide="mountain-snow"></i><div><strong>平原＋高原溫差</strong><span>成都輕薄；九寨、黃龍備保暖外套與雨具</span></div></div>
-    </section>
-
-    <section class="route-summary-bar" aria-label="全程移動順序">
-      <div class="route-summary-title"><span>全程順序</span><strong>三段移動，一眼看懂</strong></div>
-      <div class="route-leg"><span>9/4</span><strong>抵達成都</strong><small>CTU → 飯店 → 春熙路</small></div>
-      <i data-lucide="arrow-right" aria-hidden="true"></i>
-      <div class="route-leg"><span>9/5—9/7</span><strong>九寨溝・黃龍</strong><small>動車＋預約接駁／包車</small></div>
-      <i data-lucide="arrow-right" aria-hidden="true"></i>
-      <div class="route-leg"><span>9/8—9/11</span><strong>成都周邊・返程</strong><small>都江堰、三星堆、熊貓基地</small></div>
-    </section>
-
-    <section class="trip-control-section" id="overview" aria-labelledby="control-title">
+    <section class="trip-control-section" aria-labelledby="control-title">
       <div class="control-heading">
-        <div><p class="eyebrow dark">旅行控制台</p><h2 id="control-title">現在最需要做什麼</h2><p>從這裡快速進入每天路線、預約清單或分享行程。</p></div>
-        <div class="readiness-card" aria-live="polite">
-          <div class="readiness-ring" id="readinessRing"><strong id="readinessPercent">0%</strong></div>
-          <div><span>行前準備度</span><strong id="readinessText">0／6 已完成</strong><small>依下方行前清單計算</small></div>
+        <div><p class="eyebrow dark">8 天總覽</p><h2 id="control-title">選一天查看安排</h2><p>切換日期會同步更新每日行程、當日攻略和地圖路線。</p></div>
+        <div class="overview-utilities">
+          <div class="readiness-card" aria-live="polite">
+            <div class="readiness-ring" id="readinessRing"><strong id="readinessPercent">0%</strong></div>
+            <div><span>行前準備</span><strong id="readinessText">0／6 已完成</strong><small>依行前清單計算</small></div>
+          </div>
+          <div class="utility-buttons">
+            <button type="button" id="shareTrip"><i data-lucide="share-2"></i> 分享</button>
+            <button type="button" id="installTrip"><i data-lucide="download"></i> 加入主畫面</button>
+          </div>
         </div>
       </div>
-      <div class="control-actions">
-        <a href="#route"><i data-lucide="calendar-days"></i><span><strong>查看每天路線</strong><small>時間、交通與住宿</small></span></a>
-        <a href="#guide"><i data-lucide="navigation"></i><span><strong>當日實用攻略</strong><small>交通、順序與備案</small></span></a>
-        <a href="#booking"><i data-lucide="ticket-check"></i><span><strong>預約與車票</strong><small>先處理重要項目</small></span></a>
-        <button type="button" id="shareTrip"><i data-lucide="share-2"></i><span><strong>分享行程</strong><small>傳送或複製公開網址</small></span></button>
-        <button type="button" id="installTrip"><i data-lucide="download"></i><span><strong>加入手機桌面</strong><small>旅途中更快開啟</small></span></button>
-      </div>
-      <div class="all-days-head"><strong>8 天快速總覽</strong><span>點一天直接查看詳細路線</span></div>
       <div class="all-days-grid" id="allDaysGrid"></div>
     </section>
 
@@ -112,12 +95,6 @@
       </div>
     </section>
 
-    <section class="split-section" aria-labelledby="split-title">
-      <div class="split-date"><span>SEP</span><strong>11</strong><small>FRI</small></div>
-      <div><p class="eyebrow">9/11 返程安排</p><h2 id="split-title">15:50 從 CTU 出發</h2><p>成都雙流機場 → 澳門 → 高雄。建議至少提前 3 小時抵達機場，跨境航班與轉機文件在前一晚完整確認。</p></div>
-      <a href="#map" data-focus-place="成都雙流機場">在地圖查看機場 <i data-lucide="map-pin"></i></a>
-    </section>
-
     <section class="prepare-section" id="prepare">
       <div class="prepare-copy"><p class="eyebrow">行李與證件</p><h2>出發前確認清單</h2><p>勾選結果會保留在這支手機。高原段若有人不舒服，直接減少步行或折返。</p><a href="https://www.jiuzhai.com/intelligent-service/tickets" target="_blank" rel="noreferrer">查看九寨溝官方票務 <i data-lucide="external-link"></i></a></div>
       <div class="checklist" id="checklist">
@@ -130,7 +107,6 @@
       </div>
     </section>
 
-    <section class="source-strip" aria-label="資料來源與提醒"><p><i data-lucide="info"></i> 景區規則、列車與航班可能調整；請在出發前依官方公告再次確認。</p><div><a href="https://www.jiuzhai.com/news/notice/11241-2026-07-08-03-30-49" target="_blank" rel="noreferrer">九寨溝 2026 公告</a><a href="https://www.huanglong.com/cn/" target="_blank" rel="noreferrer">黃龍官方</a><a href="https://www.12306.cn/" target="_blank" rel="noreferrer">12306</a><a href="https://www.sxd.cn/" target="_blank" rel="noreferrer">三星堆官方</a></div></section>
   </main>
 
   <footer><a class="brand" href="#top"><span class="brand-mark">川</span><span>四川八日行程</span></a><p>2026/09/04—09/11 · 成都・九寨溝</p><button type="button" class="back-top" aria-label="回到頁首" data-tooltip="回到頁首"><i data-lucide="arrow-up"></i></button></footer>
@@ -144,13 +120,13 @@
   </aside>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <nav class="mobile-nav" aria-label="手機導覽">
-    <a href="#overview"><i data-lucide="layout-dashboard"></i><span>總覽</span></a>
+    <a href="#route"><i data-lucide="calendar-days"></i><span>行程</span></a>
     <a href="#guide"><i data-lucide="navigation"></i><span>帶路</span></a>
     <a href="#map"><i data-lucide="map"></i><span>地圖</span></a>
     <a href="#prepare"><i data-lucide="list-checks"></i><span>清單</span></a>
   </nav>
-  <script src="assets/vendor/lucide.min.js?v=11"></script>
-  <script src="assets/vendor/leaflet/leaflet.js?v=11"></script>
-  <script src="app.js?v=11"></script>
+  <script src="assets/vendor/lucide.min.js?v=12"></script>
+  <script src="assets/vendor/leaflet/leaflet.js?v=12"></script>
+  <script src="app.js?v=12"></script>
 </body>
 </html>
