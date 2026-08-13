@@ -8,12 +8,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="description" content="2026 年 9 月 4 日至 11 日，成都、九寨溝、黃龍、都江堰與三星堆 8 天旅行行程。">
   <title>四川八日行程｜成都・九寨溝</title>
-  <link rel="manifest" href="manifest.webmanifest?v=4">
+  <link rel="manifest" href="manifest.webmanifest?v=6">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=4">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -93,11 +93,13 @@
         <div class="map-search-wrap"><i data-lucide="search"></i><input id="mapSearch" type="search" placeholder="搜尋九寨溝、三星堆、車站…" aria-label="搜尋地圖地點"><button id="clearMapSearch" type="button" aria-label="清除搜尋" data-tooltip="清除"><i data-lucide="x"></i></button></div>
       </div>
       <div class="map-toolbar">
-        <div class="map-filters" role="group" aria-label="地點分類"><button type="button" class="active" data-map-filter="all">全部</button><button type="button" data-map-filter="sight">景點</button><button type="button" data-map-filter="transport">交通</button><button type="button" data-map-filter="stay">住宿區域</button></div>
+        <div class="map-filters" role="group" aria-label="地點分類"><button type="button" class="active" data-map-filter="all">全部</button><button type="button" data-map-filter="sight"><span class="filter-dot sight"></span>景點</button><button type="button" data-map-filter="transport"><span class="filter-dot transport"></span>交通</button><button type="button" data-map-filter="stay"><span class="filter-dot stay"></span>住宿</button></div>
         <div class="route-filters" role="group" aria-label="顯示每日路線"><button type="button" class="active" data-map-day="all">全覽</button><button type="button" data-map-day="0">D1</button><button type="button" data-map-day="1">D2</button><button type="button" data-map-day="2">D3</button><button type="button" data-map-day="3">D4</button><button type="button" data-map-day="4">D5</button><button type="button" data-map-day="5">D6</button><button type="button" data-map-day="6">D7</button><button type="button" data-map-day="7">D8</button></div>
+        <label class="map-day-select"><span>選擇日期</span><select id="mapDaySelect" aria-label="選擇地圖日期"><option value="all">全部 8 天</option></select></label>
       </div>
+      <div class="map-context" id="mapContext" aria-live="polite"></div>
       <div class="map-shell"><div id="travelMap" aria-label="成都與九寨溝互動旅遊地圖"></div><aside class="map-panel" aria-label="地圖地點清單"><div class="map-panel-head"><strong id="mapResultCount">0 個地點</strong><button id="fitMap" type="button"><i data-lucide="scan"></i> 顯示全部</button></div><div id="mapPlaceList" class="map-place-list"></div><div id="mapEmpty" class="map-empty" hidden><i data-lucide="map-pin-off"></i><strong>找不到符合的地點</strong><span>換個關鍵字或清除篩選試試看。</span></div></aside></div>
-      <div class="map-legend"><span><i class="legend-dot sight"></i>景點</span><span><i class="legend-dot transport"></i>交通</span><span><i class="legend-dot stay"></i>住宿區域</span><small>地圖用於行程概覽，實際入口與乘車點請於當日再次導航確認。</small></div>
+      <div class="map-legend"><span><i class="legend-marker sight">景</i>景點</span><span><i class="legend-marker transport">車</i>機場／車站</span><span><i class="legend-marker stay">住</i>住宿區</span><small>選擇 D1–D8 後，數字代表當日順序；「備」代表替代或備選地點。</small></div>
     </section>
 
     <section class="driver-section" id="driver" aria-labelledby="driver-title">
@@ -175,8 +177,8 @@
     <a href="#map"><i data-lucide="map"></i><span>地圖</span></a>
     <a href="#prepare"><i data-lucide="list-checks"></i><span>清單</span></a>
   </nav>
-  <script src="assets/vendor/lucide.min.js?v=4"></script>
-  <script src="assets/vendor/leaflet/leaflet.js?v=4"></script>
-  <script src="app.js?v=4"></script>
+  <script src="assets/vendor/lucide.min.js?v=6"></script>
+  <script src="assets/vendor/leaflet/leaflet.js?v=6"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>
