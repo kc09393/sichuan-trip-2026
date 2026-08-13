@@ -8,12 +8,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="description" content="2026 年 9 月 4 日至 11 日，成都、九寨溝、黃龍、都江堰與三星堆 8 天旅行行程。">
   <title>四川八日行程｜成都・九寨溝</title>
-  <link rel="manifest" href="manifest.webmanifest?v=10">
+  <link rel="manifest" href="manifest.webmanifest?v=11">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=10">
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=11">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -102,34 +102,6 @@
       <div class="map-legend"><span><i class="legend-marker sight">景</i>景點</span><span><i class="legend-marker transport">車</i>機場／車站</span><span><i class="legend-marker stay">住</i>住宿區</span><small>選擇 D1–D8 後，數字代表當日順序；「備」代表替代或備選地點。</small></div>
     </section>
 
-    <section class="driver-section" id="driver" aria-labelledby="driver-title">
-      <div class="driver-heading"><div><p class="eyebrow dark">搭車時直接出示</p><h2 id="driver-title">目的地中文卡片</h2></div><p>叫車或詢問工作人員時，直接把中文名稱給對方看。按一下即可複製。</p></div>
-      <div class="driver-grid" id="driverGrid"></div>
-    </section>
-
-    <section class="trip-info-section" aria-labelledby="trip-info-title">
-      <div class="trip-info-copy"><p class="eyebrow">自己補上的重要資料</p><h2 id="trip-info-title">飯店、接駁與聯絡方式</h2><p>內容只保存在這支手機，不會上傳。訂好住宿或包車後，把資料貼進來，旅途中不用翻聊天紀錄。</p><span id="tripInfoStatus">尚未填寫</span></div>
-      <div class="trip-info-form" id="tripInfoForm">
-        <label><span>成都飯店名稱／地址</span><textarea data-trip-info="chengduHotel" rows="2" placeholder="例：飯店名稱、中文地址、電話"></textarea></label>
-        <label><span>九寨溝飯店名稱／地址</span><textarea data-trip-info="jiuzhaiHotel" rows="2" placeholder="例：飯店名稱、溝口位置、電話"></textarea></label>
-        <label><span>9/5 車站接駁</span><textarea data-trip-info="pickup95" rows="2" placeholder="司機姓名、電話、車牌、集合點"></textarea></label>
-        <label><span>9/7 黃龍包車／接駁</span><textarea data-trip-info="pickup97" rows="2" placeholder="司機姓名、電話、車牌、出發時間"></textarea></label>
-        <label><span>緊急聯絡與保險</span><textarea data-trip-info="emergency" rows="2" placeholder="聯絡人、電話、保險資料"></textarea></label>
-      </div>
-    </section>
-
-    <section class="practical-section" aria-labelledby="practical-title">
-      <div class="practical-heading"><p class="eyebrow dark">旅途中快速查</p><h2 id="practical-title">六個容易出錯的地方</h2><p>把最常需要重新確認的交通、證件與高原注意事項集中放在一起。</p></div>
-      <div class="practical-grid">
-        <article><i data-lucide="train-front"></i><span>轉乘</span><h3>車站不是景區門口</h3><p>黃龍九寨站到九寨溝仍需公路接駁。9/5 出發前確認司機、車牌、集合點與電話。</p></article>
-        <article><i data-lucide="clock-3"></i><span>時間</span><h3>9/7 全部倒推動車</h3><p>先確定返成都車次，再排黃龍停留和離場時間；不要把景區關門時間當成可離場時間。</p></article>
-        <article><i data-lucide="mountain-snow"></i><span>高原</span><h3>不舒服就縮短路線</h3><p>黃龍避免快走與硬撐。若出現明顯不適，停止上行、休息並儘快往較低處移動。</p></article>
-        <article><i data-lucide="luggage"></i><span>行李</span><h3>9/7 行李全程隨車</h3><p>離開九寨溝飯店前清點件數；抵達車站下車時再確認後車廂與座位。</p></article>
-        <article><i data-lucide="cloud-rain"></i><span>雨天</span><h3>戶外景點直接減量</h3><p>九寨溝少走棧道、多搭觀光車；都江堰延後出發或提早回成都，不臨時加青城山。</p></article>
-        <article><i data-lucide="badge-check"></i><span>證件</span><h3>票券姓名與證件一致</h3><p>動車、景區與航班證件分開截圖備份；原始證件隨身攜帶，不放托運行李。</p></article>
-      </div>
-    </section>
-
     <section class="booking-section" id="booking">
       <div class="booking-heading"><p class="eyebrow dark">出發前要完成</p><h2>門票、車票與接駁</h2><p>九寨溝、往返動車與三星堆優先處理；實際開售時間與規則以官方平台為準。</p></div>
       <div class="booking-grid">
@@ -177,8 +149,8 @@
     <a href="#map"><i data-lucide="map"></i><span>地圖</span></a>
     <a href="#prepare"><i data-lucide="list-checks"></i><span>清單</span></a>
   </nav>
-  <script src="assets/vendor/lucide.min.js?v=10"></script>
-  <script src="assets/vendor/leaflet/leaflet.js?v=10"></script>
-  <script src="app.js?v=10"></script>
+  <script src="assets/vendor/lucide.min.js?v=11"></script>
+  <script src="assets/vendor/leaflet/leaflet.js?v=11"></script>
+  <script src="app.js?v=11"></script>
 </body>
 </html>

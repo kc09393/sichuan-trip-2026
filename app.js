@@ -131,14 +131,6 @@ const mapPlaces = [
 const categoryLabels={sight:"景點",transport:"交通",stay:"住宿"};
 const categoryGlyphs={sight:"景",transport:"車",stay:"住"};
 const dayTypeLabels={arrival:"抵達日",move:"純移動日",star:"重點景點日",hard:"高強度日",flex:"彈性戶外日",panda:"城市景點日",flight:"返程日"};
-const driverDestinations=[
-  {day:"9/4、9/11",name:"成都双流国际机场",note:"成都雙流機場 CTU"},
-  {day:"9/5",name:"成都东站",note:"搭乘前往黃龍九寨方向的動車"},
-  {day:"9/5—9/7",name:"九寨沟风景名胜区游客中心",note:"九寨溝景區入口／溝口"},
-  {day:"9/7",name:"黄龙国家级风景名胜区",note:"黃龍景區遊客中心"},
-  {day:"9/9",name:"三星堆博物馆",note:"四川省廣漢市向新路"},
-  {day:"9/10",name:"成都大熊猫繁育研究基地南大门",note:"熊貓基地南大門；出發前再確認入園門區"}
-];
 const saved=new Set(JSON.parse(localStorage.getItem("sichuan-saved")||"[]"));
 let activeDay=0,mapFilter="all",mapDay="0",mapQuery="",travelMap,markerLayer,routeLayer;
 let deferredInstallPrompt=null;
@@ -277,16 +269,9 @@ qs("#parentMode").addEventListener("click",()=>{const on=!document.body.classLis
 function updateReadiness(){const checks=qsa("[data-check]"),done=checks.filter(i=>i.checked).length,total=checks.length,pct=total?Math.round(done/total*100):0;qs("#readinessPercent").textContent=`${pct}%`;qs("#readinessText").textContent=`${done}／${total} 已完成`;qs("#readinessRing").style.setProperty("--progress",`${pct*3.6}deg`);}
 const checkState=JSON.parse(localStorage.getItem("sichuan-checklist")||"{}");qsa("[data-check]").forEach(i=>{i.checked=!!checkState[i.dataset.check];i.addEventListener("change",()=>{checkState[i.dataset.check]=i.checked;localStorage.setItem("sichuan-checklist",JSON.stringify(checkState));updateReadiness();});});
 
-function renderDriverCards(){qs("#driverGrid").innerHTML=driverDestinations.map(d=>`<button type="button" class="driver-card" data-copy-destination="${d.name}"><span>${d.day}</span>${icon("copy")}<strong>${d.name}</strong><small>${d.note}</small></button>`).join("");refreshIcons();}
-qs("#driverGrid").addEventListener("click",async e=>{const b=e.target.closest("[data-copy-destination]");if(!b)return;try{await navigator.clipboard.writeText(b.dataset.copyDestination);showToast(`已複製：${b.dataset.copyDestination}`);}catch{showToast("請長按中文名稱複製");}});
-
-const tripInfo=JSON.parse(localStorage.getItem("sichuan-trip-info")||"{}");
-function updateTripInfoStatus(){const fields=qsa("[data-trip-info]"),filled=fields.filter(x=>x.value.trim()).length;qs("#tripInfoStatus").textContent=filled?`已填寫 ${filled}／${fields.length} 項`:`尚未填寫`;}
-qsa("[data-trip-info]").forEach(field=>{field.value=tripInfo[field.dataset.tripInfo]||"";field.addEventListener("input",()=>{tripInfo[field.dataset.tripInfo]=field.value;localStorage.setItem("sichuan-trip-info",JSON.stringify(tripInfo));updateTripInfoStatus();});});
-
 qs("#shareTrip").addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"四川八日行程｜成都・九寨溝",text:"2026/09/04—09/11 四川八日完整行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstallPrompt=e;});
 qs("#installTrip").addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=10").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=11").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
-setParentMode(localStorage.getItem("sichuan-parent-mode")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDriverCards();renderDrawer();updateReadiness();updateTripInfoStatus();updateCountdown();refreshIcons();initMap();
+setParentMode(localStorage.getItem("sichuan-parent-mode")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();initMap();

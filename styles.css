@@ -82,7 +82,7 @@ input[type="date"] { border: 0; background: transparent; color: var(--ink); font
 
 .trip-control-section { padding: 95px clamp(24px, 8vw, 130px) 45px; }
 .control-heading { max-width: 1180px; margin: auto; display: flex; align-items: end; justify-content: space-between; gap: 40px; }
-.control-heading h2, .driver-heading h2, .trip-info-copy h2 { font-size: clamp(38px, 4.7vw, 62px); }
+.control-heading h2 { font-size: clamp(38px, 4.7vw, 62px); }
 .control-heading > div:first-child > p:last-child { margin: 15px 0 0; color: var(--muted); line-height: 1.7; }
 .readiness-card { min-width: 270px; display: flex; align-items: center; gap: 15px; padding: 15px 18px; background: var(--cream); border: 1px solid var(--line); }
 .readiness-ring { --progress: 0deg; width: 58px; height: 58px; flex: 0 0 58px; padding: 6px; border-radius: 50%; background: conic-gradient(var(--orange) var(--progress), #ddd5c8 0); position: relative; display: grid; place-items: center; }
@@ -309,39 +309,6 @@ input[type="date"] { border: 0; background: transparent; color: var(--ink); font
 .map-popup button.active { background: var(--orange); }
 .map-popup svg { width: 13px; height: 13px; }
 
-.driver-section { padding: 105px clamp(24px, 8vw, 130px); background: #eee7dc; }
-.driver-heading { max-width: 1180px; margin: 0 auto 38px; display: flex; align-items: end; justify-content: space-between; gap: 45px; }
-.driver-heading > p { max-width: 440px; margin: 0; color: var(--muted); line-height: 1.75; }
-.driver-grid { max-width: 1180px; margin: auto; display: grid; grid-template-columns: repeat(3, 1fr); border-left: 1px solid var(--line); border-top: 1px solid var(--line); }
-.driver-card { min-height: 175px; padding: 23px; border: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.42); color: var(--ink); cursor: pointer; text-align: left; display: grid; grid-template-columns: 1fr auto; gap: 10px; align-content: space-between; transition: .2s; }
-.driver-card:hover { background: white; }
-.driver-card > span { color: var(--orange); font-size: 10px; font-weight: 800; }
-.driver-card svg { width: 17px; color: var(--orange); }
-.driver-card strong { grid-column: 1 / -1; font-family: "Noto Serif TC", serif; font-size: 23px; line-height: 1.35; }
-.driver-card small { grid-column: 1 / -1; color: var(--muted); line-height: 1.5; }
-
-.trip-info-section { padding: 110px clamp(24px, 8vw, 130px); background: var(--navy); color: white; display: grid; grid-template-columns: .8fr 1.35fr; gap: clamp(40px, 7vw, 110px); align-items: start; }
-.trip-info-copy { position: sticky; top: 30px; }
-.trip-info-copy > p:not(.eyebrow) { color: rgba(255,255,255,.58); line-height: 1.8; }
-.trip-info-copy > span { margin-top: 20px; padding: 9px 12px; border: 1px solid rgba(255,255,255,.25); color: #efb397; display: inline-flex; font-size: 11px; font-weight: 800; }
-.trip-info-form { display: grid; gap: 13px; }
-.trip-info-form label { padding: 18px 20px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.13); display: grid; gap: 9px; }
-.trip-info-form label:focus-within { border-color: #efb397; background: rgba(255,255,255,.09); }
-.trip-info-form label > span { color: #efb397; font-size: 11px; font-weight: 800; letter-spacing: .08em; }
-.trip-info-form textarea { width: 100%; resize: vertical; border: 0; outline: 0; padding: 0; background: transparent; color: white; font: inherit; font-size: 14px; line-height: 1.65; }
-.trip-info-form textarea::placeholder { color: rgba(255,255,255,.32); }
-
-.practical-section { padding: 110px clamp(24px, 8vw, 130px); background: var(--paper); }
-.practical-heading { max-width: 1180px; margin: 0 auto 38px; display: grid; grid-template-columns: 1fr .8fr; column-gap: 55px; align-items: end; }
-.practical-heading .eyebrow { grid-column: 1 / -1; }
-.practical-heading h2 { font-size: clamp(38px, 4.7vw, 62px); }
-.practical-heading > p:last-child { margin: 0; color: var(--muted); line-height: 1.75; }
-.practical-grid { max-width: 1180px; margin: auto; display: grid; grid-template-columns: repeat(3, 1fr); border-left: 1px solid var(--line); border-top: 1px solid var(--line); }
-.practical-grid article { min-height: 235px; padding: 25px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); position: relative; }
-.practical-grid article > svg { position: absolute; right: 23px; top: 23px; color: var(--orange); width: 22px; height: 22px; }
-.practical-grid article > span { color: var(--orange); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
-.practical-grid h3 { max-width: 84%; margin: 28px 0 13px; font-family: "Noto Serif TC", serif; font-size: 23px; line-height: 1.4; }
-.practical-grid p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
 
 .booking-section { padding: 120px clamp(24px, 8vw, 130px); background: var(--paper); }
 .booking-heading { max-width: 1180px; margin: 0 auto 48px; display: grid; grid-template-columns: 1fr 1fr; column-gap: 50px; align-items: end; }
@@ -526,10 +493,6 @@ body.parent-mode .parent-guide-card .run-step-copy h4 { font-size: 26px; }
   .booking-grid { grid-template-columns: 1fr; }
   .split-section { grid-template-columns: auto 1fr; }
   .split-section > a { grid-column: 2; justify-self: start; }
-  .driver-grid { grid-template-columns: repeat(2, 1fr); }
-  .trip-info-section { grid-template-columns: 1fr; }
-  .trip-info-copy { position: static; }
-  .practical-grid { grid-template-columns: repeat(2, 1fr); }
   .mobile-nav { position: fixed; inset: auto 0 0; z-index: 55; min-height: 64px; padding-bottom: env(safe-area-inset-bottom); background: rgba(7,22,34,.96); backdrop-filter: blur(14px); display: grid; grid-template-columns: repeat(4, 1fr); box-shadow: 0 -8px 30px rgba(4,18,30,.2); }
   .mobile-nav a { min-height: 64px; color: rgba(255,255,255,.68); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 10px; }
   .mobile-nav a:active { color: var(--orange-2); background: rgba(255,255,255,.06); }
@@ -555,7 +518,7 @@ body.parent-mode .parent-guide-card .run-step-copy h4 { font-size: 26px; }
   .route-leg strong { font-size: 15px; }
   .trip-control-section { padding: 72px 18px 30px; }
   .control-heading { display: grid; gap: 24px; }
-  .control-heading h2, .driver-heading h2, .trip-info-copy h2 { font-size: 36px; }
+  .control-heading h2 { font-size: 36px; }
   .readiness-card { width: 100%; min-width: 0; }
   .control-actions { margin: 24px auto 34px; grid-template-columns: 1fr 1fr; }
   .control-actions > a, .control-actions > button { min-height: 108px; padding: 16px 13px; gap: 9px; }
@@ -625,19 +588,6 @@ body.parent-mode .parent-guide-card .run-step-copy h4 { font-size: 26px; }
   .split-date strong { font-size: 46px; }
   .split-section > a { grid-column: auto; justify-self: stretch; }
   .source-strip, footer { flex-direction: column; align-items: flex-start; }
-  .driver-section { padding: 72px 18px; }
-  .driver-heading { align-items: start; flex-direction: column; gap: 16px; }
-  .driver-heading > p { font-size: 13px; }
-  .driver-grid { grid-template-columns: 1fr; }
-  .driver-card { min-height: 140px; }
-  .trip-info-section { padding: 72px 18px; gap: 32px; }
-  .practical-section { padding: 72px 18px; }
-  .practical-heading { grid-template-columns: 1fr; gap: 16px; }
-  .practical-heading .eyebrow { grid-column: auto; margin-bottom: 0; }
-  .practical-heading h2 { font-size: 36px; }
-  .practical-heading > p:last-child { font-size: 13px; }
-  .practical-grid { grid-template-columns: 1fr; }
-  .practical-grid article { min-height: 200px; }
   footer .back-top { align-self: flex-end; }
   #route, #guide, #map, #booking, #prepare { scroll-margin-top: 12px; }
 }
