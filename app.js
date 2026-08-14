@@ -4,10 +4,10 @@ const itineraries = [
     ["17:30","飯店 Check-in","建議住春熙路／天府廣場一帶，後續進出成都東站與市區都方便。","成都住宿區"],
     ["19:00","春熙路・太古里・IFS","三處相鄰，依體力慢慢走；累了就在附近吃飯回飯店。","成都IFS"]
   ]},
-  { date:"9/5", weekday:"六", title:"成都 → 九寨溝", city:"移動日", lodging:"九寨溝", tone:"move", note:"純移動日，正式景點為 0。動車與接駁之間保留緩衝，抵達後只辦入住、吃晚餐；還有精神再到溝口附近短暫散步。", items:[
+  { date:"9/5", weekday:"六", title:"成都 → 九寨溝", city:"移動日", lodging:"九寨溝", tone:"move", note:"純移動日，正式景點為 0。動車到黃龍九寨站後，官方接駁到九寨溝約 2 小時；抵達後只辦入住、吃晚餐。", items:[
     ["早上","前往成都東站","至少提前 45–60 分鐘到站，證件與車票截圖放在手機容易找到的位置。","成都東站"],
     ["動車","成都東 → 黃龍九寨","實際車次以 12306 開售後為準，不在網站寫死可能調整的時刻。","黃龍九寨站"],
-    ["下午","接駁前往九寨溝","車站到九寨溝仍有公路段；預先訂好直通車、飯店接駁或包車。","九寨溝住宿區"],
+    ["下午","接駁前往九寨溝","優先預訂官方「九旅悅行」直通車；車程約 2 小時，班次會配合動車到站。","九寨溝住宿區"],
     ["抵達後","入住、晚餐、自由休息","今天不排正式景點。若提早抵達且精神還好，只在溝口附近散步、買隔天補給，不另外叫車跑行程。","九寨溝住宿區"]
   ]},
   { date:"9/6", weekday:"日", title:"九寨溝完整一天", city:"九寨溝", lodging:"九寨溝", tone:"star", note:"本次旅行第一個重點日。8:00 開始入園，一整天只給九寨溝；¥190 門票＋¥90 觀光車。", items:[
@@ -39,23 +39,23 @@ const itineraries = [
     ["16:30","武侯祠","對三國歷史有興趣再入館，否則直接略過。","武侯祠"],
     ["18:30","錦里・回飯店","吃完晚餐就回去整理隔天行李。","錦里"]
   ]},
-  { date:"9/11", weekday:"五", title:"返程・分開", city:"成都", lodging:"—", tone:"flight", note:"15:50 CTU → 澳門 → 高雄。上午不排遠程景點，預留行李、退房與跨境航班報到時間。", items:[
+  { date:"9/11", weekday:"五", title:"返程・分開", city:"成都", lodging:"—", tone:"flight", note:"搭機者 15:50 CTU → 澳門 → 高雄。上午不排遠程景點，預留行李、退房與跨境航班報到時間。", items:[
     ["上午","早餐與整理行李","只在飯店周邊活動，確認護照、轉機文件、行李與登機資訊。","成都住宿區"],
     ["12:30 前","前往成都雙流機場","建議至少提前 3 小時抵達；實際航廈與交通時間以前一晚查詢為準。","成都雙流機場"],
-    ["15:50","CTU → 澳門 → 高雄","返程航班。轉機過程留意登機門、行李是否直掛與下一段航班狀態。","成都雙流機場"]
+    ["15:50","搭機者：CTU → 澳門 → 高雄","轉機過程留意登機門、行李是否直掛與下一段航班狀態。","成都雙流機場"]
   ]}
 ];
 
 const dayGuides = [
   {effort:"輕鬆",summary:"機場 → 飯店 → 春熙路商圈。抵達日的原則是先安頓，再決定要逛多少。",facts:[
-    ["car-taxi-front","交通方式","CTU 到市區帶行李時優先叫車；車程依晚高峰而變，出發後把車牌與司機資訊截圖保存。"],
+    ["car-taxi-front","交通方式","CTU 到市區帶行李時優先叫車；車程會受晚高峰影響，第一晚不要預約有固定入場時間的活動。"],
     ["utensils","吃飯安排","飯店放好行李後再吃。春熙路、太古里、IFS 餐廳密集，不必為名店排長隊。"],
     ["armchair","休息地點","太古里與 IFS 內都有室內座位、洗手間與冷氣；累了就直接回飯店。"],
     ["backpack","今天要帶","護照／台胞證、手機、行李牌；下車前一起清點件數。"]
   ],spot:["春熙路・太古里・IFS","這是成都最集中的現代商圈。春熙路適合逛街、太古里是開放式街區、IFS 最醒目的是屋頂熊貓；三處相連，不需要分別叫車。"]},
   {effort:"移動為主",summary:"飯店 → 成都東站 → 動車 → 黃龍九寨站 → 九寨溝飯店。今天不安排景點。",facts:[
-    ["train-front","乘車順序","前一晚叫飯店確認去成都東站所需時間；抵站後依 12306 顯示的檢票口進站。"],
-    ["bus-front","接駁重點","黃龍九寨站到九寨溝仍有一段公路。出發前把司機姓名、電話、車牌與集合點截圖。"],
+    ["train-front","進站安排","依 12306 班次提早 45–60 分鐘抵達成都東站，證件與訂單放在手機容易找到的位置。"],
+    ["bus-front","接駁重點","黃龍九寨站不是景區入口。官方「九旅悅行」直通車約 2 小時，開售後先預訂並確認集合點。"],
     ["sandwich","吃飯安排","早餐在飯店吃飽；另外帶水與簡單乾糧，避免轉乘途中臨時找不到餐食。"],
     ["badge-alert","不要硬排","如果接駁晚到，只做入住與晚餐。九寨溝隔天要走整日，今晚越早休息越好。"]
   ],spot:["川青鐵路","成都東到黃龍九寨已可搭動車，但班次會調整。黃龍九寨站是鐵路接駁點，不是九寨溝景區門口；出站後還要換車。"]},
@@ -75,12 +75,12 @@ const dayGuides = [
   ],spot:["黃龍看什麼","黃龍以層層鈣華彩池、雪山、峽谷與森林聞名。最具代表性的是五彩池，但不必以抵達最高點為唯一目標；舒服地看風景比完成路線重要。"]},
   {effort:"中等可縮短",summary:"成都 → 都江堰水利景區 → 灌縣古城／南橋 → 住都江堰。睡飽再出發，不和青城山塞在同一天。",facts:[
     ["train-front","交通選擇","城際列車以 12306 當日班次為準；多人同行若想減少轉乘，也可直接包車到都江堰。"],
-    ["route","水利工程順序","官方建議遊覽約 3 小時。現場依入口與觀光車安排，掌握魚嘴、飛沙堰、寶瓶口三個核心即可。"],
+    ["route","水利工程順序","官方建議遊覽約 3 小時。掌握魚嘴、飛沙堰、寶瓶口三個核心即可；港澳台旅客使用有效通行證購票，走人工通道入園。"],
     ["footprints","體力管理","景區橋樑與步道較多，不走安瀾索橋也不影響理解水利工程；多用觀光車並隨時坐下休息。"],
     ["moon-star","晚上安排","先入住再逛灌縣古城與南橋。夜景區不必久站，累了就回住宿休息。"]
   ],spot:["都江堰看什麼","兩千多年前建成、至今仍在運作的水利工程。魚嘴負責分水、飛沙堰協助排沙洩洪、寶瓶口控制進水；理解這三處，就看懂都江堰。"]},
   {effort:"中高・可省力",summary:"都江堰 → 青城山前山 → 青城山站 → 成都。只走前山，能省力就省力。",facts:[
-    ["trees","前山不是後山","前山以道教宮觀與文化景觀為主，路線較成熟；後山更偏山林健行，這次不安排。"],
+    ["trees","前山不是後山","前山以道教宮觀與文化景觀為主，這次不排後山。9 月官網目前標示 08:00–17:30 開放，仍以出發前公告為準。"],
     ["tram-front","省力走法","觀光車、月城湖渡船與索道皆另計費；能用就用，不追求登頂。"],
     ["footprints","體力底線","仍有階梯與坡道。膝蓋不舒服就折返，不需要走完整條路線。"],
     ["luggage","行李與回程","包車時行李留車上最省事；搭公共交通要先確認寄存，並預留取行李與進站時間。"]
@@ -92,10 +92,10 @@ const dayGuides = [
     ["luggage","今晚任務","完成行李、航廈與轉機文件確認，避免隔天匆忙。"]
   ],spot:["成都慢遊看什麼","人民公園看成都人的日常，寬窄巷子看老街格局，武侯祠理解蜀漢歷史，錦里適合傍晚散步。時間不足時，優先人民公園與武侯祠。"]},
   {effort:"輕鬆但時間重要",summary:"飯店附近 → 退房 → 12:30 前往 CTU → 15:50 飛澳門轉高雄。",facts:[
-    ["badge-check","文件放同一包","護照／台胞證、登機資料、澳門轉機文件與緊急聯絡方式放在隨身包，不要托運。"],
+    ["badge-check","文件放同一包","護照／台胞證、登機資料與澳門轉機文件放在隨身包，不要托運。"],
     ["plane","機場時間","跨境航班建議至少提前 3 小時抵達；前一晚確認 CTU 航廈與即時交通。"],
     ["luggage","行李確認","確認是否直掛高雄、每段托運限額與行動電源規則；掛行李後拍行李條。"],
-    ["message-circle","分開後聯絡","約好三個報平安節點：到 CTU、到澳門、抵達高雄；手機漫遊與充電要先準備。"]
+    ["route","轉機節點","到 CTU 後先確認行李是否直掛高雄；抵達澳門再查看下一段登機門與時間。"]
   ],spot:["澳門轉機","下機後跟著 Transfer／轉機標示走，不要直接前往入境。先看下一段登機門與時間；若行李不是直掛，依航空公司指示提領並重新辦理。"]}
 ];
 
@@ -168,7 +168,7 @@ const mapPlaces = [
   {name:"成都住宿區",area:"春熙路／天府廣場",desc:"成都四晚的建議住宿核心區，前往成都東站與市區景點方便。",lat:30.6570,lng:104.0737,type:"stay",days:[0,3,4,5,6,7],stay:"成都共 4 晚",icon:"bed-double"},
   {name:"成都IFS",area:"春熙路商圈",desc:"春熙路、太古里與 IFS 相鄰，抵達第一晚依體力散步。",lat:30.6543,lng:104.0815,type:"sight",days:[0],stay:"9/4 晚間",icon:"shopping-bag"},
   {name:"成都東站",area:"成華區",desc:"9/5 前往黃龍九寨的動車起點；車次以 12306 開售後為準。",lat:30.6289,lng:104.1403,type:"transport",days:[1,3],stay:"至少提早 45–60 分鐘",icon:"train-front"},
-  {name:"黃龍九寨站",area:"松潘・川主寺",desc:"川青鐵路車站，可轉接駁前往九寨溝或黃龍。",lat:32.6530,lng:103.6089,type:"transport",days:[1,3],stay:"接駁轉乘點",icon:"train-front"},
+  {name:"黃龍九寨站",area:"松潘・川主寺",desc:"川青鐵路車站；可轉乘官方直通車，約 2 小時到九寨溝景區。",lat:32.6530,lng:103.6089,type:"transport",days:[1,3],stay:"接駁轉乘點",icon:"train-front"},
   {name:"松潘站",area:"松潘縣",desc:"9/7 回成都的備選車站，依班次與黃龍接駁安排擇一。",lat:32.6367,lng:103.5983,type:"transport",days:[3],stay:"回程備選",icon:"train-front"},
   {name:"九寨溝住宿區",area:"漳扎鎮／溝口",desc:"9/5、9/6 連住兩晚；優先選有車站或景區接送的住宿。",lat:33.2317,lng:103.9114,type:"stay",days:[1,2,3],stay:"九寨溝共 2 晚",icon:"bed-double"},
   {name:"九寨溝景區入口",area:"九寨溝縣",desc:"9/6 建議 07:20 左右抵達，準備 08:00 第一批入園。",lat:33.2601,lng:103.9187,type:"sight",days:[2],stay:"完整一天",icon:"ticket-check"},
@@ -185,10 +185,12 @@ const mapPlaces = [
   {name:"錦里",area:"武侯區",desc:"晚間備選老街，前一晚要整理行李，不必逛到太晚。",lat:30.6450,lng:104.0479,type:"sight",days:[6],stay:"彈性備選",icon:"store"}
 ];
 
+const readStoredJSON=(key,fallback)=>{try{const value=JSON.parse(localStorage.getItem(key)||"null");return value??fallback;}catch{return fallback;}};
 const categoryLabels={sight:"景點",transport:"交通",stay:"住宿"};
 const categoryGlyphs={sight:"景",transport:"車",stay:"住"};
 const dayTypeLabels={arrival:"抵達日",move:"純移動日",star:"山林景點日",hard:"高強度日",flex:"兩天一夜・第一天",city:"成都慢遊日",flight:"返程日"};
-const saved=new Set(JSON.parse(localStorage.getItem("sichuan-saved")||"[]"));
+const savedData=readStoredJSON("sichuan-saved",[]);
+const saved=new Set(Array.isArray(savedData)?savedData:[]);
 let activeDay=0,mapFilter="all",mapDay="0",mapQuery="",travelMap,markerLayer,routeLayer;
 let deferredInstallPrompt=null;
 let mapMarkers=new Map();
@@ -284,7 +286,7 @@ function renderMapList(list){
 }
 function setActiveList(name){qsa(".map-list-item").forEach(x=>x.classList.toggle("active",x.dataset.mapPlace===name));const a=qsa(".map-list-item").find(x=>x.dataset.mapPlace===name);if(a)a.scrollIntoView({block:"nearest",behavior:"smooth"});}
 function fitVisibleMap(){if(!travelMap)return;const p=visiblePlaces();if(!p.length)return;p.length===1?travelMap.setView([p[0].lat,p[0].lng],14):travelMap.fitBounds(p.map(x=>[x.lat,x.lng]),{padding:[35,35],maxZoom:13});}
-function focusPlace(name){const p=mapPlaces.find(x=>x.name===name);if(!p)return;mapFilter="all";mapDay="all";mapQuery="";qs("#mapSearch").value="";qs("#mapDaySelect").value="all";qsa("[data-map-filter]").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter==="all"));qsa("[data-map-day]").forEach(b=>b.classList.toggle("active",b.dataset.mapDay==="all"));renderMapData(false);setTimeout(()=>{if(travelMap){travelMap.invalidateSize();travelMap.setView([p.lat,p.lng],14,{animate:true});mapMarkers.get(name)?.openPopup();setActiveList(name);}},420);}
+function focusPlace(name){const p=mapPlaces.find(x=>x.name===name);if(!p)return;mapFilter="all";mapDay=String(activeDay);mapQuery="";qs("#mapSearch").value="";qs("#mapDaySelect").value=mapDay;qsa("[data-map-filter]").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter==="all"));qsa("[data-map-day]").forEach(b=>b.classList.toggle("active",b.dataset.mapDay===mapDay));renderMapData(false);setTimeout(()=>{if(travelMap){travelMap.invalidateSize();travelMap.setView([p.lat,p.lng],14,{animate:true});mapMarkers.get(name)?.openPopup();setActiveList(name);}},420);}
 function setMapDay(day){mapDay=String(day);qsa("[data-map-day]").forEach(b=>b.classList.toggle("active",b.dataset.mapDay===mapDay));qs("#mapDaySelect").value=mapDay;renderMapData(true);}
 function updateCountdown(){const days=Math.ceil((new Date("2026-09-04T00:00:00+08:00")-new Date())/86400000);qs("#countdown").textContent=days>0?`倒數 ${days} 天`:days===0?"今天出發":"旅程已開始";}
 function renderDrawer(){const list=[...saved].map(n=>mapPlaces.find(p=>p.name===n)).filter(Boolean);qs("#drawerEmpty").hidden=!!list.length;qs("#drawerSaved").hidden=!list.length;qs("#drawerSaved").innerHTML=list.map(p=>`<div class="drawer-place"><div><strong>${p.name}</strong><span>${p.area} · ${p.stay}</span></div><button type="button" data-drawer-remove="${p.name}" aria-label="移除${p.name}">${icon("x")}</button></div>`).join("");refreshIcons();}
@@ -320,17 +322,17 @@ qs("#copyDayGuide").addEventListener("click",async()=>{
   const steps=day.items.map((item,i)=>`${i+1}. ${item[0]}｜${item[1]}\n${item[2]}`).join("\n\n");
   const facts=guide.facts.map(f=>`・${f[1]}：${f[2]}`).join("\n");
   const text=`DAY ${activeDay+1}｜${day.date} 星期${day.weekday}｜${day.title}\n今晚住宿：${day.lodging}\n體力：${guide.effort}\n\n${guide.summary}\n\n${steps}\n\n當日提醒\n${facts}\n\n${guide.spot[0]}\n${guide.spot[1]}`;
-  try{await navigator.clipboard.writeText(text);showToast("今天的帶路內容已複製");}catch{showToast("瀏覽器未允許複製");}
+  try{await navigator.clipboard.writeText(text);showToast("今天的摘要已複製");}catch{showToast("瀏覽器未允許複製");}
 });
-qs("#toggleLargeGuide").addEventListener("click",()=>{qs("#parentGuide").classList.toggle("large-guide");showToast(qs("#parentGuide").classList.contains("large-guide")?"帶路文字已放大":"帶路文字已恢復");});
+qs("#toggleLargeGuide").addEventListener("click",()=>{qs("#parentGuide").classList.toggle("large-guide");showToast(qs("#parentGuide").classList.contains("large-guide")?"介紹文字已放大":"介紹文字已恢復");});
 function setParentMode(on){document.body.classList.toggle("parent-mode",on);qs("#parentMode").classList.toggle("active",on);qs("#parentMode").setAttribute("aria-pressed",String(on));localStorage.setItem("sichuan-parent-mode",String(on));}
 qs("#parentMode").addEventListener("click",()=>{const on=!document.body.classList.contains("parent-mode");setParentMode(on);showToast(on?"已開啟大字閱讀":"已關閉大字閱讀");});
 function updateReadiness(){const checks=qsa("[data-check]"),done=checks.filter(i=>i.checked).length,total=checks.length,pct=total?Math.round(done/total*100):0;qs("#readinessPercent").textContent=`${pct}%`;qs("#readinessText").textContent=`${done}／${total} 已完成`;qs("#readinessRing").style.setProperty("--progress",`${pct*3.6}deg`);}
-const checkState=JSON.parse(localStorage.getItem("sichuan-checklist")||"{}");qsa("[data-check]").forEach(i=>{i.checked=!!checkState[i.dataset.check];i.addEventListener("change",()=>{checkState[i.dataset.check]=i.checked;localStorage.setItem("sichuan-checklist",JSON.stringify(checkState));updateReadiness();});});
+const savedCheckState=readStoredJSON("sichuan-checklist",{}),checkState=savedCheckState&&typeof savedCheckState==="object"&&!Array.isArray(savedCheckState)?savedCheckState:{};qsa("[data-check]").forEach(i=>{i.checked=!!checkState[i.dataset.check];i.addEventListener("change",()=>{checkState[i.dataset.check]=i.checked;localStorage.setItem("sichuan-checklist",JSON.stringify(checkState));updateReadiness();});});
 
 qs("#shareTrip").addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"四川八日行程｜成都・九寨溝",text:"2026/09/04—09/11 四川八日完整行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstallPrompt=e;});
 qs("#installTrip").addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=16").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=17").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(localStorage.getItem("sichuan-parent-mode")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();initMap();

@@ -434,7 +434,7 @@ body.parent-mode .parent-guide-card .guide-fact span, body.parent-mode .parent-g
   .map-panel { max-height: 360px; }
   .budget-section { grid-template-columns: 1fr; }
   .guide-title-row { flex-direction: column; align-items: start; }
-  .guide-body { grid-template-columns: 1fr; }
+  .guide-body, .guide-body.guide-info-only { grid-template-columns: 1fr; }
   .guide-info-only .guide-sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
   .booking-heading { grid-template-columns: 1fr; align-items: start; gap: 20px; }
   .booking-grid { grid-template-columns: 1fr; }
@@ -487,10 +487,11 @@ body.parent-mode .parent-guide-card .guide-fact span, body.parent-mode .parent-g
   .map-legend small { width: 100%; margin-left: 0; line-height: 1.5; }
   .cq-marker-name, .cq-marker.daily .cq-marker-name { opacity: 0; pointer-events: none; }
   .section-heading { margin-bottom: 35px; }
-  .mobile-day-picker { margin-bottom: 14px; padding: 12px 14px; background: var(--navy); color: white; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 13px; }
+  .mobile-day-picker { margin-bottom: 0; padding: 12px 14px; background: var(--navy); color: white; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 13px; }
   .mobile-day-picker label { color: #efb397; font-size: 10px; font-weight: 800; }
   .mobile-day-picker select { min-width: 0; width: 100%; border: 0; outline: 0; background: var(--navy); color: white; font: inherit; font-size: 13px; font-weight: 700; }
-  .day-overview { grid-template-columns: 1fr; padding: 23px 20px; gap: 17px; }
+  .day-tabs { display: none; }
+  .day-overview { grid-template-columns: 1fr; margin-top: 14px; padding: 23px 20px; gap: 17px; }
   .day-overview > p { font-size: 13px; }
   .lodging-badge { grid-column: auto; }
   .section-heading h2, .food-intro h2, .prepare-copy h2 { font-size: 36px; }
@@ -515,7 +516,8 @@ body.parent-mode .parent-guide-card .guide-fact span, body.parent-mode .parent-g
   .parent-mode-button span { display: none; }
   .parent-mode-button { width: 36px; padding: 0; justify-content: center; }
   .booking-grid { border-left: 0; }
-  .booking-card { border-left: 1px solid var(--line); min-height: 300px; padding: 25px 22px; }
+  .booking-card { border-left: 1px solid var(--line); min-height: 0; padding: 25px 22px; }
+  .booking-card h3 { margin-top: 24px; }
   footer { flex-direction: column; align-items: flex-start; }
   footer .back-top { align-self: flex-end; }
   #route, #guide, #map, #booking, #prepare { scroll-margin-top: 12px; }

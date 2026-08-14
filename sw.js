@@ -1,4 +1,4 @@
-const CACHE_NAME = "sichuan-eight-day-trip-v16";
+const CACHE_NAME = "sichuan-eight-day-trip-v17";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -6,7 +6,7 @@ const APP_SHELL = [
   "./app.js",
   "./manifest.webmanifest",
   "./assets/app-icon.svg",
-  "./assets/chengdu-jiuzhai-hero.png",
+  "./assets/chengdu-jiuzhai-hero.jpg",
   "./assets/attractions/ifs.jpg",
   "./assets/attractions/jiuzhai.jpg",
   "./assets/attractions/huanglong.jpg",
