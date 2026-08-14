@@ -147,19 +147,11 @@ h1 { font-size: clamp(52px, 6.8vw, 96px); text-wrap: balance; }
 .effort-pill small { color: rgba(255,255,255,.55); font-size: 10px; }
 .effort-pill strong { font-size: 16px; color: #efb397; }
 .guide-body { display: grid; grid-template-columns: 1.4fr .8fr; }
-.run-steps { padding: 32px; border-right: 1px solid var(--line); }
+.guide-body.guide-info-only { grid-template-columns: 1fr 1fr; }
 .guide-subheading { margin: 0 0 22px; font-family: "Noto Serif TC", serif; font-size: 23px; }
-.run-step { display: grid; grid-template-columns: 46px 1fr; gap: 17px; position: relative; padding-bottom: 28px; }
-.run-step:last-child { padding-bottom: 0; }
-.run-step:not(:last-child)::after { content: ""; width: 1px; background: var(--line); position: absolute; left: 22px; top: 43px; bottom: 4px; }
-.run-step-num { width: 44px; height: 44px; border-radius: 50%; background: var(--orange); color: white; display: grid; place-items: center; font-weight: 800; z-index: 1; }
-.run-step-copy { min-width: 0; }
-.run-step-copy > span { color: var(--orange); font-size: 11px; font-weight: 800; }
-.run-step-copy h4 { margin: 4px 0 7px; font-family: "Noto Serif TC", serif; font-size: 21px; }
-.run-step-copy p { margin: 0; color: var(--muted); line-height: 1.7; font-size: 13px; }
-.run-step-copy a { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 11px; font-weight: 800; color: var(--orange); }
-.run-step-copy a svg { width: 14px; }
-.guide-sidebar { padding: 32px; }
+.guide-info-only .guide-sidebar { padding: 32px; border-right: 1px solid var(--line); }
+.guide-spot-column { padding: 32px; }
+.guide-spot-column .spot-visual { margin-top: 0; }
 .guide-facts { display: grid; gap: 0; }
 .guide-fact { padding: 17px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 28px 1fr; gap: 12px; }
 .guide-fact:first-child { padding-top: 0; }
@@ -185,8 +177,7 @@ h1 { font-size: clamp(52px, 6.8vw, 96px); text-wrap: balance; }
 .plan-b svg { width: 16px; height: 16px; }
 .plan-b p { margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .parent-guide-card.large-guide .guide-summary h3 { font-size: 38px; }
-.parent-guide-card.large-guide .run-step-copy h4 { font-size: 25px; }
-.parent-guide-card.large-guide .run-step-copy p, .parent-guide-card.large-guide .guide-fact span, .parent-guide-card.large-guide .spot-explainer p, .parent-guide-card.large-guide .plan-b p { font-size: 16px; line-height: 1.8; }
+.parent-guide-card.large-guide .guide-fact span, .parent-guide-card.large-guide .spot-explainer p, .parent-guide-card.large-guide .plan-b p { font-size: 16px; line-height: 1.8; }
 .parent-guide-card.large-guide .guide-fact strong { font-size: 17px; }
 
 .map-section { padding: 115px clamp(24px, 6vw, 96px) 90px; background: #0c2031; color: white; }
@@ -416,8 +407,7 @@ body.parent-mode { font-size: 18px; }
 body.parent-mode .hero-copy, body.parent-mode .section-heading > p, body.parent-mode .day-overview > p { font-size: 17px; }
 body.parent-mode .day-tab strong { font-size: 17px; }
 body.parent-mode .timeline-item p { font-size: 17px; }
-body.parent-mode .parent-guide-card .run-step-copy p, body.parent-mode .parent-guide-card .guide-fact span, body.parent-mode .parent-guide-card .spot-explainer p { font-size: 17px; line-height: 1.85; }
-body.parent-mode .parent-guide-card .run-step-copy h4 { font-size: 26px; }
+body.parent-mode .parent-guide-card .guide-fact span, body.parent-mode .parent-guide-card .spot-explainer p { font-size: 17px; line-height: 1.85; }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
 @media (max-width: 900px) {
@@ -445,7 +435,7 @@ body.parent-mode .parent-guide-card .run-step-copy h4 { font-size: 26px; }
   .budget-section { grid-template-columns: 1fr; }
   .guide-title-row { flex-direction: column; align-items: start; }
   .guide-body { grid-template-columns: 1fr; }
-  .run-steps { border-right: 0; border-bottom: 1px solid var(--line); }
+  .guide-info-only .guide-sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
   .booking-heading { grid-template-columns: 1fr; align-items: start; gap: 20px; }
   .booking-grid { grid-template-columns: 1fr; }
   .mobile-nav { position: fixed; inset: auto 0 0; z-index: 55; min-height: 64px; padding-bottom: env(safe-area-inset-bottom); background: rgba(7,22,34,.96); backdrop-filter: blur(14px); display: grid; grid-template-columns: repeat(4, 1fr); box-shadow: 0 -8px 30px rgba(4,18,30,.2); }
@@ -521,10 +511,7 @@ body.parent-mode .parent-guide-card .run-step-copy h4 { font-size: 26px; }
   .guide-summary { padding: 24px 20px; grid-template-columns: 1fr; }
   .guide-summary h3 { font-size: 28px; }
   .effort-pill { justify-self: start; display: flex; align-items: center; gap: 8px; }
-  .run-steps, .guide-sidebar { padding: 25px 20px; }
-  .run-step { grid-template-columns: 40px 1fr; gap: 13px; }
-  .run-step-num { width: 38px; height: 38px; }
-  .run-step:not(:last-child)::after { left: 19px; top: 37px; }
+  .guide-info-only .guide-sidebar, .guide-spot-column { padding: 25px 20px; }
   .parent-mode-button span { display: none; }
   .parent-mode-button { width: 36px; padding: 0; justify-content: center; }
   .booking-grid { border-left: 0; }
