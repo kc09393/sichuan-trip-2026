@@ -27,17 +27,17 @@ const itineraries = [
     ["17:00","灌縣古城・南橋","吃晚餐、看岷江夜景；累了就直接回住宿。","南橋"],
     ["晚上","住都江堰","隔天直接去青城山，不必先回成都。","都江堰住宿區"]
   ]},
-  { date:"9/9", weekday:"三", title:"青城山前山・回成都", city:"青城山", lodging:"成都", tone:"star", note:"只走前山主線，能搭車、渡船與索道就省力；下午回成都。", items:[
+  { date:"9/9", weekday:"三", title:"青城山前山・回成都", city:"青城山", lodging:"成都", tone:"star", note:"只走前山主線，能搭車、渡船與索道就省力；下午回成都，晚上到奎星樓街吃飯。", items:[
     ["08:30","前往青城山","退房後出發；行李先確認寄放或留在包車上。","都江堰住宿區"],
     ["09:30","青城山前山","走建福宮、月城湖與上清宮主線；不走後山，也不必登頂。","青城山前山"],
     ["15:30","下山前往車站","預留接駁與進站時間，實際班次以 12306 為準。","青城山站"],
-    ["晚上","回成都休息","只吃晚餐，今晚不再排景點。","成都住宿區"]
+    ["19:00","回成都・奎星樓街晚餐","抵達成都後到這一帶集中吃晚餐；吃完回飯店，不再追加白天型景點。","奎星樓街"]
   ]},
   { date:"9/10", weekday:"四", title:"成都經典一日", city:"成都", lodging:"成都", tone:"city", note:"高密度市區日。由北往西、再往南與東走，四段涵蓋六個代表景點，晚上回飯店整理行李。", items:[
     ["08:30","文殊院","先看川西佛寺與傳統街區；早上人較少，停留約 1 小時後直接前往人民公園。","文殊院"],
     ["10:30","人民公園・寬窄巷子","先喝茶，再前往相鄰的寬窄巷子散步與吃午餐；最晚 14:00 離開。","人民公園・寬窄巷子"],
     ["15:30","武侯祠・錦里","先看蜀漢歷史，再步行到隔壁錦里吃晚餐；兩處不需要另外叫車。","武侯祠・錦里"],
-    ["20:00","九眼橋・安順廊橋","看府河夜景與廊橋，拍完照就回飯店，不延長成深夜行程。","九眼橋・安順廊橋"]
+    ["20:00","九眼橋・安順廊橋","這一站只放晚上：沿府河散步、看廊橋，也可找間店坐一下；結束後回飯店。","九眼橋・安順廊橋"]
   ]},
   { date:"9/11", weekday:"五", title:"返程・分開", city:"成都", lodging:"—", tone:"flight", note:"搭機者 15:50 CTU → 澳門 → 高雄。上午不排遠程景點，預留行李、退房與跨境航班報到時間。", items:[
     ["上午","早餐與整理行李","只在飯店周邊活動，確認護照、轉機文件、行李與登機資訊。","成都住宿區"],
@@ -79,11 +79,11 @@ const dayGuides = [
     ["footprints","體力管理","景區橋樑與步道較多，不走安瀾索橋也不影響理解水利工程；多用觀光車並隨時坐下休息。"],
     ["moon-star","晚上安排","先入住再逛灌縣古城與南橋。夜景區不必久站，累了就回住宿休息。"]
   ],spot:["都江堰看什麼","兩千多年前建成、至今仍在運作的水利工程。魚嘴負責分水、飛沙堰協助排沙洩洪、寶瓶口控制進水；理解這三處，就看懂都江堰。"]},
-  {effort:"中高・可省力",summary:"都江堰 → 青城山前山 → 青城山站 → 成都。只走前山，能省力就省力。",facts:[
+  {effort:"中高・可省力",summary:"都江堰 → 青城山前山 → 青城山站 → 成都 → 奎星樓街晚餐。只走前山，能省力就省力。",facts:[
     ["trees","前山不是後山","前山以道教宮觀與文化景觀為主，這次不排後山。9 月官網目前標示 08:00–17:30 開放，仍以出發前公告為準。"],
     ["tram-front","省力走法","觀光車、月城湖渡船與索道皆另計費；能用就用，不追求登頂。"],
     ["footprints","體力底線","仍有階梯與坡道。膝蓋不舒服就折返，不需要走完整條路線。"],
-    ["luggage","行李與回程","包車時行李留車上最省事；搭公共交通要先確認寄存，並預留取行李與進站時間。"]
+    ["luggage","回成都與晚餐","取回行李後返成都，晚上到奎星樓街集中吃飯；吃完回飯店，不再排白天景點。"]
   ],spot:["青城山前山看什麼","青城山以幽深山林與道教宮觀聞名。建福宮、月城湖、上清宮是主線重點；老君閣位置最高，但不必把登頂當作唯一目標。"]},
   {effort:"中高・高密度",summary:"文殊院 → 人民公園／寬窄巷子 → 武侯祠／錦里 → 九眼橋／安順廊橋。由北往西、南、東移動。",facts:[
     ["route","四段一路走","文殊院先逛；人民公園和寬窄巷子排一段，武侯祠和錦里排一段，最後到九眼橋看夜景。"],
@@ -137,7 +137,7 @@ const dayVisuals = [
     src:"assets/attractions/qingcheng.jpg",
     alt:"青城山前山雲霧森林中的道教宮觀",
     caption:"青城山前山",
-    highlights:["建福宮","月城湖","上清宮"],
+    highlights:["建福宮","月城湖","上清宮","奎星樓晚餐"],
     credit:"Xiquinho Silva／Wikimedia Commons · CC BY 2.0",
     source:"https://commons.wikimedia.org/wiki/File:Mount_Qingcheng_(54531970274).jpg"
   },
@@ -158,7 +158,7 @@ const dayFallbacks=[
   "遇雨就提高觀光車比例，只選五花海、諾日朗與樹正群海等代表區域，不追求走完整條棧道。",
   "若高原不適或回程時間不足，縮短黃龍或直接前往車站；返成都動車優先於景點完整度。",
   "下雨或前幾天太累，可以晚出發、只看魚嘴與寶瓶口；古城和南橋直接刪除，提早入住休息。",
-  "若遇大雨、道路預警或雙腿不舒服，就取消青城山，從都江堰直接回成都休息；不要臨時改走後山。",
+  "若遇大雨、道路預警或雙腿不舒服，就取消青城山，直接回成都休息；晚餐改在飯店附近，不必去奎星樓街。",
   "若落後超過 1 小時，先刪九眼橋夜景；若前一天仍很累，再刪文殊院，保留人民公園、寬窄巷子與武侯祠／錦里兩組。",
   "航班日不安排遠程備案；若時間有餘，只在飯店附近吃飯、整理行李與確認報到櫃檯。"
 ];
@@ -179,10 +179,11 @@ const mapPlaces = [
   {name:"都江堰住宿區",area:"灌縣古城／離堆公園附近",desc:"9/8 住一晚，隔天直接前往青城山，避免連續兩天往返成都。",lat:30.9941,lng:103.6196,type:"stay",days:[4,5],stay:"都江堰共 1 晚",icon:"bed-double"},
   {name:"青城山前山",area:"都江堰市",desc:"9/9 只走道教文化主線，利用渡船、索道與觀光車節省體力。",lat:30.9000,lng:103.5703,type:"sight",days:[5],stay:"建議半日至下午",icon:"trees"},
   {name:"青城山站",area:"都江堰市",desc:"9/9 下山後銜接城際列車回成都；班次以 12306 為準。",lat:30.8990,lng:103.6160,type:"transport",days:[5],stay:"回成都轉乘點",icon:"train-front"},
+  {name:"奎星樓街",area:"成都・青羊區",desc:"9/9 回成都後的晚餐區；把小吃集中在這一段，吃完直接回飯店。",lat:30.6678,lng:104.0556,type:"sight",days:[5],stay:"19:00 晚餐",icon:"utensils"},
   {name:"文殊院",area:"青羊區",desc:"9/10 第一站；看川西佛寺建築與傳統街區，早上停留約 1 小時。",lat:30.6804,lng:104.0747,type:"sight",days:[6],stay:"08:30–09:30",icon:"landmark"},
   {name:"人民公園・寬窄巷子",area:"青羊區",desc:"兩處距離近，先喝茶再逛老街與吃午餐，合併成同一段最省移動。",lat:30.6636,lng:104.0537,type:"sight",days:[6],stay:"10:30–14:00",icon:"coffee"},
   {name:"武侯祠・錦里",area:"武侯區",desc:"兩處相鄰；先參觀武侯祠，再步行到錦里吃晚餐。",lat:30.6453,lng:104.0487,type:"sight",days:[6],stay:"15:30–19:00",icon:"landmark"},
-  {name:"九眼橋・安順廊橋",area:"錦江區",desc:"9/10 最後一站，沿府河看夜景與廊橋；拍完照就回飯店。",lat:30.6430,lng:104.0935,type:"sight",days:[6],stay:"20:00 後",icon:"bridge"}
+  {name:"九眼橋・安順廊橋",area:"錦江區",desc:"9/10 只排晚上：沿府河散步、看廊橋，也可找間店坐一下；結束後回飯店。",lat:30.6430,lng:104.0935,type:"sight",days:[6],stay:"20:00 後",icon:"bridge"}
 ];
 
 const readStoredJSON=(key,fallback)=>{try{const value=JSON.parse(localStorage.getItem(key)||"null");return value??fallback;}catch{return fallback;}};
@@ -333,6 +334,6 @@ const savedCheckState=readStoredJSON("sichuan-checklist",{}),checkState=savedChe
 qs("#shareTrip").addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"四川八日行程｜成都・九寨溝",text:"2026/09/04—09/11 四川八日完整行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstallPrompt=e;});
 qs("#installTrip").addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=18").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=19").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(localStorage.getItem("sichuan-parent-mode")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();initMap();
