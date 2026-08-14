@@ -21,23 +21,23 @@ const itineraries = [
     ["下午","前往車站搭動車","黃龍九寨站或松潘站擇一，以當日班次與接駁最順者為準。","松潘站"],
     ["晚上","回成都，只休息","抵達飯店後不排宵夜、不逛街，讓體力完整恢復。","成都住宿區"]
   ]},
-  { date:"9/8", weekday:"二", title:"成都 → 都江堰", city:"都江堰", lodging:"都江堰", tone:"flex", note:"前一天最累，今天睡飽再出發。下午完整看水利工程，傍晚逛灌縣古城與南橋，住一晚避免來回折返。", items:[
-    ["09:30","成都出發前往都江堰","依體力選城際列車或包車。只帶一晚輕便行李；其餘行李能否寄放，要先向成都住宿確認。","成都住宿區"],
-    ["12:00","都江堰水利景區","預留約 3 小時，依序理解魚嘴分水、飛沙堰排沙與寶瓶口控水；使用觀光車減少步行。","都江堰景區"],
-    ["17:00","灌縣古城・南橋","景區結束後慢慢吃晚餐、看岷江夜景；南橋在景區外，不必趕著離開。","南橋"],
-    ["晚上","住都江堰","今晚不回成都，隔天可直接前往青城山，少一次長距離往返。","都江堰住宿區"]
+  { date:"9/8", weekday:"二", title:"都江堰・住一晚", city:"都江堰", lodging:"都江堰", tone:"flex", note:"睡飽再出發。下午看水利工程，傍晚逛古城與南橋，今晚住都江堰。", items:[
+    ["09:30","成都出發","搭城際列車或包車；只帶一晚小行李，先確認大件行李能否寄放。","成都住宿區"],
+    ["12:00","都江堰水利景區","約 3 小時，掌握魚嘴、飛沙堰與寶瓶口；需要就搭觀光車。","都江堰景區"],
+    ["17:00","灌縣古城・南橋","吃晚餐、看岷江夜景；累了就直接回住宿。","南橋"],
+    ["晚上","住都江堰","隔天直接去青城山，不必先回成都。","都江堰住宿區"]
   ]},
-  { date:"9/9", weekday:"三", title:"青城山前山 → 成都", city:"青城山", lodging:"成都", tone:"star", note:"從都江堰直接去青城山前山，只走道教文化主線；以渡船、索道省力，下午下山回成都。", items:[
-    ["08:30","都江堰前往青城山","退房後出發。不要帶大件行李上山；前一晚先確認寄存或包車載運方式。","都江堰住宿區"],
-    ["09:30","青城山前山","建福宮進山，經月城湖搭渡船與索道；上清宮、老君閣依體力決定，不走後山。","青城山前山"],
-    ["15:30","下山前往青城山站","預留觀光車、接駁與進站時間；城際列車實際班次以 12306 為準。","青城山站"],
-    ["晚上","回成都休息","抵達後只吃晚餐，不再增加景點，讓雙腿休息。","成都住宿區"]
+  { date:"9/9", weekday:"三", title:"青城山前山・回成都", city:"青城山", lodging:"成都", tone:"star", note:"只走前山主線，能搭車、渡船與索道就省力；下午回成都。", items:[
+    ["08:30","前往青城山","退房後出發；行李先確認寄放或留在包車上。","都江堰住宿區"],
+    ["09:30","青城山前山","走建福宮、月城湖與上清宮主線；不走後山，也不必登頂。","青城山前山"],
+    ["15:30","下山前往車站","預留接駁與進站時間，實際班次以 12306 為準。","青城山站"],
+    ["晚上","回成都休息","只吃晚餐，今晚不再排景點。","成都住宿區"]
   ]},
-  { date:"9/10", weekday:"四", title:"成都慢遊・整理行李", city:"成都", lodging:"成都", tone:"city", note:"登機前一天不再跑遠。人民公園與寬窄巷子相近，武侯祠與錦里相連；任何一段累了都能直接刪除。", items:[
-    ["10:00","人民公園喝茶","睡飽再出門，在鶴鳴茶社一帶坐下休息，感受成都的慢生活。","人民公園"],
-    ["13:00","寬窄巷子","從人民公園前往很近；以散步、吃午餐為主，人多或太商業化就縮短停留。","寬窄巷子"],
-    ["16:30","武侯祠","了解劉備、諸葛亮與蜀漢歷史；若不想進館，可直接保留外面的錦里。","武侯祠"],
-    ["18:30","錦里晚餐後回飯店","錦里就在武侯祠旁，吃完提早回去整理隔天返程行李。","錦里"]
+  { date:"9/10", weekday:"四", title:"成都慢慢逛", city:"成都", lodging:"成都", tone:"city", note:"登機前一天留在市區。四個點分成兩組，累了就刪掉一組。", items:[
+    ["10:00","人民公園喝茶","睡飽再出門，坐下感受成都的慢生活。","人民公園"],
+    ["13:00","寬窄巷子","散步、吃午餐；人多就縮短停留。","寬窄巷子"],
+    ["16:30","武侯祠","對三國歷史有興趣再入館，否則直接略過。","武侯祠"],
+    ["18:30","錦里・回飯店","吃完晚餐就回去整理隔天行李。","錦里"]
   ]},
   { date:"9/11", weekday:"五", title:"返程・分開", city:"成都", lodging:"—", tone:"flight", note:"15:50 CTU → 澳門 → 高雄。上午不排遠程景點，預留行李、退房與跨境航班報到時間。", items:[
     ["上午","早餐與整理行李","只在飯店周邊活動，確認護照、轉機文件、行李與登機資訊。","成都住宿區"],
@@ -79,20 +79,17 @@ const dayGuides = [
     ["footprints","體力管理","景區橋樑與步道較多，不走安瀾索橋也不影響理解水利工程；多用觀光車並隨時坐下休息。"],
     ["moon-star","晚上安排","先入住再逛灌縣古城與南橋。夜景區不必久站，累了就回住宿休息。"]
   ],spot:["都江堰看什麼","兩千多年前建成、至今仍在運作的水利工程。魚嘴負責分水、飛沙堰協助排沙洩洪、寶瓶口控制進水；理解這三處，就看懂都江堰。"]},
-  {effort:"中高・可省力",summary:"都江堰 → 青城山前山 → 青城山站 → 成都。只走前山，渡船與索道能用就用。",facts:[
+  {effort:"中高・可省力",summary:"都江堰 → 青城山前山 → 青城山站 → 成都。只走前山，能省力就省力。",facts:[
     ["trees","前山不是後山","前山以道教宮觀與文化景觀為主，路線較成熟；後山更偏山林健行，這次不安排。"],
-    ["tram-front","省力走法","景區觀光車、月城湖渡船與索道皆另計費；先確認當日營運，再決定走到上清宮或老君閣。"],
-    ["footprints","體力底線","全程仍有階梯與坡道。爸爸媽媽若膝蓋不舒服，索道上站附近看完就折返，不追求登頂。"],
-    ["luggage","行李方案","包車時行李留車上最省事；搭公共交通則先確認住宿或車站寄存，無法寄存就回住宿取件後再返成都。"],
-    ["clock-3","回程時間","青城山夏季通常 17:30 閉園；預留排隊、下山、接駁與取行李時間，再銜接回成都列車。"],
-    ["cloud-rain","下雨原則","山中石階濕滑。遇大雨、雷雨或景區預警就縮短路線，安全比完成景點重要。"]
+    ["tram-front","省力走法","觀光車、月城湖渡船與索道皆另計費；能用就用，不追求登頂。"],
+    ["footprints","體力底線","仍有階梯與坡道。膝蓋不舒服就折返，不需要走完整條路線。"],
+    ["luggage","行李與回程","包車時行李留車上最省事；搭公共交通要先確認寄存，並預留取行李與進站時間。"]
   ],spot:["青城山前山看什麼","青城山以幽深山林與道教宮觀聞名。建福宮、月城湖、上清宮是主線重點；老君閣位置最高，但不必把登頂當作唯一目標。"]},
-  {effort:"輕鬆・可刪減",summary:"人民公園 → 寬窄巷子 → 武侯祠 → 錦里。四處分成兩組，相鄰景點一起走，不來回繞路。",facts:[
-    ["coffee","上午放慢","人民公園的重點是坐下喝茶，不是趕著拍完離開；睡飽後再出門即可。"],
+  {effort:"輕鬆・可刪減",summary:"人民公園 → 寬窄巷子 → 武侯祠 → 錦里。相鄰景點排一起，不來回繞路。",facts:[
     ["route","兩組相鄰景點","人民公園與寬窄巷子排同一段；武侯祠與錦里排另一段，中間直接叫車最簡單。"],
     ["landmark","武侯祠重點","對三國歷史有興趣再買票入館；若興趣普通，可縮短參觀，把時間留給休息。"],
-    ["utensils","晚餐安排","錦里方便但觀光客多，不必追網紅店。吃完直接回飯店，不再加夜景。"],
-    ["luggage","今晚任務","回飯店後完成行李、航廈與轉機文件確認，避免隔天早上匆忙。"]
+    ["utensils","晚餐安排","錦里方便但觀光客多，不必排網紅店；吃完直接回飯店。"],
+    ["luggage","今晚任務","完成行李、航廈與轉機文件確認，避免隔天匆忙。"]
   ],spot:["成都慢遊看什麼","人民公園看成都人的日常，寬窄巷子看老街格局，武侯祠理解蜀漢歷史，錦里適合傍晚散步。時間不足時，優先人民公園與武侯祠。"]},
   {effort:"輕鬆但時間重要",summary:"飯店附近 → 退房 → 12:30 前往 CTU → 15:50 飛澳門轉高雄。",facts:[
     ["badge-check","文件放同一包","護照／台胞證、登機資料、澳門轉機文件與緊急聯絡方式放在隨身包，不要托運。"],
@@ -233,8 +230,8 @@ function renderParentGuide(){
   qs("#parentGuide").innerHTML=`
     <div class="guide-summary"><div><span>DAY ${activeDay+1} · ${day.date} 星期${day.weekday}</span><h3>${day.title}</h3><p>${guide.summary}</p></div><div class="effort-pill"><small>今日體力</small><strong>${guide.effort}</strong></div></div>
     <div class="guide-body">
-      <div class="run-steps"><h3 class="guide-subheading">一步一步怎麼跑</h3>${day.items.map((item,i)=>`<div class="run-step"><span class="run-step-num">${i+1}</span><div class="run-step-copy"><span>${item[0]}</span><h4>${item[1]}</h4><p>${item[2]}</p><a href="#map" data-focus-place="${item[3]}">打開位置 ${icon("navigation")}</a></div></div>`).join("")}</div>
-      <aside class="guide-sidebar"><h3 class="guide-subheading">今天要先確認</h3><div class="guide-facts">${guide.facts.map(f=>`<div class="guide-fact">${icon(f[0])}<div><strong>${f[1]}</strong><span>${f[2]}</span></div></div>`).join("")}</div>${visualMarkup}<div class="spot-explainer"><span>景點重點</span><h4>${guide.spot[0]}</h4><p>${guide.spot[1]}</p></div><div class="plan-b"><span>${icon("route-off")} 臨時備案</span><p>${dayFallbacks[activeDay]}</p></div></aside>
+      <div class="run-steps"><h3 class="guide-subheading">今天順序</h3>${day.items.map((item,i)=>`<div class="run-step"><span class="run-step-num">${i+1}</span><div class="run-step-copy"><span>${item[0]}</span><h4>${item[1]}</h4><p>${item[2]}</p><a href="#map" data-focus-place="${item[3]}">打開位置 ${icon("navigation")}</a></div></div>`).join("")}</div>
+      <aside class="guide-sidebar"><h3 class="guide-subheading">出發前看這裡</h3><div class="guide-facts">${guide.facts.map(f=>`<div class="guide-fact">${icon(f[0])}<div><strong>${f[1]}</strong><span>${f[2]}</span></div></div>`).join("")}</div>${visualMarkup}<div class="spot-explainer"><span>看什麼</span><h4>${guide.spot[0]}</h4><p>${guide.spot[1]}</p></div><div class="plan-b"><span>${icon("route-off")} 累了就這樣</span><p>${dayFallbacks[activeDay]}</p></div></aside>
     </div>`;
   refreshIcons();
 }
@@ -334,6 +331,6 @@ const checkState=JSON.parse(localStorage.getItem("sichuan-checklist")||"{}");qsa
 qs("#shareTrip").addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"四川八日行程｜成都・九寨溝",text:"2026/09/04—09/11 四川八日完整行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstallPrompt=e;});
 qs("#installTrip").addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=14").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=15").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(localStorage.getItem("sichuan-parent-mode")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();initMap();
