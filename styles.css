@@ -525,5 +525,483 @@ body.parent-mode .parent-guide-card .guide-fact span, body.parent-mode .parent-g
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: ./* ===== 四川八日行程 v14｜UI/UX 精修 =====
+   只調整視覺與手機操作，不更動任何行程資料或功能。
+*/
+
+:root{
+  --v14-radius-lg:24px;
+  --v14-radius-md:16px;
+  --v14-radius-sm:12px;
+  --v14-soft-shadow:0 18px 50px rgba(9,30,45,.10);
+  --v14-hover-shadow:0 22px 56px rgba(9,30,45,.14);
+}
+
+body{
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Header */
+.site-header{
+  height:76px;
+  background:linear-gradient(180deg,rgba(5,20,31,.32),rgba(5,20,31,0));
+}
+
+.brand{
+  gap:11px;
+  letter-spacing:.055em;
+}
+
+.brand-mark{
+  border-radius:10px;
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(10px);
+}
+
+.site-header nav a{
+  position:relative;
+}
+
+.site-header nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:100%;
+  bottom:-8px;
+  height:1px;
+  background:rgba(255,255,255,.9);
+  transition:right .22s ease;
+}
+
+.site-header nav a:hover::after{
+  right:0;
+}
+
+.parent-mode-button,
+.utility-buttons button,
+.guide-actions button{
+  border-radius:999px;
+}
+
+/* Hero */
+.hero{
+  min-height:650px;
+}
+
+.hero>img{
+  transform:scale(1.015);
+}
+
+.hero-overlay{
+  background:
+    linear-gradient(90deg,rgba(4,18,30,.92) 0%,rgba(4,18,30,.58) 42%,rgba(4,18,30,.10) 76%),
+    linear-gradient(0deg,rgba(4,18,30,.54),transparent 48%);
+}
+
+.hero-content{
+  max-width:760px;
+}
+
+.hero-content h1{
+  text-shadow:0 8px 34px rgba(0,0,0,.16);
+}
+
+.hero-copy{
+  max-width:540px;
+}
+
+.primary-button,
+.ghost-button{
+  border-radius:999px;
+  min-width:150px;
+}
+
+.primary-button{
+  box-shadow:0 12px 30px rgba(231,111,61,.22);
+}
+
+.trip-stamp{
+  padding:14px 18px;
+  border:1px solid rgba(255,255,255,.22);
+  border-left-color:rgba(255,255,255,.48);
+  border-radius:16px;
+  background:rgba(4,18,30,.20);
+  backdrop-filter:blur(12px);
+}
+
+/* 8 天總覽 */
+.trip-control-section{
+  padding-top:82px;
+}
+
+.readiness-card{
+  border-radius:var(--v14-radius-md);
+  background:rgba(245,240,231,.88);
+}
+
+.all-days-grid{
+  gap:12px;
+}
+
+.overview-day{
+  border-radius:var(--v14-radius-md);
+  background:rgba(255,255,255,.42);
+  box-shadow:0 1px 0 rgba(255,255,255,.65) inset;
+}
+
+.overview-day:hover,
+.overview-day.active{
+  transform:translateY(-3px);
+  box-shadow:var(--v14-hover-shadow);
+}
+
+/* 每日行程 */
+.day-tabs{
+  gap:5px;
+  border-bottom:0;
+  padding-bottom:5px;
+}
+
+.day-tab{
+  min-width:136px;
+  padding:14px;
+  border:1px solid transparent;
+  border-radius:12px;
+  transition:
+    background .2s ease,
+    color .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+.day-tab:hover{
+  background:rgba(16,32,43,.04);
+  transform:translateY(-1px);
+}
+
+.day-tab.active{
+  color:var(--orange);
+  background:rgba(231,111,61,.08);
+  border-color:rgba(231,111,61,.18);
+}
+
+.eight-days .day-tab{
+  min-width:138px;
+}
+
+.day-overview{
+  border-left-width:4px;
+  border-radius:var(--v14-radius-md);
+  box-shadow:0 12px 34px rgba(9,30,45,.06);
+}
+
+.day-tags b{
+  border-radius:999px;
+  padding-inline:9px;
+}
+
+.timeline{
+  border-top-color:rgba(16,32,43,.12);
+}
+
+.timeline-item{
+  padding-top:34px;
+}
+
+.timeline-item::before{
+  width:10px;
+  height:10px;
+}
+
+.timeline-item h3{
+  line-height:1.35;
+}
+
+/* 景點介紹、預約 */
+.parent-guide-card,
+.booking-card,
+.checklist label{
+  border-radius:var(--v14-radius-md);
+}
+
+.parent-guide-card{
+  overflow:hidden;
+  box-shadow:0 14px 42px rgba(9,30,45,.08);
+}
+
+.booking-card{
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease,
+    border-color .22s ease;
+}
+
+.booking-card:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--v14-soft-shadow);
+}
+
+/* 地圖 */
+.map-search-wrap{
+  border-radius:999px;
+}
+
+.map-filters button,
+.route-filters button{
+  border-radius:999px;
+}
+
+.map-shell{
+  border-radius:var(--v14-radius-lg);
+  overflow:hidden;
+  box-shadow:var(--v14-soft-shadow);
+}
+
+.map-panel-head button{
+  border-radius:999px;
+}
+
+/* 輕微動畫 */
+@keyframes v14Reveal{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.day-overview,
+.parent-guide-card{
+  animation:v14Reveal .28s ease both;
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,
+  *::before,
+  *::after{
+    scroll-behavior:auto!important;
+    animation-duration:.01ms!important;
+    transition-duration:.01ms!important;
+  }
+}
+
+/* Tablet */
+@media (max-width:980px){
+  .site-header nav{
+    display:none;
+  }
+
+  .hero{
+    min-height:620px;
+    height:82vh;
+  }
+
+  .all-days-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .day-overview{
+    grid-template-columns:1fr 1.35fr;
+  }
+
+  .lodging-badge{
+    grid-column:1/-1;
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding:16px 0 0;
+  }
+}
+
+/* Phone */
+@media (max-width:700px){
+  .site-header{
+    height:64px;
+    padding-inline:17px;
+  }
+
+  .brand{
+    gap:8px;
+  }
+
+  .brand-mark{
+    width:32px;
+    height:32px;
+  }
+
+  .header-actions{
+    gap:10px;
+  }
+
+  .parent-mode-button{
+    min-height:34px;
+    padding-inline:10px;
+  }
+
+  .hero{
+    min-height:610px;
+    height:78svh;
+    align-items:flex-end;
+  }
+
+  .hero>img{
+    object-position:62% center;
+  }
+
+  .hero-overlay{
+    background:
+      linear-gradient(0deg,rgba(4,18,30,.94) 0%,rgba(4,18,30,.64) 46%,rgba(4,18,30,.18) 78%),
+      linear-gradient(90deg,rgba(4,18,30,.30),transparent 70%);
+  }
+
+  .hero-content{
+    width:auto;
+    margin:0;
+    padding:0 20px 74px;
+  }
+
+  .hero-content .eyebrow{
+    margin-bottom:12px;
+  }
+
+  h1{
+    font-size:clamp(45px,14vw,61px);
+    line-height:1.08;
+  }
+
+  .hero-copy{
+    margin:18px 0 23px;
+    font-size:14px;
+    line-height:1.75;
+    max-width:92%;
+  }
+
+  .hero-actions{
+    gap:9px;
+  }
+
+  .primary-button,
+  .ghost-button{
+    min-width:0;
+    height:46px;
+    padding-inline:17px;
+    font-size:13px;
+  }
+
+  .trip-control-section,
+  .section,
+  .parent-guide-section,
+  .map-section,
+  .booking-section,
+  .prepare-section{
+    padding-left:18px;
+    padding-right:18px;
+  }
+
+  .trip-control-section{
+    padding-top:58px;
+  }
+
+  .overview-utilities{
+    width:100%;
+    min-width:0;
+  }
+
+  .readiness-card{
+    min-width:0;
+  }
+
+  .day-overview{
+    margin-top:20px;
+    padding:21px 19px;
+    grid-template-columns:1fr;
+    gap:17px;
+    border-radius:14px;
+  }
+
+  .day-overview h3{
+    font-size:23px;
+  }
+
+  .day-overview>p{
+    font-size:13px;
+  }
+
+  .lodging-badge{
+    grid-column:auto;
+  }
+
+  .timeline{
+    margin-top:28px;
+    grid-template-columns:1fr;
+    border-top:0;
+    border-left:1px solid var(--line);
+    padding-left:18px;
+  }
+
+  .timeline-item{
+    padding:5px 0 27px 14px;
+    border-left:0;
+  }
+
+  .timeline-item::before{
+    top:7px;
+    left:-24px;
+    box-shadow:0 0 0 5px var(--paper);
+  }
+
+  .timeline-item h3{
+    margin-top:8px;
+    font-size:21px;
+  }
+
+  .guide-actions{
+    width:100%;
+  }
+
+  .guide-actions button{
+    flex:1;
+    min-height:44px;
+  }
+
+  .map-shell{
+    border-radius:16px;
+  }
+
+  .map-toolbar{
+    gap:10px;
+  }
+
+  .map-filters,
+  .route-filters{
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    scrollbar-width:none;
+    padding-bottom:2px;
+  }
+
+  .map-filters::-webkit-scrollbar,
+  .route-filters::-webkit-scrollbar{
+    display:none;
+  }
+
+  .map-filters button,
+  .route-filters button{
+    white-space:nowrap;
+    min-height:38px;
+  }
+
+  .booking-card{
+    border-radius:14px;
+  }
+}
+
+@media (max-width:390px){
+  .parent-mode-button span{
+    display:none;
+  }
 }
