@@ -478,7 +478,9 @@ body.parent-mode .parent-guide-card .guide-fact span, body.parent-mode .parent-g
   .map-context-title { min-width: 0; }
   .map-context-title strong { font-size: 18px; }
   .map-context-hint { font-size: 10px; }
-  .map-route-chain button { max-width: 130px; padding: 3px; }
+  .map-route-chain { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; overflow: visible; }
+  .map-route-chain > svg { display: none; }
+  .map-route-chain button { width: 100%; max-width: none; min-width: 0; padding: 6px; background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.08); }
   .map-route-chain button span { font-size: 10px; }
   .map-shell { display: block; height: auto; }
   #travelMap { height: 360px; min-height: 360px; }
