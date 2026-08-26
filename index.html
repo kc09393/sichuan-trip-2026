@@ -8,12 +8,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="description" content="2026 年 9 月 4 日至 11 日，成都、九寨溝、黃龍、都江堰與青城山 8 天旅行行程。">
   <title>四川八日行程｜成都・九寨溝</title>
-  <link rel="manifest" href="manifest.webmanifest?v=24">
+  <link rel="manifest" href="manifest.webmanifest?v=26">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=24">
-  <link rel="stylesheet" href="styles.css?v=24">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=26">
+  <link rel="stylesheet" href="styles.css?v=26">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -43,7 +43,7 @@
         <div class="overview-utilities">
           <div class="readiness-card" aria-live="polite">
             <div class="readiness-ring" id="readinessRing"><strong id="readinessPercent">0%</strong></div>
-            <div><span>行前準備</span><strong id="readinessText">0／6 已完成</strong><small>依行前清單計算</small></div>
+            <div><span>行前準備</span><strong id="readinessText">0／10 已完成</strong><small>依行前清單計算</small></div>
           </div>
           <div class="utility-buttons">
             <button type="button" id="shareTrip"><i data-lucide="share-2"></i> 分享</button>
@@ -96,12 +96,22 @@
     </section>
 
     <section class="prepare-section" id="prepare">
-      <div class="prepare-copy"><p class="eyebrow">行李與證件</p><h2>出發前確認清單</h2><p>勾選結果會保留在這支手機。高原段若有人不舒服，直接減少步行或折返。</p><a href="https://www.jiuzhai.com/intelligent-service/tickets" target="_blank" rel="noreferrer">查看九寨溝官方票務 <i data-lucide="external-link"></i></a></div>
+      <div class="prepare-copy"><p class="eyebrow">行李與證件</p><h2>出發前確認清單</h2><p>所有票券收在下方同一格，點開才會顯示，不讓首頁塞滿內容。勾選結果會保留在這支手機。</p><a href="https://www.jiuzhai.com/intelligent-service/tickets" target="_blank" rel="noreferrer">查看九寨溝官方票務 <i data-lucide="external-link"></i></a></div>
       <div class="checklist" id="checklist">
-        <label><input type="checkbox" data-check="train"><span></span><div><strong>9/5 與 9/7 動車票</strong><small>購買 9/5 C6362 與 9/7 C6374，並核對乘車人證件</small></div></label>
-        <label><input type="checkbox" data-check="jiuzhai"><span></span><div><strong>9/6 九寨溝實名門票</strong><small>門票、觀光車、入園證件與適用優惠資格一起確認</small></div></label>
-        <label><input type="checkbox" data-check="dujiangyan-qingcheng"><span></span><div><strong>9/8、9/9 都江堰與青城山</strong><small>兩個景區分開購票；帶有效通行證，並確認觀光車、渡船與索道</small></div></label>
-        <label><input type="checkbox" data-check="pickup"><span></span><div><strong>9/5 九寨溝官方接駁</strong><small>確認黃龍九寨站到九寨溝的「九旅悅行」班次與集合點</small></div></label>
+        <details class="ticket-checklist-panel">
+          <summary><span class="ticket-summary-icon"><i data-lucide="tickets"></i></span><div><strong>購票日期總表</strong><small>共 8 項・附建議訂票日・點開逐項勾選</small></div><i data-lucide="chevron-down" class="ticket-summary-arrow"></i></summary>
+          <div class="ticket-checklist-body">
+            <label><input type="checkbox" data-check="train"><span></span><div><div class="ticket-date"><b>8/26 現在訂</b><em>使用 9/5、9/7</em></div><strong>川青鐵路動車</strong><small>9/5 C6362、9/7 C6374；核對成都東與黃龍九寨站名及乘車證件。</small></div></label>
+            <label><input type="checkbox" data-check="pickup"><span></span><div><div class="ticket-date"><b>8/26 現在訂</b><em>使用 9/5</em></div><strong>黃龍九寨站 → 九寨溝接駁</strong><small>動車票確認後，預訂「九旅悅行」並核對集合點。</small></div></label>
+            <label><input type="checkbox" data-check="jiuzhai"><span></span><div><div class="ticket-date"><b>8/26 現在訂</b><em>使用 9/6</em></div><strong>九寨溝門票＋觀光車</strong><small>實名購買 ¥190 門票＋¥90 觀光車，帶購票使用的有效證件。</small></div></label>
+            <label><input type="checkbox" data-check="huanglong-transfer"><span></span><div><div class="ticket-date"><b>8/26 現在訂</b><em>使用 9/7</em></div><strong>九寨溝 → 黃龍 → 車站包車</strong><small>06:00 出發，15:15 前離開黃龍，必須能銜接 17:30 的 C6374。</small></div></label>
+            <label><input type="checkbox" data-check="huanglong"><span></span><div><div class="ticket-date"><b>8/26 現在訂</b><em>使用 9/7</em></div><strong>黃龍門票＋省力交通</strong><small>旺季門票 ¥170；索道與觀光車依體力選購，觀光車有每日限量。</small></div></label>
+            <label><input type="checkbox" data-check="dujiangyan-qingcheng"><span></span><div><div class="ticket-date"><b>8/26 現在訂</b><em>使用 9/8、9/9</em></div><strong>都江堰＋青城山前山門票</strong><small>兩景區分開實名購票；觀光車、渡船與索道依體力現場取捨。</small></div></label>
+            <label><input type="checkbox" data-check="city-rail"><span></span><div><div class="ticket-date"><b>8/26 現在訂</b><em>使用 9/8、9/9</em></div><strong>成都／都江堰／青城山城際車票</strong><small>採鐵路才購買；若已決定全程包車，這項可直接勾完成。</small></div></label>
+            <label><input type="checkbox" data-check="wuhou"><span></span><div><div class="ticket-date future"><b>建議 8/27 訂</b><em>使用 9/10</em></div><strong>成都武侯祠門票</strong><small>官方 14 天預售，全票 ¥50；若系統尚未開放，隔天再查。</small></div></label>
+            <nav class="ticket-links" aria-label="官方購票入口"><span>官方入口</span><a href="https://www.12306.cn/" target="_blank" rel="noreferrer">12306</a><a href="https://www.jiuzhai.com/intelligent-service/tickets" target="_blank" rel="noreferrer">九寨溝</a><a href="https://www.huanglong.com/cn/" target="_blank" rel="noreferrer">黃龍</a><a href="https://www.djy517.com/online.html?channelCode=mpyd" target="_blank" rel="noreferrer">都江堰／青城山</a><a href="https://whpww.cdwuhouci.cn/login" target="_blank" rel="noreferrer">武侯祠</a></nav>
+          </div>
+        </details>
         <label><input type="checkbox" data-check="altitude"><span></span><div><strong>高原保暖與常用藥</strong><small>薄羽絨或防風外套、雨具、防曬、舒服鞋與個人處方藥</small></div></label>
         <label><input type="checkbox" data-check="flight"><span></span><div><strong>9/11 返程文件</strong><small>CTU 航廈、澳門轉機、行李規則、登機證與證件前晚再核對</small></div></label>
       </div>
@@ -125,8 +135,8 @@
     <a href="#map"><i data-lucide="map"></i><span>地圖</span></a>
     <a href="#prepare"><i data-lucide="list-checks"></i><span>清單</span></a>
   </nav>
-  <script src="assets/vendor/lucide.min.js?v=24"></script>
-  <script src="assets/vendor/leaflet/leaflet.js?v=24"></script>
-  <script src="app.js?v=24"></script>
+  <script src="assets/vendor/lucide.min.js?v=26"></script>
+  <script src="assets/vendor/leaflet/leaflet.js?v=26"></script>
+  <script src="app.js?v=26"></script>
 </body>
 </html>

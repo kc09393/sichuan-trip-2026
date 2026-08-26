@@ -370,6 +370,26 @@ h1 { font-size: clamp(52px, 6.8vw, 96px); text-wrap: balance; }
 .checklist label:has(input:checked) div { opacity: .55; text-decoration: line-through; }
 .checklist div { display: grid; gap: 5px; transition: .2s; }
 .checklist small { color: rgba(255,255,255,.68); line-height: 1.5; }
+.ticket-checklist-panel { border-bottom: 1px solid rgba(255,255,255,.3); }
+.ticket-checklist-panel summary { min-height: 82px; padding: 18px 0; display: grid; grid-template-columns: 42px 1fr 24px; gap: 13px; align-items: center; cursor: pointer; list-style: none; }
+.ticket-checklist-panel summary::-webkit-details-marker { display: none; }
+.ticket-checklist-panel summary > div { gap: 4px; }
+.ticket-checklist-panel summary strong { font-size: 18px; }
+.ticket-summary-icon { width: 36px; height: 36px; border: 1px solid rgba(255,255,255,.65); display: grid; place-items: center; }
+.ticket-summary-icon svg { width: 18px; }
+.ticket-summary-arrow { width: 19px; transition: transform .2s ease; }
+.ticket-checklist-panel[open] .ticket-summary-arrow { transform: rotate(180deg); }
+.ticket-checklist-body { padding: 0 18px; background: rgba(7,22,34,.12); border-top: 1px solid rgba(255,255,255,.22); }
+.ticket-checklist-body label { padding: 18px 0; }
+.ticket-checklist-body label:last-child { border-bottom: 0; }
+.ticket-checklist-body .ticket-date { display: flex; grid-template-columns: none; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 2px; }
+.ticket-date b { color: #351b13; background: rgba(255,255,255,.34); padding: 3px 7px; font-size: 10px; letter-spacing: .04em; text-decoration: none; }
+.ticket-date.future b { background: var(--navy); color: white; }
+.ticket-date em { color: rgba(255,255,255,.72); font-size: 10px; font-style: normal; font-weight: 700; white-space: nowrap; }
+.ticket-links { padding: 16px 0 19px; border-top: 1px solid rgba(255,255,255,.22); display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.ticket-links span { width: 100%; color: rgba(255,255,255,.6); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+.ticket-links a { padding: 6px 9px; border: 1px solid rgba(255,255,255,.38); color: white; font-size: 10px; font-weight: 700; }
+.ticket-links a:hover { background: white; color: var(--orange); }
 
 footer { min-height: 180px; background: #071622; color: white; padding: 50px clamp(24px, 8vw, 130px); display: flex; align-items: center; justify-content: space-between; gap: 25px; }
 footer p { color: rgba(255,255,255,.5); font-size: 13px; }
