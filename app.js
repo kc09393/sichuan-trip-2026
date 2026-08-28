@@ -34,11 +34,11 @@ const itineraries = [
     ["15:30","下山前往車站","預留接駁與進站時間，實際班次以 12306 為準。","青城山站"],
     ["19:00","回成都・奎星樓街晚餐","抵達成都後到這一帶集中吃晚餐；吃完回飯店，不再追加白天型景點。","奎星樓街"]
   ]},
-  { date:"9/10", weekday:"四", title:"成都經典一日", city:"成都", lodging:"成都", tone:"city", note:"高密度市區日。由北往西、再往南與東走，四段串起成都代表景點，晚上回飯店整理行李。", items:[
+  { date:"9/10", weekday:"四", title:"成都經典一日・川劇變臉", city:"成都", lodging:"成都", tone:"city", note:"高密度市區日。白天走成都代表景點，晚上到正規劇場看川劇變臉；已取消九眼橋，不另外增加夜遊。", items:[
     ["08:30","文殊院","先看川西佛寺與傳統街區；早上人較少，停留約 1 小時後直接前往人民公園。","文殊院"],
     ["10:30","人民公園・寬窄巷子","先喝茶，再前往相鄰的寬窄巷子散步與吃午餐；最晚 14:00 離開。","人民公園・寬窄巷子"],
-    ["15:30","武侯祠・錦里","先看蜀漢歷史，再步行到隔壁錦里吃晚餐；兩處不需要另外叫車。","武侯祠・錦里"],
-    ["20:00","九眼橋・安順廊橋","這一站只放晚上：沿府河散步、看廊橋，也可找間店坐一下；結束後回飯店。","九眼橋・安順廊橋"]
+    ["15:30","武侯祠・錦里","先看蜀漢歷史，再步行到隔壁錦里；18:30 前吃完晚餐，準時叫車離開。","武侯祠・錦里"],
+    ["19:20","錦江劇場《川劇秀・傳奇變臉》","提前約 40 分鐘抵達取票入場；預計 20:00–21:10 演出，變臉、吐火、木偶與川劇身段一次看。場次以票面通知為準。","錦江劇場"]
   ]},
   { date:"9/11", weekday:"五", title:"返程・分開", city:"成都", lodging:"—", tone:"flight", note:"搭機者 15:50 CTU → 澳門 → 高雄。上午不排遠程景點，12:00 從飯店出發，預留跨境航班報到時間。", items:[
     ["上午","早餐與整理行李","只在飯店周邊活動，確認護照、轉機文件、行李與登機資訊。","成都住宿區"],
@@ -86,12 +86,12 @@ const dayGuides = [
     ["footprints","體力底線","仍有階梯與坡道。膝蓋不舒服就折返，不需要走完整條路線。"],
     ["luggage","回成都與晚餐","取回行李後返成都，晚上到奎星樓街集中吃飯；吃完回飯店，不再排白天景點。"]
   ],spot:["青城山前山看什麼","青城山以幽深山林與道教宮觀聞名。建福宮、月城湖、上清宮是主線重點；老君閣位置最高，但不必把登頂當作唯一目標。"]},
-  {effort:"中高・高密度",summary:"文殊院 → 人民公園／寬窄巷子 → 武侯祠／錦里 → 九眼橋／安順廊橋。由北往西、南、東移動。",facts:[
-    ["route","四段一路走","文殊院先逛；人民公園和寬窄巷子排一段，武侯祠和錦里排一段，最後到九眼橋沿河散步。"],
-    ["clock-3","控制停留時間","文殊院約 1 小時、人民公園與寬窄巷子共 3 小時、武侯祠與錦里共 3.5 小時。不要臨時排長隊。"],
-    ["utensils","吃飯安排","午餐放在寬窄巷子附近，晚餐放在錦里；以方便為主，不為網紅店打亂順序。"],
-    ["luggage","今晚任務","九眼橋拍完夜景就回飯店，完成行李、航廈與轉機文件確認。"]
-  ],spot:["成都經典路線","文殊院看川西佛寺，人民公園看成都日常，寬窄巷子看老街，武侯祠與錦里串起三國文化，九眼橋和安順廊橋在晚上收尾。"]},
+  {effort:"中高・高密度",summary:"文殊院 → 人民公園／寬窄巷子 → 武侯祠／錦里 → 錦江劇場川劇變臉。晚上以坐著看戲收尾。",facts:[
+    ["route","四段一路走","文殊院先逛；人民公園和寬窄巷子排一段，武侯祠和錦里排一段，最後叫車到錦江劇場。"],
+    ["clock-3","演出不能遲到","18:30 前在錦里吃完晚餐，19:20 抵達劇場取票；一般 20:00 開演、約 21:10 結束，仍以票面通知為準。"],
+    ["utensils","吃飯安排","午餐放在寬窄巷子附近，晚餐提早在錦里解決；不要排需要久候的餐廳。"],
+    ["luggage","看完直接回飯店","演出結束後直接叫車回飯店，完成行李、航廈與轉機文件確認。"]
+  ],spot:["錦江劇場川劇變臉","錦江劇場是成都市中心的專業劇場。《川劇秀・傳奇變臉》把川劇唱做、變臉、吐火、滾燈、木偶與舞台效果整合成約 70 分鐘演出，坐著看也適合全家。"]},
   {effort:"輕鬆但時間重要",summary:"飯店附近 → 退房 → 12:00 前往 CTU → 15:50 飛澳門轉高雄。",facts:[
     ["badge-check","文件放同一包","護照／台胞證、登機資料與澳門轉機文件放在隨身包，不要托運。"],
     ["plane","機場時間","跨境航班建議至少提前 3 小時抵達；前一晚確認 CTU 航廈與即時交通。"],
@@ -146,7 +146,7 @@ const dayVisuals = [
     src:"assets/attractions/wuhou.jpg",
     alt:"成都武侯祠內的傳統建築與庭院",
     caption:"成都武侯祠",
-    highlights:["文殊院","人民公園／寬窄","武侯祠／錦里","九眼橋夜景"],
+    highlights:["文殊院","人民公園／寬窄","武侯祠／錦里","川劇變臉"],
     credit:"Gisling／Wikimedia Commons · CC BY 2.5",
     source:"https://commons.wikimedia.org/wiki/File:Chengdu_Wuhou_ci.jpg"
   },
@@ -160,7 +160,7 @@ const dayFallbacks=[
   "若高原不適或回程時間不足，縮短黃龍或直接前往車站；返成都動車優先於景點完整度。",
   "下雨或前幾天太累，可以晚出發、只看魚嘴與寶瓶口；古城和南橋直接刪除，提早入住休息。",
   "若遇大雨、道路預警或雙腿不舒服，就取消青城山，直接回成都休息；晚餐改在飯店附近，不必去奎星樓街。",
-  "若落後超過 1 小時，先刪九眼橋夜景；若前一天仍很累，再刪文殊院，保留人民公園、寬窄巷子與武侯祠／錦里兩組。",
+  "若落後超過 1 小時，先刪文殊院或縮短寬窄巷子；演出票買好後，以 19:20 抵達錦江劇場為固定底線。",
   "航班日不安排遠程備案；若時間有餘，只在飯店附近吃飯、整理行李與確認報到櫃檯。"
 ];
 
@@ -183,7 +183,7 @@ const mapPlaces = [
   {name:"文殊院",area:"青羊區",desc:"9/10 第一站；看川西佛寺建築與傳統街區，早上停留約 1 小時。",lat:30.6804,lng:104.0747,type:"sight",days:[6],stay:"08:30–09:30",icon:"landmark"},
   {name:"人民公園・寬窄巷子",area:"青羊區",desc:"兩處距離近，先喝茶再逛老街與吃午餐，合併成同一段最省移動。",lat:30.6636,lng:104.0537,type:"sight",days:[6],stay:"10:30–14:00",icon:"coffee"},
   {name:"武侯祠・錦里",area:"武侯區",desc:"兩處相鄰；先參觀武侯祠，再步行到錦里吃晚餐。",lat:30.6453,lng:104.0487,type:"sight",days:[6],stay:"15:30–19:00",icon:"landmark"},
-  {name:"九眼橋・安順廊橋",area:"錦江區",desc:"9/10 只排晚上：沿府河散步、看廊橋，也可找間店坐一下；結束後回飯店。",lat:30.6430,lng:104.0935,type:"sight",days:[6],stay:"20:00 後",icon:"bridge"}
+  {name:"錦江劇場",area:"錦江區・華興正街 54 號",desc:"9/10 晚上看《川劇秀・傳奇變臉》；19:20 前抵達取票，演出約 20:00–21:10。",lat:30.659637,lng:104.080386,type:"sight",days:[6],stay:"19:20–21:10",icon:"theater"}
 ];
 
 const readStoredValue=(key,fallback)=>{try{return localStorage.getItem(key)??fallback;}catch{return fallback;}};
@@ -348,6 +348,6 @@ window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredIns
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=30").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=31").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("sichuan-parent-mode","false")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);
