@@ -380,6 +380,9 @@ h1 { font-size: clamp(52px, 6.8vw, 96px); text-wrap: balance; }
 .ticket-summary-arrow { width: 19px; transition: transform .2s ease; }
 .ticket-checklist-panel[open] .ticket-summary-arrow { transform: rotate(180deg); }
 .ticket-checklist-body { padding: 0 18px; background: rgba(7,22,34,.12); border-top: 1px solid rgba(255,255,255,.22); }
+.ticket-shared-note { margin: 0; padding: 15px 0; display: grid; gap: 4px; border-bottom: 1px solid rgba(255,255,255,.22); }
+.ticket-shared-note strong { font-size: 13px; }
+.ticket-shared-note span { color: rgba(255,255,255,.72); font-size: 11px; line-height: 1.55; }
 .ticket-checklist-body label { padding: 18px 0; }
 .ticket-checklist-body label:last-child { border-bottom: 0; }
 .ticket-checklist-body .ticket-date { display: flex; grid-template-columns: none; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 2px; }
@@ -390,6 +393,17 @@ h1 { font-size: clamp(52px, 6.8vw, 96px); text-wrap: balance; }
 .ticket-links span { width: 100%; color: rgba(255,255,255,.6); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
 .ticket-links a { padding: 6px 9px; border: 1px solid rgba(255,255,255,.38); color: white; font-size: 10px; font-weight: 700; }
 .ticket-links a:hover { background: white; color: var(--orange); }
+.lodging-panel-body { padding: 0 18px 8px; background: rgba(7,22,34,.12); border-top: 1px solid rgba(255,255,255,.22); }
+.lodging-zone { padding: 18px 0; display: grid; gap: 6px; border-bottom: 1px solid rgba(255,255,255,.22); }
+.lodging-zone-head { display: flex !important; align-items: center; justify-content: space-between; gap: 12px; }
+.lodging-zone-head b { color: #ffe4d6; font-size: 12px; }
+.lodging-zone-head em { color: rgba(255,255,255,.6); font-size: 10px; font-style: normal; text-align: right; }
+.lodging-zone > strong { font-size: 16px; }
+.lodging-zone > small { color: rgba(255,255,255,.72); font-size: 11px; line-height: 1.65; }
+.lodging-proof { margin: 0; padding: 16px 0 8px; display: grid; grid-template-columns: 20px 1fr; gap: 10px; color: rgba(255,255,255,.72); font-size: 11px; line-height: 1.55; }
+.lodging-proof svg { width: 18px; color: #ffe4d6; }
+.lodging-proof span { display: block; }
+.lodging-proof strong { color: white; }
 
 footer { min-height: 180px; background: #071622; color: white; padding: 50px clamp(24px, 8vw, 130px); display: flex; align-items: center; justify-content: space-between; gap: 25px; }
 footer p { color: rgba(255,255,255,.5); font-size: 13px; }

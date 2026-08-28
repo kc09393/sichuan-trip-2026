@@ -1,14 +1,14 @@
 const itineraries = [
   { date:"9/4", weekday:"五", title:"抵達成都", city:"成都", lodging:"成都", tone:"arrival", note:"14:40 抵達 CTU。第一天只熟悉飯店周邊，晚餐與逛街依當天體力彈性取捨。", items:[
     ["14:40","抵達成都雙流機場 CTU","領行李後前往飯店；先休息、補水，不急著開始跑景點。","成都雙流機場"],
-    ["17:30","飯店 Check-in","建議住春熙路／天府廣場一帶，後續進出成都東站與市區都方便。","成都住宿區"],
+    ["17:30","飯店 Check-in","建議住春熙路北側／市二醫院地鐵站一帶；9/5 清晨直接叫車去成都東站。","成都住宿區"],
     ["19:00","春熙路・太古里・IFS","三處相鄰，依體力慢慢走；累了就在附近吃飯回飯店。","成都IFS"]
   ]},
   { date:"9/5", weekday:"六", title:"成都 → 九寨溝", city:"移動日", lodging:"九寨溝", tone:"move", note:"純移動日，正式景點為 0。首選 08:12 的 C6362，抵達黃龍九寨站後轉官方接駁約 2 小時；下午只辦入住與休息。", items:[
     ["06:30","飯店出發前往成都東站","搭 08:12 的 C6362；07:10 前抵達車站，證件與訂單放在手機容易找到的位置。","成都東站"],
     ["08:12–10:01","C6362 成都東 → 黃龍九寨","12306 已開售；二等座票價目前 ¥143／人。購票後仍要留意臨時調整通知。","黃龍九寨站"],
     ["約 10:30 起","接駁前往九寨溝","優先預訂官方「九旅悅行」直通車；車程約 2 小時，依購票頁的實際班次與集合點搭乘。","九寨溝住宿區"],
-    ["抵達後","入住、晚餐、自由休息","今天不排正式景點。若提早抵達且精神還好，只在溝口附近散步、買隔天補給，不另外叫車跑行程。","九寨溝住宿區"]
+    ["抵達後","入住、晚餐、自由休息","住溝口彭豐村／天堂口，今天不排正式景點；只在附近吃飯、買隔天補給。","九寨溝住宿區"]
   ]},
   { date:"9/6", weekday:"日", title:"九寨溝完整一天", city:"九寨溝", lodging:"九寨溝", tone:"star", note:"本次旅行第一個重點日。最新公告 7:30 開始入園，一整天只給九寨溝；¥190 門票＋¥90 觀光車。", items:[
     ["07:00","抵達九寨溝遊客中心","帶有效證件、早餐吃飽、穿分層衣物；盡量排在第一批入園。","九寨溝景區入口"],
@@ -26,7 +26,7 @@ const itineraries = [
     ["09:30","成都出發","搭城際列車或包車；只帶一晚小行李，先確認大件行李能否寄放。","成都住宿區"],
     ["12:00","都江堰水利景區","約 3 小時，掌握魚嘴、飛沙堰與寶瓶口；需要就搭觀光車。","都江堰景區"],
     ["17:00","灌縣古城・南橋","吃晚餐、看岷江夜景；累了就直接回住宿。","南橋"],
-    ["晚上","住都江堰","隔天直接去青城山，不必先回成都。","都江堰住宿區"]
+    ["晚上","住灌縣古城／離堆公園一帶","步行回住宿；隔天直接叫車去青城山，不必先回成都。","都江堰住宿區"]
   ]},
   { date:"9/9", weekday:"三", title:"青城山前山・回成都", city:"青城山", lodging:"成都", tone:"star", note:"只走前山主線，能搭車、渡船與索道就省力；下午回成都，晚上到奎星樓街吃飯。", items:[
     ["08:30","前往青城山","退房後出發；行李先確認寄放或留在包車上。","都江堰住宿區"],
@@ -166,17 +166,17 @@ const dayFallbacks=[
 
 const mapPlaces = [
   {name:"成都雙流機場",area:"成都・雙流",desc:"9/4 抵達與 9/11 返程使用的機場；務必再次確認航廈。",lat:30.5785,lng:103.9471,type:"transport",days:[0,7],stay:"CTU 機場",icon:"plane"},
-  {name:"成都住宿區",area:"春熙路／天府廣場",desc:"成都四晚的建議住宿核心區，前往成都東站與市區景點方便。",lat:30.6570,lng:104.0737,type:"stay",days:[0,3,4,5,6,7],stay:"成都共 4 晚",icon:"bed-double"},
+  {name:"成都住宿區",area:"春熙路北側／市二醫院站",desc:"成都共住 4 晚，三段訂房盡量選同一家；靠近 IFS、文殊院與錦江劇場，9/5 清晨叫車去成都東。",lat:30.6592,lng:104.0830,type:"stay",days:[0,3,4,5,6,7],stay:"成都共 4 晚",icon:"bed-double"},
   {name:"成都IFS",area:"春熙路商圈",desc:"春熙路、太古里與 IFS 相鄰，抵達第一晚依體力散步。",lat:30.6543,lng:104.0815,type:"sight",days:[0],stay:"9/4 晚間",icon:"shopping-bag"},
   {name:"成都東站",area:"成華區",desc:"9/5 搭 C6362 前往黃龍九寨；08:12 發車，建議 07:10 前抵達。",lat:30.6289,lng:104.1403,type:"transport",days:[1,3],stay:"至少提早 45–60 分鐘",icon:"train-front"},
   {name:"黃龍九寨站",area:"松潘・川主寺",desc:"9/5 轉官方接駁往九寨溝；9/7 搭 C6374 於 17:30 回成都。",lat:32.6530,lng:103.6089,type:"transport",days:[1,3],stay:"接駁轉乘點",icon:"train-front"},
-  {name:"九寨溝住宿區",area:"漳扎鎮／溝口",desc:"9/5、9/6 連住兩晚；優先選有車站或景區接送的住宿。",lat:33.2317,lng:103.9114,type:"stay",days:[1,2,3],stay:"九寨溝共 2 晚",icon:"bed-double"},
+  {name:"九寨溝住宿區",area:"溝口彭豐村／天堂口",desc:"9/5、9/6 連住兩晚；優先選步行約 5–15 分鐘到景區入口，或明確提供接送的住宿。",lat:33.2676,lng:103.9188,type:"stay",days:[1,2,3],stay:"九寨溝共 2 晚",icon:"bed-double"},
   {name:"九寨溝景區入口",area:"九寨溝縣",desc:"9/6 建議 07:00 左右抵達，準備 07:30 第一批入園。",lat:33.2601,lng:103.9187,type:"sight",days:[2],stay:"完整一天",icon:"ticket-check"},
   {name:"五花海",area:"九寨溝・日則溝",desc:"九寨溝代表性海子之一；實際遊覽順序依景區觀光車調度。",lat:33.1599,lng:103.8794,type:"sight",days:[2],stay:"依觀光車安排",icon:"waves"},
   {name:"黃龍風景區",area:"松潘縣",desc:"9/7 高海拔重點行程；量力步行並預留前往車站時間。",lat:32.7434,lng:103.8335,type:"sight",days:[3],stay:"半天・量力而為",icon:"mountain-snow"},
   {name:"都江堰景區",area:"都江堰市",desc:"9/8 下午完整理解魚嘴、飛沙堰與寶瓶口三大水利核心。",lat:31.0045,lng:103.6050,type:"sight",days:[4],stay:"官方建議約 3 小時",icon:"landmark"},
   {name:"南橋",area:"灌縣古城",desc:"都江堰景區外的岷江廊橋；9/8 傍晚與灌縣古城一起散步。",lat:30.9949,lng:103.6162,type:"sight",days:[4],stay:"傍晚彈性停留",icon:"bridge"},
-  {name:"都江堰住宿區",area:"灌縣古城／離堆公園附近",desc:"9/8 住一晚，隔天直接前往青城山，避免連續兩天往返成都。",lat:30.9941,lng:103.6196,type:"stay",days:[4,5],stay:"都江堰共 1 晚",icon:"bed-double"},
+  {name:"都江堰住宿區",area:"灌縣古城／南橋／離堆公園站",desc:"9/8 住一晚；步行可到晚餐與南橋，隔天直接叫車去青城山，不必先回成都。",lat:31.0007,lng:103.6190,type:"stay",days:[4,5],stay:"都江堰共 1 晚",icon:"bed-double"},
   {name:"青城山前山",area:"都江堰市",desc:"9/9 只走道教文化主線，利用渡船、索道與觀光車節省體力。",lat:30.9000,lng:103.5703,type:"sight",days:[5],stay:"建議半日至下午",icon:"trees"},
   {name:"青城山站",area:"都江堰市",desc:"9/9 下山後銜接城際列車回成都；班次以 12306 為準。",lat:30.8990,lng:103.6160,type:"transport",days:[5],stay:"回成都轉乘點",icon:"train-front"},
   {name:"奎星樓街",area:"成都・青羊區",desc:"9/9 回成都後的晚餐區；把小吃集中在這一段，吃完直接回飯店。",lat:30.6678,lng:104.0556,type:"sight",days:[5],stay:"19:00 晚餐",icon:"utensils"},
@@ -348,6 +348,6 @@ window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredIns
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=31").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=32").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("sichuan-parent-mode","false")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);
