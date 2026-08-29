@@ -4,23 +4,24 @@ const itineraries = [
     ["17:30","飯店 Check-in","建議住春熙路北側／市二醫院地鐵站一帶；9/5 清晨直接叫車去成都東站。","成都住宿區"],
     ["19:00","春熙路・太古里・IFS","三處相鄰，依體力慢慢走；累了就在附近吃飯回飯店。","成都IFS"]
   ]},
-  { date:"9/5", weekday:"六", title:"成都 → 九寨溝", city:"移動日", lodging:"九寨溝", tone:"move", note:"純移動日，正式景點為 0。首選 08:12 的 C6362，抵達黃龍九寨站後轉官方接駁約 2 小時；下午只辦入住與休息。", items:[
+  { date:"9/5", weekday:"六", title:"成都 → 黃龍 → 九寨溝", city:"黃龍", lodging:"九寨溝", tone:"hard", note:"先遊黃龍再入住九寨溝，第三天就不用趕景區。固定搭 C6362 與 11:40 共乘車；約 20:45 抵達九寨溝。", items:[
     ["06:30","飯店出發前往成都東站","搭 08:12 的 C6362；07:10 前抵達車站，證件與訂單放在手機容易找到的位置。","成都東站"],
-    ["08:12–10:01","C6362 成都東 → 黃龍九寨","12306 已開售；二等座票價目前 ¥143／人。購票後仍要留意臨時調整通知。","黃龍九寨站"],
-    ["約 10:30 起","接駁前往九寨溝","優先預訂官方「九旅悅行」直通車；車程約 2 小時，依購票頁的實際班次與集合點搭乘。","九寨溝住宿區"],
-    ["抵達後","入住、晚餐、自由休息","住溝口彭豐村／天堂口，今天不排正式景點；只在附近吃飯、買隔天補給。","九寨溝住宿區"]
+    ["08:12–10:01","C6362 成都東 → 黃龍九寨","班次已於 8/29 再次核對；以 12306 最終訂單為準。抵達後先吃東西、上洗手間並到集合點等車。","黃龍九寨站"],
+    ["11:40","共乘車：車站 → 黃龍 → 九寨溝","預訂 9/5 的 11:40 班次；商品預計 20:45 結束。不要誤選 9/7 或反方向。","黃龍九寨站"],
+    ["約 12:30–17:00","黃龍風景區","使用上行索道省力，重點看五彩池；高海拔慢走，任何人不舒服就縮短行程。自備午餐、飲水與保暖衣物。","黃龍風景區"],
+    ["約 20:45","抵達九寨溝・入住","住溝口彭豐村／天堂口。晚餐以簡單、快速為主，入住後直接休息，準備隔天完整遊園。","九寨溝住宿區"]
   ]},
   { date:"9/6", weekday:"日", title:"九寨溝完整一天", city:"九寨溝", lodging:"九寨溝", tone:"star", note:"本次旅行第一個重點日。最新公告 7:30 開始入園，一整天只給九寨溝；¥190 門票＋¥90 觀光車。", items:[
     ["07:00","抵達九寨溝遊客中心","帶有效證件、早餐吃飽、穿分層衣物；盡量排在第一批入園。","九寨溝景區入口"],
     ["07:30","全天遊覽九寨溝","搭觀光車分段遊覽日則溝、則查洼溝與樹正溝；不追求每個點都走到。","五花海"],
-    ["18:00 前","離開景區回飯店","景區 18:00 閉園。晚餐後整理隔天黃龍的保暖衣物與行李。","九寨溝景區入口"]
+    ["18:00 前","離開景區回飯店","景區 18:00 閉園。晚餐後整理行李，隔天不用再跑景點，可以睡飽再退房。","九寨溝景區入口"]
   ]},
-  { date:"9/7", weekday:"一", title:"九寨溝 → 黃龍 → 成都", city:"高強度移動日", lodging:"成都", tone:"hard", note:"黃龍值得保留，但健康與回程優先。06:00 出發、15:15 前離開景區，搭 17:30 的 C6374 回成都；晚上完全留白。", items:[
-    ["06:00","九寨溝出發","建議預約包車直達黃龍，目標 09:00 前抵達；行李全程隨車。","九寨溝住宿區"],
-    ["約 09:00–14:30","黃龍風景區","上行索道＋觀光車優先，重點看五彩池；任何人高原不適就立刻縮短或取消。","黃龍風景區"],
-    ["15:15 前","離開景區前往黃龍九寨站","銜接 C6374；預留公路、進站與安檢緩衝，不把離開時間拖到最後。","黃龍九寨站"],
-    ["17:30–20:09","C6374 黃龍九寨 → 成都東","抵達後直接叫車前往飯店，不在車站附近追加行程。","成都東站"],
-    ["20:30 後","回飯店，只休息","辦入住、洗澡、睡覺；不排宵夜或其他行程。","成都住宿區"]
+  { date:"9/7", weekday:"一", title:"九寨溝 → 成都", city:"輕鬆回程", lodging:"成都", tone:"move", note:"今天不排景點、不趕黃龍。睡飽退房，10:45 搭共乘車到黃龍九寨站，再搭 C6364 回成都。", items:[
+    ["上午","睡飽、早餐、整理行李","確認證件、動車票與接駁憑證；約 10:20 到飯店通知的集合點等車。","九寨溝住宿區"],
+    ["10:45–約 14:15","共乘車：九寨溝 → 黃龍九寨站","預訂 9/7 的 10:45 班次並填寫飯店名稱；平台預估 14:15 抵達，實際集合點以前一日通知為準。","黃龍九寨站"],
+    ["14:15–16:00","車站等候・吃東西","公路車程可能浮動，這段緩衝不能刪；抵達後吃東西、上洗手間、完成安檢。","黃龍九寨站"],
+    ["16:25–18:07","C6364 黃龍九寨 → 成都東","班次已於 8/29 再次核對；以 12306 最終訂單為準。抵達後直接叫車回飯店。","成都東站"],
+    ["19:00 後","成都飯店・附近晚餐","辦入住後再吃晚餐；今晚不預約固定時間活動。","成都住宿區"]
   ]},
   { date:"9/8", weekday:"二", title:"都江堰・住一晚", city:"都江堰", lodging:"都江堰", tone:"flex", note:"早上搭 S5105 直達離堆公園，整天給都江堰水利景區與古城；今晚住都江堰，不趕回成都。", items:[
     ["06:50","成都飯店出發","帶一晚小行李，優先叫車直達犀浦站；若搭地鐵，市二醫院站搭 4 號線到中醫大省醫院站，再轉 2 號線到犀浦。","成都住宿區"],
@@ -57,12 +58,13 @@ const dayGuides = [
     ["armchair","休息地點","太古里與 IFS 內都有室內座位、洗手間與冷氣；累了就直接回飯店。"],
     ["backpack","今天要帶","護照／台胞證、手機、行李牌；下車前一起清點件數。"]
   ],spot:["春熙路・太古里・IFS","這是成都最集中的現代商圈。春熙路適合逛街、太古里是開放式街區、IFS 最醒目的是屋頂熊貓；三處相連，不需要分別叫車。"]},
-  {effort:"移動為主",summary:"飯店 → 成都東站 → C6362 → 黃龍九寨站 → 九寨溝飯店。今天不安排景點。",facts:[
+  {effort:"高強度・已留緩衝",summary:"飯店 → C6362 → 11:40 共乘車 → 黃龍 → 九寨溝飯店。先完成黃龍，9/7 就能輕鬆回成都。",facts:[
     ["train-front","已確認班次","9/5 首選 C6362：成都東 08:12 出發、黃龍九寨 10:01 抵達；07:10 前到站。"],
-    ["bus-front","接駁重點","黃龍九寨站不是景區入口。官方「九旅悅行」直通車約 2 小時，動車票確認後就預訂並核對集合點。"],
-    ["sandwich","吃飯安排","早餐在飯店吃飽；另外帶水與簡單乾糧，避免轉乘途中臨時找不到餐食。"],
-    ["badge-alert","不要硬排","如果接駁晚到，只做入住與晚餐。九寨溝隔天要走整日，今晚越早休息越好。"]
-  ],spot:["川青鐵路","成都東到黃龍九寨已可搭動車，但班次會調整。黃龍九寨站是鐵路接駁點，不是九寨溝景區門口；出站後還要換車。"]},
+    ["bus-front","固定接駁","選 9/5、黃龍九寨站出發、11:40 的「車站 → 黃龍 → 九寨溝」方案；預計 20:45 抵達九寨溝。"],
+    ["tram-front","黃龍省力走法","優先購買門票＋上行索道方案，重點看五彩池；高原慢走，不舒服就縮短。"],
+    ["sandwich","吃飯安排","早餐吃飽並自備午餐、飲水與零食。20:45 左右才到九寨溝，不能等到沿途再找正餐。"],
+    ["badge-alert","核對方向","下單日期必須是 9/5，方向必須是黃龍九寨站 → 黃龍 → 九寨溝；不要沿用先前 9/7 的畫面。"]
+  ],spot:["黃龍看什麼","黃龍以鈣華彩池、雪山、峽谷與森林聞名，五彩池最具代表性。使用上行索道減少爬升；舒服完成比走完整圈更重要。"]},
   {effort:"中高",summary:"07:00 到遊客中心 → 07:30 入園 → 分區遊覽 → 18:00 前出園。不要自行規劃死板順序。",facts:[
     ["ticket-check","票券與入園","2026 旺季門票 ¥190＋觀光車 ¥90；全員帶購票時使用的有效證件原件。"],
     ["bus-front","怎麼遊覽","進園後先搭觀光車，當天由景區依人流調度去左線或右線；下車後再沿棧道看景。"],
@@ -70,13 +72,13 @@ const dayGuides = [
     ["utensils","午餐與補給","園內用餐選擇有限，帶水、巧克力或餅乾；午餐避開最尖峰時間。"],
     ["cloud-rain","衣物與安全","早晚涼、日照強，採洋蔥式穿法。雨具、防曬都帶；全程不離開棧道。"]
   ],spot:["九寨溝看什麼","重點不是跑完所有海子，而是看翠海、瀑布與森林層次。五花海色彩最豐富，諾日朗瀑布氣勢大，樹正群海適合從觀光車與棧道交替欣賞。"]},
-  {effort:"最高",summary:"06:00 九寨溝出發 → 黃龍 → 15:15 前離開 → C6374 → 成都飯店。黃龍值得去，但所有時間以健康與回程動車為底線。",facts:[
-    ["mountain-snow","高原原則","黃龍海拔較高：慢走、不跑、不喝酒。頭痛、噁心、胸悶或明顯不適就停止上行並求助。"],
-    ["tram-front","省體力走法","優先上行索道＋觀光車到核心區，再依體力選擇步行或索道下山；不勉強走完整圈。"],
-    ["clock-3","時間底線","C6374 於 17:30 從黃龍九寨站出發；15:15 前離開景區，保留公路與進站緩衝。"],
-    ["luggage","行李安排","早上退房後行李隨接駁車，下車前確認護照、票券與行李件數。"],
-    ["bed-double","晚上安排","回成都只入住、洗澡、睡覺。不要再加火鍋、夜市或逛街。"]
-  ],spot:["黃龍看什麼","黃龍以層層鈣華彩池、雪山、峽谷與森林聞名。最具代表性的是五彩池，但不必以抵達最高點為唯一目標；舒服地看風景比完成路線重要。"]},
+  {effort:"輕鬆移動",summary:"睡飽退房 → 10:45 共乘車 → 黃龍九寨站 → C6364 → 成都飯店。今天沒有景點與早起。",facts:[
+    ["bus-front","接駁班次","選 9/7 的 10:45 九寨溝 → 黃龍九寨站共乘車；預訂時填飯店名稱，約 10:20 到通知的集合點。"],
+    ["clock-3","安全緩衝","平台預估 14:15 抵達，C6364 於 16:25 發車，保留約 2 小時 10 分鐘處理交通浮動與安檢。"],
+    ["train-front","回程班次","C6364：黃龍九寨 16:25 出發、成都東 18:07 抵達；以 12306 最終訂單為準。"],
+    ["luggage","行李安排","行李隨共乘車；下車先清點證件與件數，再進站。"],
+    ["utensils","晚上安排","約 19:00 回飯店，附近吃晚餐即可；不預約固定時間活動。"]
+  ],spot:["今天為什麼留白","黃龍已在 9/5 完成，9/7 不再塞景點。把公路延誤緩衝留足，回成都後還能正常吃晚餐與休息。"]},
   {effort:"中等可縮短",summary:"成都飯店 → 犀浦 → S5105 → 離堆公園 → 都江堰水利景區 → 古城／南橋 → 住都江堰。",facts:[
     ["train-front","固定班次","S5105：犀浦 08:11 出發、離堆公園 08:39 抵達。建議先買，07:35 前到犀浦站。"],
     ["route","怎麼到犀浦","帶行李優先叫車；搭地鐵則由市二醫院站搭 4 號線，在中醫大省醫院站轉 2 號線到犀浦。"],
@@ -114,15 +116,6 @@ const dayVisuals = [
     credit:"David Xuang／Wikimedia Commons · CC BY-SA 4.0",
     source:"https://commons.wikimedia.org/wiki/File:The_panda_at_IFS_Chengdu.jpg"
   },
-  null,
-  {
-    src:"assets/attractions/jiuzhai.jpg",
-    alt:"九寨溝五花海的藍綠湖水與森林棧道",
-    caption:"五花海",
-    highlights:["五花海","諾日朗瀑布","樹正群海"],
-    credit:"Shahar Wider／Wikimedia Commons · CC BY 3.0",
-    source:"https://commons.wikimedia.org/wiki/File:5_Flowers_Lake_(127556467).jpeg"
-  },
   {
     src:"assets/attractions/huanglong.jpg",
     alt:"黃龍景區的鈣華彩池、森林與古寺",
@@ -131,6 +124,15 @@ const dayVisuals = [
     credit:"Wikimedia Commons · CC BY-SA 3.0",
     source:"https://commons.wikimedia.org/wiki/File:Huanglonggou_Pools.jpg"
   },
+  {
+    src:"assets/attractions/jiuzhai.jpg",
+    alt:"九寨溝五花海的藍綠湖水與森林棧道",
+    caption:"五花海",
+    highlights:["五花海","諾日朗瀑布","樹正群海"],
+    credit:"Shahar Wider／Wikimedia Commons · CC BY 3.0",
+    source:"https://commons.wikimedia.org/wiki/File:5_Flowers_Lake_(127556467).jpeg"
+  },
+  null,
   {
     src:"assets/attractions/dujiangyan.jpg",
     alt:"從高處俯瞰都江堰水利工程與岷江",
@@ -160,9 +162,9 @@ const dayVisuals = [
 
 const dayFallbacks=[
   "航班延誤或抵達後太累，就只辦入住與吃晚餐；春熙路留到 9/10 再決定。",
-  "動車或接駁延誤時，直接前往九寨溝飯店，不增加沿途停靠，也不安排晚間逛街。",
+  "若 C6362 大幅誤點、確定趕不上 11:40 共乘車，立刻聯絡供應商；無法改班就取消黃龍，改搭直達車前往九寨溝。",
   "遇雨就提高觀光車比例，只選五花海、諾日朗與樹正群海等代表區域，不追求走完整條棧道。",
-  "若高原不適或回程時間不足，縮短黃龍或直接前往車站；返成都動車優先於景點完整度。",
+  "出發前一日若供應商通知的抵站時間太晚，就改更早接駁；9/7 沒有景點，安全銜接 C6364 是唯一優先。",
   "下雨或前幾天太累，就縮短水利景區，只看魚嘴與寶瓶口；古城和南橋直接刪除，提早入住休息。",
   "若遇大雨、道路預警或雙腿不舒服，就取消青城山，改搭較早班次回成都；晚餐留在飯店附近。",
   "若落後超過 1 小時，先刪文殊院或縮短寬窄巷子；演出票買好後，以 19:20 抵達錦江劇場為固定底線。",
@@ -176,11 +178,11 @@ const mapPlaces = [
   {name:"成都東站",area:"成華區",desc:"9/5 搭 C6362 前往黃龍九寨；08:12 發車，建議 07:10 前抵達。",lat:30.6289,lng:104.1403,type:"transport",days:[1,3],stay:"至少提早 45–60 分鐘",icon:"train-front"},
   {name:"犀浦站",area:"成都・郫都區",desc:"9/8 轉乘 S5105 前往離堆公園；9/9 搭 S5054 返回後轉地鐵 2 號線進城。",lat:30.7562,lng:103.9727,type:"transport",days:[4,5],stay:"地鐵／城際列車同站換乘",icon:"train-front"},
   {name:"離堆公園站",area:"都江堰・灌縣古城",desc:"9/8 搭 S5105 於 08:39 抵達，最接近都江堰景區、古城與住宿區。",lat:30.9952,lng:103.6215,type:"transport",days:[4],stay:"08:39 抵達",icon:"train-front"},
-  {name:"黃龍九寨站",area:"松潘・川主寺",desc:"9/5 轉官方接駁往九寨溝；9/7 搭 C6374 於 17:30 回成都。",lat:32.6530,lng:103.6089,type:"transport",days:[1,3],stay:"接駁轉乘點",icon:"train-front"},
+  {name:"黃龍九寨站",area:"松潘・川主寺",desc:"9/5 轉 11:40 共乘車先遊黃龍；9/7 搭 C6364 於 16:25 回成都。",lat:32.6530,lng:103.6089,type:"transport",days:[1,3],stay:"接駁轉乘點",icon:"train-front"},
   {name:"九寨溝住宿區",area:"溝口彭豐村／天堂口",desc:"9/5、9/6 連住兩晚；優先選步行約 5–15 分鐘到景區入口，或明確提供接送的住宿。",lat:33.2676,lng:103.9188,type:"stay",days:[1,2,3],stay:"九寨溝共 2 晚",icon:"bed-double"},
   {name:"九寨溝景區入口",area:"九寨溝縣",desc:"9/6 建議 07:00 左右抵達，準備 07:30 第一批入園。",lat:33.2601,lng:103.9187,type:"sight",days:[2],stay:"完整一天",icon:"ticket-check"},
   {name:"五花海",area:"九寨溝・日則溝",desc:"九寨溝代表性海子之一；實際遊覽順序依景區觀光車調度。",lat:33.1599,lng:103.8794,type:"sight",days:[2],stay:"依觀光車安排",icon:"waves"},
-  {name:"黃龍風景區",area:"松潘縣",desc:"9/7 高海拔重點行程；量力步行並預留前往車站時間。",lat:32.7434,lng:103.8335,type:"sight",days:[3],stay:"半天・量力而為",icon:"mountain-snow"},
+  {name:"黃龍風景區",area:"松潘縣",desc:"9/5 約 12:30 抵達、17:00 集合前往九寨溝；上行索道省力，重點看五彩池。",lat:32.7434,lng:103.8335,type:"sight",days:[1],stay:"約 4.5 小時・量力而為",icon:"mountain-snow"},
   {name:"都江堰景區",area:"都江堰市",desc:"9/8 下午完整理解魚嘴、飛沙堰與寶瓶口三大水利核心。",lat:31.0045,lng:103.6050,type:"sight",days:[4],stay:"官方建議約 3 小時",icon:"landmark"},
   {name:"南橋",area:"灌縣古城",desc:"都江堰景區外的岷江廊橋；9/8 傍晚與灌縣古城一起散步。",lat:30.9949,lng:103.6162,type:"sight",days:[4],stay:"傍晚彈性停留",icon:"bridge"},
   {name:"都江堰住宿區",area:"灌縣古城／南橋／離堆公園站",desc:"9/8 住一晚；步行可到晚餐與南橋，隔天直接叫車去青城山，不必先回成都。",lat:31.0007,lng:103.6190,type:"stay",days:[4,5],stay:"都江堰共 1 晚",icon:"bed-double"},
@@ -197,7 +199,7 @@ const writeStoredValue=(key,value)=>{try{localStorage.setItem(key,value);return 
 const readStoredJSON=(key,fallback)=>{try{const value=JSON.parse(readStoredValue(key,"null"));return value??fallback;}catch{return fallback;}};
 const categoryLabels={sight:"景點",transport:"交通",stay:"住宿"};
 const categoryGlyphs={sight:"景",transport:"車",stay:"住"};
-const dayTypeLabels={arrival:"抵達日",move:"純移動日",star:"山林景點日",hard:"高強度日",flex:"兩天一夜・第一天",city:"成都市區重點日",flight:"返程日"};
+const dayTypeLabels={arrival:"抵達日",move:"移動日",star:"山林景點日",hard:"高強度日",flex:"兩天一夜・第一天",city:"成都市區重點日",flight:"返程日"};
 const savedData=readStoredJSON("sichuan-saved",[]);
 const saved=new Set(Array.isArray(savedData)?savedData:[]);
 let activeDay=0,mapFilter="all",mapDay="0",mapQuery="",travelMap,markerLayer,routeLayer;
@@ -354,6 +356,6 @@ window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredIns
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=33").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=34").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("sichuan-parent-mode","false")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);
