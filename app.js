@@ -11,7 +11,7 @@ const itineraries = [
     ["約 12:30–17:00","黃龍風景區","使用上行索道省力，重點看五彩池；高海拔慢走，任何人不舒服就縮短行程。自備午餐、飲水與保暖衣物。","黃龍風景區"],
     ["約 20:45","抵達九寨溝・入住","住溝口彭豐村／天堂口。晚餐以簡單、快速為主，入住後直接休息，準備隔天完整遊園。","九寨溝住宿區"]
   ]},
-  { date:"9/6", weekday:"日", title:"九寨溝完整一天", city:"九寨溝", lodging:"九寨溝", tone:"star", note:"本次旅行第一個重點日。成人選 08:00–10:00 的非中國大陸遊客票；一位 60 歲以上長者改訂官方優惠票，一整天只給九寨溝。", items:[
+  { date:"9/6", weekday:"日", title:"九寨溝完整一天", city:"九寨溝", lodging:"九寨溝", tone:"star", note:"本次旅行第一個重點日。兩位成人票與一位 60 歲以上長者票均已購買，入園時段 08:00–10:00；一整天只給九寨溝。", items:[
     ["07:45","抵達九寨溝遊客中心","帶各自購票使用的有效證件原件、早餐吃飽、穿分層衣物；準備 08:00 入園。","九寨溝景區入口"],
     ["08:00","全天遊覽九寨溝","搭觀光車分段遊覽日則溝、則查洼溝與樹正溝；不追求每個點都走到。","五花海"],
     ["18:00 前","離開景區回飯店","景區 18:00 閉園。晚餐後整理行李，隔天不用再跑景點，可以睡飽再退房。","九寨溝景區入口"]
@@ -66,7 +66,7 @@ const dayGuides = [
     ["badge-alert","核對方向","下單日期必須是 9/5，方向必須是黃龍九寨站 → 黃龍 → 九寨溝；不要沿用先前 9/7 的畫面。"]
   ],spot:["黃龍看什麼","黃龍以鈣華彩池、雪山、峽谷與森林聞名，五彩池最具代表性。使用上行索道減少爬升；舒服完成比走完整圈更重要。"]},
   {effort:"中高",summary:"07:00 到遊客中心 → 07:30 入園 → 分區遊覽 → 18:00 前出園。不要自行規劃死板順序。",facts:[
-    ["ticket-check","票券與入園","兩位 19–59 歲成人買非中國大陸遊客票；一位 60 歲以上長者在官方平台預約免門票＋¥90 觀光車，最終以有效證件資格驗證為準。"],
+    ["ticket-check","門票已購買","非中國大陸遊客成人票兩份＋60 歲以上長者票一份，共 TWD 3,053；三人都帶訂票使用的有效證件原件。"],
     ["bus-front","怎麼遊覽","進園後先搭觀光車，當天由景區依人流調度去左線或右線；下車後再沿棧道看景。"],
     ["footprints","少走一點的方法","每一區挑代表景點，不必站站下車。疲累時多搭一站觀光車、少走棧道。"],
     ["utensils","午餐與補給","園內用餐選擇有限，帶水、巧克力或餅乾；午餐避開最尖峰時間。"],
@@ -356,6 +356,6 @@ window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredIns
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=36").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=37").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("sichuan-parent-mode","false")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);
