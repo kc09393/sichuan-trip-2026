@@ -1,11 +1,11 @@
 const itineraries = [
-  { date:"9/4", weekday:"五", title:"抵達成都・住成都東", city:"成都", lodging:"成都東站附近", tone:"arrival", note:"14:40 抵達 CTU。今晚住成都東站附近，隔天前往 08:12 動車最穩；不再橫跨市區逛春熙路，辦好入住、吃飯並早睡。", items:[
+  { date:"9/4", weekday:"五", title:"抵達成都・住成都東", city:"成都", lodging:"龍之夢瑞峯公寓酒店", tone:"arrival", note:"14:40 抵達 CTU。龍之夢瑞峯公寓酒店（成都東站店）已確認並付款；隔天步行前往 08:12 動車最穩。今晚不再橫跨市區，辦好入住、吃飯並早睡。", items:[
     ["14:40","抵達成都雙流機場 CTU","領行李後前往飯店；先休息、補水，不急著開始跑景點。","成都雙流機場"],
-    ["約 17:00–18:00","成都東站附近飯店 Check-in","選成都東站西廣場／成渝立交一帶、叫車約 5–10 分鐘到車站的住宿；先確認隔天叫車上車點。","成都東站住宿區"],
-    ["19:00","飯店附近晚餐・整理行李","不再前往春熙路；把台胞證、動車票、接駁訂單、保暖衣物與隔天早餐放好，早點休息。","成都東站住宿區"]
+    ["約 17:00–18:00","龍之夢瑞峯公寓酒店 Check-in","地址為成華區嘉陵江路 8 號-D；14:00 後可入住。訂單已付款 TWD 988，9/4 18:00 前可免費取消，之後不退款。","龍之夢瑞峯公寓酒店"],
+    ["19:00","飯店附近晚餐・整理行李","不再前往春熙路；把台胞證、動車票、接駁訂單、保暖衣物與隔天早餐放好，早點休息。","龍之夢瑞峯公寓酒店"]
   ]},
   { date:"9/5", weekday:"六", title:"成都 → 黃龍 → 九寨溝", city:"黃龍", lodging:"Yuji 嶼季海韻酒店", tone:"hard", note:"先遊黃龍再入住九寨溝，第三天就不用趕景區。C6362、11:40 小車拼車與兩晚住宿均已確認；約 20:45 抵達飯店。", items:[
-    ["06:30","飯店出發前往成都東站","搭 08:12 的 C6362；07:10 前抵達車站，證件與訂單放在手機容易找到的位置。","成都東站"],
+    ["06:30","從龍之夢瑞峯公寓酒店步行出發","飯店在成都東站東廣場一側；按導航前往進站口，第一次走多留 10–15 分鐘找路。搭 08:12 的 C6362，07:10 前完成進站。","成都東站"],
     ["08:12–10:01","C6362 成都東 → 黃龍九寨","班次已於 8/29 再次核對；以 12306 最終訂單為準。抵達後先吃東西、上洗手間並到集合點等車。","黃龍九寨站"],
     ["11:40","已確認：車站 → 黃龍 → 九寨溝","三人小車拼車已預訂，包含黃龍門票與上行索道；商品預計 20:45 結束。","黃龍九寨站"],
     ["約 12:30–17:00","黃龍風景區","使用上行索道省力，重點看五彩池；高海拔慢走，任何人不舒服就縮短行程。自備午餐、飲水與保暖衣物。","黃龍風景區"],
@@ -61,9 +61,11 @@ const itineraries = [
 ];
 
 const dayGuides = [
-  {effort:"輕鬆・早睡",summary:"CTU → 成都東站附近飯店 → 附近晚餐 → 整理隔天用品。第一晚不跑市中心。",facts:[
+  {effort:"輕鬆・早睡",summary:"CTU → 龍之夢瑞峯公寓酒店 → 附近晚餐 → 整理隔天用品。第一晚不跑市中心。",facts:[
     ["car-taxi-front","機場車不用先訂接駁","9/4 領完行李後直接叫滴滴或排官方計程車；三人帶行李選六座或較大車型，下午可能遇到晚高峰。"],
-    ["bed-double","第一晚可住不同飯店","9/4 只住一晚，重點是距成都東站叫車約 5–10 分鐘、24 小時櫃台、電梯與安靜無菸房，不必和 9/7 後同一家。"],
+    ["bed-double","成都東站飯店已確認","龍之夢瑞峯公寓酒店（成都東站店）9/4 入住、9/5 退房，實付 TWD 988；地址為成華區嘉陵江路 8 號-D。"],
+    ["badge-alert","記住取消期限","9/4 18:00（住宿當地時間）前可免費取消；之後訂單不退款。接駁服務需另向飯店詢問，不代表訂單已含免費接送。"],
+    ["footprints","隔天可步行進站","飯店位於成都東站東廣場一側，公開資料標示約 5–10 分鐘；帶行李第一次找路，多留 10–15 分鐘並依現場指標前往進站口。"],
     ["sandwich","早餐先準備","9/5 約 06:30 離開飯店，通常趕不上正式早餐；前晚準備早餐盒、麵包、水與零食。"],
     ["backpack","今晚先分裝","台胞證、動車票、接駁訂單、保暖衣物與常用藥放隨身包；隔天不用重新翻大行李。"]
   ],spot:["為什麼第一晚住成都東","9/5 的 C6362 在 08:12 發車，07:10 前要到成都東站。住車站附近能避開清晨從春熙路跨區移動，比第一晚多逛一個商圈更實際。"]},
@@ -167,7 +169,7 @@ const dayVisuals = [
 ];
 
 const dayFallbacks=[
-  "航班延誤或抵達後太累，就直接到成都東站附近飯店休息並叫外送；今晚沒有景點，也不需要為了逛街再進市中心。",
+  "航班延誤或抵達後太累，就直接到龍之夢瑞峯公寓酒店休息並叫外送；今晚沒有景點，也不需要為了逛街再進市中心。",
   "若 C6362 大幅誤點、確定趕不上 11:40 共乘車，立刻聯絡供應商；無法改班就取消黃龍，改搭直達車前往九寨溝。",
   "遇雨就提高觀光車比例，只選五花海、諾日朗與樹正群海等代表區域，不追求走完整條棧道。",
   "9/6 晚上確認師傅訊息與飯店接人時間；若仍未收到通知，主動聯絡供應商。若預估無法在 11:30 前抵站，立即要求調整，安全銜接 C5794 是唯一優先。",
@@ -179,7 +181,7 @@ const dayFallbacks=[
 
 const mapPlaces = [
   {name:"成都雙流機場",area:"成都・雙流",desc:"9/4 抵達使用的機場；9/11 爸媽的出發機場仍須依 NX387 電子票確認，不可直接沿用。",lat:30.5785,lng:103.9471,type:"transport",days:[0],stay:"9/4 抵達 CTU",icon:"plane"},
-  {name:"成都東站住宿區",area:"成都東站西廣場／成渝立交",desc:"9/4 只住一晚；選叫車約 5–10 分鐘到成都東站、24 小時櫃台與安靜無菸房，方便 9/5 清晨搭車。",lat:30.6312,lng:104.1336,type:"stay",days:[0,1],stay:"9/4 入住・9/5 退房・共 1 晚",icon:"bed-double"},
+  {name:"龍之夢瑞峯公寓酒店",area:"成華區・嘉陵江路 8 號-D",desc:"成都東站店已確認，9/4 一晚實付 TWD 988。飯店位於成都東站東廣場一側，步行約 5–10 分鐘；帶行李第一次找路需多留時間。",lat:30.6328,lng:104.1427,type:"stay",days:[0,1],stay:"9/4 入住・9/5 退房・共 1 晚",icon:"bed-double"},
   {name:"成都住宿區",area:"市二醫院站／太升南路站／春熙路北側",desc:"9/7 回成都後連住到 9/11；在三環內且避開春熙路最吵主街，適合 9/8 套票接送，也方便文殊院、IFS、錦江劇場及 9/11 退房轉乘。",lat:30.6632,lng:104.0782,type:"stay",days:[3,4,5,6,7],stay:"9/7 入住・9/11 退房・共 4 晚",icon:"bed-double"},
   {name:"成都IFS",area:"春熙路商圈",desc:"春熙路、太古里與 IFS 相鄰；9/9 下午依體力散步、吃飯與拍屋頂熊貓。",lat:30.6543,lng:104.0815,type:"sight",days:[5],stay:"9/9 下午彈性停留",icon:"shopping-bag"},
   {name:"成都東站",area:"成華區",desc:"9/5 搭 C6362 前往黃龍九寨；9/11 陪爸媽進安檢後，再由此搭高鐵前往重慶。",lat:30.6289,lng:104.1403,type:"transport",days:[1,3,7],stay:"至少提早 45–60 分鐘",icon:"train-front"},
@@ -361,6 +363,6 @@ window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredIns
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=42").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=43").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("sichuan-parent-mode","false")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);
