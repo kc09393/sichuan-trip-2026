@@ -5,7 +5,7 @@ const itineraries = [
     ["18:15–20:45（有體力才去）","東郊記憶・附近晚餐","完成入住且沒有航班延誤才叫滴滴前往；逛紅磚廠房與夜間街區、附近吃晚餐，最晚約 21:30 回飯店。不用預約，也不列為必跑。","東郊記憶"],
     ["回房後","整理隔天行李・早睡","把台胞證、動車票、接駁訂單、保暖衣物、早餐與水放好；若入住超過 18:30，直接略過東郊記憶並在飯店附近吃飯。","龍之夢瑞峯公寓酒店"]
   ]},
-  { date:"9/5", weekday:"六", title:"成都 → 黃龍 → 九寨溝", city:"黃龍", lodging:"Yuji 嶼季海韻酒店", tone:"hard", note:"先遊黃龍再入住九寨溝，第三天就不用趕景區。依 C6362 與 11:40 小車接駁往黃龍，約 20:45 抵達飯店。", items:[
+  { date:"9/5", weekday:"六", title:"成都 → 黃龍 → 九寨溝", city:"黃龍", lodging:"Yuji 嶼季海韻酒店", tone:"hard", note:"先遊黃龍再入住九寨溝。依 C6362 與 11:40 小車接駁往黃龍，約 20:45 抵達飯店；高原偏冷且可能下雨，保暖外套與雨衣放隨身包。", items:[
     ["06:30","從龍之夢瑞峯公寓酒店步行出發","飯店在成都東站東廣場一側；按導航前往進站口，第一次走多留 10–15 分鐘找路。搭 08:12 的 C6362，07:10 前完成進站。","成都東站"],
     ["08:12–10:01","C6362 成都東 → 黃龍九寨","班次已於 8/29 再次核對；以 12306 最終訂單為準。抵達後先吃東西、上洗手間並到集合點等車。","黃龍九寨站"],
     ["11:40","車站 → 黃龍 → 九寨溝","三人小車拼車包含黃龍門票與上行索道；商品預計 20:45 結束。","黃龍九寨站"],
@@ -16,9 +16,9 @@ const itineraries = [
     ["07:30","早餐後步行出發","帶三人的購票證件原件、水和零食，約 07:45 抵達景區入口。","Yuji 嶼季海韻酒店"],
     ["08:00","入園後先搭觀光車","依現場分流：被送往日則溝或長海方向，就先完成那一條；不用堅持固定順序。","九寨溝景區入口"],
     ["08:30–11:30","完成第一條上支線","日則溝抓五花海、珍珠灘瀑布；則查洼溝抓長海、五彩池。完成後搭車回諾日朗中心站。","五花海"],
-    ["11:30–12:30","諾日朗午餐・換線","在中心站吃飯、上洗手間，再轉往尚未遊覽的另一條支線；諾日朗是今天最重要的換乘點。","五花海"],
-    ["12:30–15:30","完成另一條上支線","照同一原則只看兩個代表景點，再搭觀光車回諾日朗，不多走無必要的長棧道。","五花海"],
-    ["15:30–17:15","諾日朗瀑布 → 出園","看完諾日朗瀑布，樹正溝只加犀牛海或樹正群海一處；爸媽累了就從諾日朗直接搭往溝口／出口的觀光車。","九寨溝景區入口"]
+    ["11:30–12:30","諾日朗午餐・換線","在中心站吃飯、上洗手間，再轉往尚未遊覽的另一條支線；諾日朗是今天最重要的換乘點。","諾日朗中心站"],
+    ["12:30–15:30","完成另一條上支線","照同一原則只看兩個代表景點，再搭觀光車回諾日朗，不多走無必要的長棧道。","長海・五彩池"],
+    ["15:30–17:15","諾日朗瀑布 → 出園","看完諾日朗瀑布，樹正溝只加犀牛海或樹正群海一處；爸媽累了就從諾日朗直接搭往溝口／出口的觀光車。","諾日朗瀑布"]
   ]},
   { date:"9/7", weekday:"一", title:"九寨溝 → 成都", city:"提早回程", lodging:"璽悅·瀾庭度假公寓", tone:"move", note:"今天不排景點。送站拼車銜接 13:08 的 C5794，實際飯店接人時間以師傅通知為準；15:14 抵達成都東後直接叫車入住。", items:[
     ["依接人通知","早餐、退房並在飯店等車","確認證件、動車票與接駁憑證；早餐 07:00 開始，若師傅提早抵達就前一晚詢問能否準備簡便早餐。","Yuji 嶼季海韻酒店"],
@@ -27,7 +27,7 @@ const itineraries = [
     ["13:08–15:14","C5794 黃龍九寨 → 成都東","三人帶購票時使用的台胞證原件；抵達後直接叫車前往公寓。","成都東站"],
     ["16:00 後","璽悅·瀾庭度假公寓 Check-in","地址：青羊區東華門街富力史丹尼國際公寓 A 座一樓。入住後先確認房間無菸味、清潔與洗衣機，再在附近吃飯休息。","璽悅·瀾庭度假公寓"]
   ]},
-  { date:"9/8", weekday:"二", title:"青城山＋都江堰夜遊", city:"青城山・都江堰", lodging:"璽悅·瀾庭度假公寓", tone:"hard", note:"套票 B 含兩景區門票與人工精講、川劇短演出、灌縣古城及藍眼淚夜景。07:00 為集合基準，公寓位於三環內可免費接人；實際時間可能提前約 1 小時，以前一晚通知為準。", items:[
+  { date:"9/8", weekday:"二", title:"青城山＋都江堰夜遊", city:"青城山・都江堰", lodging:"璽悅·瀾庭度假公寓", tone:"hard", note:"套票 B 含兩景區門票與人工精講、川劇短演出、灌縣古城及藍眼淚夜景。07:00 為集合基準，接人時間以 9/7 晚上通知為準；山區遇雨就多用索道、觀光車與扶梯。", items:[
     ["前一晚 20:00 後","確認接車通知","供應商會確認公寓地址與實際接人時間；若 22:00 前仍沒收到通知，主動從 Trip.com 訂單聯絡客服。","璽悅·瀾庭度假公寓"],
     ["約 06:00 起・通知為準","公寓免費接人","集合基準為 07:00，接人可能提前約 1 小時。不用退房、不帶大件行李；三人帶訂票使用的有效證件原件、水、零食與防滑鞋。","璽悅·瀾庭度假公寓"],
     ["上午・約 3–3.5 小時","青城山前山","套票 B 為專業導遊人工講解；走建福宮、月城湖、上清宮與老君閣方向。索道、觀光車與耳機依現場公示另付，建議爸媽全部使用。","青城山前山"],
@@ -52,7 +52,7 @@ const itineraries = [
     ["16:30–18:30","錦里・提早吃晚餐","武侯祠旁直接步行進錦里；若已訂劇場，18:30 準時叫車離開。","武侯祠・錦里"],
     ["19:20・若有預訂","錦江劇場《川劇秀・傳奇變臉》","這是可選的完整劇場版，不是必買；提前約 40 分鐘抵達取票，預計 20:00–21:10 演出，場次以票面通知為準。","錦江劇場"]
   ]},
-  { date:"9/11", weekday:"五", title:"成都收尾・前往重慶", city:"成都 → 重慶", lodging:"重慶", tone:"move", note:"上午只在成都飯店附近吃飯、整理與退房；陪爸媽到票面指定的成都機場後，你再前往成都東站搭高鐵到重慶。NX387 的 TFU／CTU 與航廈尚未確認，今天不排景點。", items:[
+  { date:"9/11", weekday:"五", title:"送機・前往重慶（機場待核對）", city:"成都 → 重慶", lodging:"重慶", tone:"move", note:"現在就打開爸媽 NX387 電子票，確認出發機場、航廈與報到時間；TFU 與 CTU 方向不同。確認後才能買你的成都東 → 重慶北高鐵，今天不排景點。", items:[
     ["08:30–09:30","早餐・最後補給","公寓不含早餐，在附近吃飯並買水與車上需要的小點心；不前往排隊名店。","璽悅·瀾庭度假公寓"],
     ["09:30–11:00","整理行李・核對兩段交通","先確認爸媽 NX387 的出發機場是 TFU 還是 CTU、報到時間與航廈；再確認你當天成都東到重慶的高鐵訂單。","璽悅·瀾庭度假公寓"],
     ["依航班報到時間","退房・陪爸媽前往票面機場","全員帶齊證件與行李，依電子票機場代碼前往；未確認前不要自行假設是雙流或天府。",""],
@@ -125,52 +125,6 @@ const dayGuides = [
   ],spot:["成都到重慶交接","這天四川行程在成都收尾，晚間抵達重慶後直接辦入住。重慶景點從 9/12 開始，9/11 不需要再塞景點。"]}
 ];
 
-const dayVisuals = [
-  null,
-  {
-    src:"assets/attractions/huanglong.jpg",
-    alt:"黃龍景區的鈣華彩池、森林與古寺",
-    caption:"黃龍鈣華彩池",
-    highlights:["五彩池","鈣華彩池","雪山森林"],
-    credit:"Wikimedia Commons · CC BY-SA 3.0",
-    source:"https://commons.wikimedia.org/wiki/File:Huanglonggou_Pools.jpg"
-  },
-  {
-    src:"assets/attractions/jiuzhai.jpg",
-    alt:"九寨溝五花海的藍綠湖水與森林棧道",
-    caption:"五花海",
-    highlights:["五花海","諾日朗瀑布","樹正群海"],
-    credit:"Shahar Wider／Wikimedia Commons · CC BY 3.0",
-    source:"https://commons.wikimedia.org/wiki/File:5_Flowers_Lake_(127556467).jpeg"
-  },
-  null,
-  {
-    src:"assets/attractions/dujiangyan.jpg",
-    alt:"從高處俯瞰都江堰水利工程與岷江",
-    caption:"青城山＋都江堰夜遊",
-    highlights:["青城山前山","川劇短演出","都江堰精講","藍眼淚夜景"],
-    credit:"BenBen／Wikimedia Commons · CC BY 1.0",
-    source:"https://commons.wikimedia.org/wiki/File:Dujiangyan.jpg"
-  },
-  {
-    src:"assets/attractions/ifs.jpg",
-    alt:"成都 IFS 屋頂的大熊貓裝置藝術",
-    caption:"文殊院＋春熙路慢遊",
-    highlights:["睡到自然醒","文殊院／文殊坊","太古里","IFS 熊貓"],
-    credit:"David Xuang／Wikimedia Commons · CC BY-SA 4.0",
-    source:"https://commons.wikimedia.org/wiki/File:The_panda_at_IFS_Chengdu.jpg"
-  },
-  {
-    src:"assets/attractions/wuhou.jpg",
-    alt:"成都武侯祠內的傳統建築與庭院",
-    caption:"成都武侯祠",
-    highlights:["杜甫草堂","人民公園／寬窄","武侯祠／錦里","可選完整川劇"],
-    credit:"Gisling／Wikimedia Commons · CC BY 2.5",
-    source:"https://commons.wikimedia.org/wiki/File:Chengdu_Wuhou_ci.jpg"
-  },
-  null
-];
-
 const dayFallbacks=[
   "航班延誤、18:30 後才入住或任何人太累，就取消東郊記憶，直接在龍之夢瑞峯公寓酒店附近吃飯或叫外送；這是彈性加碼，不需要勉強完成。",
   "若 C6362 大幅誤點、確定趕不上 11:40 共乘車，立刻聯絡供應商；無法改班就取消黃龍，改搭直達車前往九寨溝。",
@@ -194,6 +148,9 @@ const mapPlaces = [
   {name:"Yuji 嶼季海韻酒店",area:"溝口彭豐村／天堂口",desc:"9/5、9/6 連住兩晚；三張單人床、三份早餐，步行約 10–15 分鐘到九寨溝景區入口。",lat:33.2676,lng:103.9188,type:"stay",days:[1,2,3],stay:"9/5 入住・9/7 退房・兩晚共 ¥475",icon:"bed-double"},
   {name:"九寨溝景區入口",area:"九寨溝縣",desc:"9/6 建議 07:45 抵達，依已選的 08:00–10:00 時段準備入園。",lat:33.2601,lng:103.9187,type:"sight",days:[2],stay:"完整一天",icon:"ticket-check"},
   {name:"五花海",area:"九寨溝・日則溝",desc:"九寨溝代表性海子之一；實際遊覽順序依景區觀光車調度。",lat:33.1599,lng:103.8794,type:"sight",days:[2],stay:"依觀光車安排",icon:"waves"},
+  {name:"諾日朗中心站",area:"九寨溝・三條溝交會處",desc:"兩條上支線的午餐與換乘中心；不知道怎麼搭時，直接詢問穿制服的工作人員。",lat:33.16027,lng:103.910407,type:"transport",days:[2],stay:"11:30–12:30 午餐・換線",icon:"bus-front"},
+  {name:"長海・五彩池",area:"九寨溝・則查洼溝",desc:"另一條上支線的兩個代表景點；搭觀光車為主，依現場分流決定先後。",lat:33.036228,lng:103.932113,type:"sight",days:[2],stay:"依觀光車安排",icon:"waves"},
+  {name:"諾日朗瀑布",area:"九寨溝・諾日朗",desc:"兩條上支線完成後再看；爸媽累了可從諾日朗直接搭車往溝口。",lat:33.16552,lng:103.90513,type:"sight",days:[2],stay:"15:30 後・量力停留",icon:"waves"},
   {name:"黃龍風景區",area:"松潘縣",desc:"9/5 約 12:30 抵達、17:00 集合前往九寨溝；上行索道省力，重點看五彩池。",lat:32.7434,lng:103.8335,type:"sight",days:[1],stay:"約 4.5 小時・量力而為",icon:"mountain-snow"},
   {name:"都江堰景區",area:"都江堰市",desc:"9/8 套票 B 下午由專業導遊人工精講，重點看玉壘閣、二王廟、魚嘴、飛沙堰與寶瓶口。",lat:31.0045,lng:103.6050,type:"sight",days:[4],stay:"約 3 小時・門票包含",icon:"landmark"},
   {name:"南橋",area:"灌縣古城",desc:"9/8 套票 B 夜間自由活動區；觀看藍眼淚燈光、逛灌縣古城並視時間前往仰天窩。",lat:30.9949,lng:103.6162,type:"sight",days:[4],stay:"夜間約 2 小時",icon:"bridge"},
@@ -211,9 +168,7 @@ const readStoredJSON=(key,fallback)=>{try{const value=JSON.parse(readStoredValue
 const categoryLabels={sight:"景點",transport:"交通",stay:"住宿"};
 const categoryGlyphs={sight:"景",transport:"車",stay:"住"};
 const dayTypeLabels={arrival:"抵達日",move:"移動日",star:"山林景點日",hard:"高強度日",flex:"晚起慢遊日",city:"成都市區重點日",flight:"返程日"};
-const savedData=readStoredJSON("sichuan-saved",[]);
-const saved=new Set(Array.isArray(savedData)?savedData:[]);
-let activeDay=0,mapFilter="all",mapDay="0",mapQuery="",travelMap,markerLayer,routeLayer;
+let activeDay=0,mapFilter="all",mapDay="0",mapQuery="",travelMap,markerLayer;
 let deferredInstallPrompt=null;
 let mapMarkers=new Map();
 const qs=s=>document.querySelector(s),qsa=s=>[...document.querySelectorAll(s)];
@@ -243,37 +198,34 @@ function renderTimeline(){
   const sightCount=routePlacesForDay(activeDay).filter(p=>p.type==="sight").length;
   qs("#dayOverview").className=`day-overview ${d.tone}`;
   qs("#dayOverview").innerHTML=`<div><span>${d.date} 星期${d.weekday}</span><h3>${d.title}</h3><div class="day-tags"><b>${dayTypeLabels[d.tone]}</b><b>${sightCount} 個主要景點</b></div></div><p>${d.note}</p><div class="lodging-badge">${icon("bed-double")}<span>今晚住宿</span><strong>${d.lodging}</strong></div>`;
-  timeline.innerHTML=d.items.map((item,i)=>`<article class="timeline-item" style="animation-delay:${i*60}ms"><time>${item[0]}</time><h3>${item[1]}</h3><p>${item[2]}</p>${mapPlaces.some(p=>p.name===item[3])?`<a href="#map" data-focus-place="${item[3]}">在旅行地圖查看 ${icon("map-pin")}</a>`:""}</article>`).join("");
+  timeline.innerHTML=d.items.map((item,i)=>`<article class="timeline-item" style="animation-delay:${i*60}ms"><time>${item[0]}</time><h3>${item[1]}</h3><p>${item[2]}</p>${mapPlaces.some(p=>p.name===item[3])?`<a href="https://uri.amap.com/search?keyword=${encodeURIComponent(item[3]+" 四川")}" target="_blank" rel="noreferrer">開啟導航 ${icon("external-link")}</a>`:""}</article>`).join("");
   renderParentGuide();
   refreshIcons();
 }
 function renderParentGuide(){
   const day=itineraries[activeDay],guide=dayGuides[activeDay];
-  const visual=dayVisuals[activeDay];
-  const visualMarkup=visual?`<figure class="spot-visual"><img src="${visual.src}" alt="${visual.alt}" loading="lazy" decoding="async"><div class="spot-highlights">${visual.highlights.map(item=>`<b>${item}</b>`).join("")}</div><figcaption><span>${visual.caption}</span><a href="${visual.source}" target="_blank" rel="noreferrer">${visual.credit} ${icon("external-link")}</a></figcaption></figure>`:"";
-  const large=qs("#parentGuide")?.classList.contains("large-guide");
-  qs("#parentGuide").className=`parent-guide-card${large?" large-guide":""}`;
+  qs("#parentGuide").className="parent-guide-card";
   qs("#parentGuide").innerHTML=`
-    <div class="guide-summary"><div><span>DAY ${activeDay+1} · ${day.date} 星期${day.weekday}</span><h3>${day.title}</h3></div><div class="effort-pill"><small>今日體力</small><strong>${guide.effort}</strong></div></div>
-    <div class="guide-body guide-info-only">
-      <aside class="guide-sidebar"><h3 class="guide-subheading">出發前看這裡</h3><div class="guide-facts">${guide.facts.map(f=>`<div class="guide-fact">${icon(f[0])}<div><strong>${f[1]}</strong><span>${f[2]}</span></div></div>`).join("")}</div></aside>
-      <div class="guide-spot-column">${visualMarkup}<div class="spot-explainer"><span>看什麼</span><h4>${guide.spot[0]}</h4><p>${guide.spot[1]}</p></div><div class="plan-b"><span>${icon("route-off")} 累了就這樣</span><p>${dayFallbacks[activeDay]}</p></div></div>
+    <div class="guide-summary"><div><span>DAY ${activeDay+1} · ${day.date} 星期${day.weekday}</span><h3>${day.title}</h3><p>${guide.summary}</p></div><div class="effort-pill"><small>今日體力</small><strong>${guide.effort}</strong></div></div>
+    <div class="guide-body guide-compact">
+      <div class="guide-facts">${guide.facts.map(f=>`<div class="guide-fact">${icon(f[0])}<div><strong>${f[1]}</strong><span>${f[2]}</span></div></div>`).join("")}</div>
+      <div class="plan-b"><span>${icon("route-off")} 累了或下雨</span><p>${dayFallbacks[activeDay]}</p></div>
     </div>`;
   refreshIcons();
 }
-function toggleSaved(name){saved.has(name)?(saved.delete(name),showToast(`已移除「${name}」`)):(saved.add(name),showToast(`已收藏「${name}」`));writeStoredValue("sichuan-saved",JSON.stringify([...saved]));qs("#savedCount").textContent=saved.size;renderMapData(false);renderDrawer();}
 function routePlacesForDay(day){const result=[];itineraries[day].items.forEach(item=>{const p=mapPlaces.find(x=>x.name===item[3]);if(p&&!result.includes(p))result.push(p);});return result;}
 function routeIndexForPlace(p){if(mapDay==="all")return -1;return routePlacesForDay(Number(mapDay)).findIndex(x=>x.name===p.name);}
-function markerIcon(p){const order=routeIndexForPlace(p),daily=mapDay!=="all",markerText=daily?(order>=0?String(order+1):"備"):categoryGlyphs[p.type];return L.divIcon({className:`cq-marker ${p.type} ${daily?"daily":"overview"} ${order<0&&daily?"alternate":""} ${saved.has(p.name)?"is-saved":""}`,html:`<div class="cq-marker-pin"><span>${markerText}</span></div><strong class="cq-marker-name">${p.name}</strong>`,iconSize:[38,38],iconAnchor:[19,36],popupAnchor:[0,-37]});}
-function popupMarkup(p){const a=saved.has(p.name);return `<div class="map-popup"><span>${categoryLabels[p.type]} · ${p.area}</span><h3>${p.name}</h3><p>${p.desc}<br>${p.stay}</p><div><button type="button" class="popup-save ${a?"active":""}" data-popup-save="${p.name}">${icon("heart")} ${a?"已收藏":"收藏"}</button><a href="https://uri.amap.com/search?keyword=${encodeURIComponent(p.name+" 四川")}" target="_blank" rel="noreferrer">導航 ${icon("external-link")}</a></div></div>`;}
-function visiblePlaces(){const q=mapQuery.trim().toLocaleLowerCase("zh-Hant");return mapPlaces.filter(p=>(mapFilter==="all"||p.type===mapFilter)&&(mapDay==="all"||p.days.includes(Number(mapDay)))&&(!q||`${p.name} ${p.area} ${p.desc}`.toLocaleLowerCase("zh-Hant").includes(q)));}
+function markerIcon(p){const order=routeIndexForPlace(p),daily=mapDay!=="all",markerText=daily?String(order+1):categoryGlyphs[p.type];return L.divIcon({className:`cq-marker ${p.type} ${daily?"daily":"overview"}`,html:`<div class="cq-marker-pin"><span>${markerText}</span></div><strong class="cq-marker-name">${p.name}</strong>`,iconSize:[38,38],iconAnchor:[19,36],popupAnchor:[0,-37]});}
+function popupMarkup(p){return `<div class="map-popup"><span>${categoryLabels[p.type]} · ${p.area}</span><h3>${p.name}</h3><p>${p.desc}<br>${p.stay}</p><div><a href="https://uri.amap.com/search?keyword=${encodeURIComponent(p.name+" 四川")}" target="_blank" rel="noreferrer">開啟導航 ${icon("external-link")}</a></div></div>`;}
+function visiblePlaces(){const q=mapQuery.trim().toLocaleLowerCase("zh-Hant"),source=mapDay==="all"?mapPlaces:routePlacesForDay(Number(mapDay));return source.filter(p=>(mapFilter==="all"||p.type===mapFilter)&&(!q||`${p.name} ${p.area} ${p.desc}`.toLocaleLowerCase("zh-Hant").includes(q)));}
 function renderMapContext(){
   const box=qs("#mapContext");
   if(mapDay==="all"){
     box.innerHTML=`<div class="map-context-title"><span>${icon("map")} 8 天全覽</span><strong>成都與川西主要地點</strong><small>先選日期查看當天順序，或依顏色辨認景點、交通與住宿。</small></div><div class="map-context-hint">${icon("mouse-pointer-click")} 點地圖標記或右側清單查看說明</div>`;
   }else{
     const dayNumber=Number(mapDay),d=itineraries[dayNumber],route=routePlacesForDay(dayNumber),sightCount=route.filter(p=>p.type==="sight").length;
-    box.innerHTML=`<div class="map-context-title"><span>D${dayNumber+1} · ${d.date} 星期${d.weekday} · ${dayTypeLabels[d.tone]}</span><strong>${d.title}</strong><small>${route.length} 個主要停靠點 · ${sightCount} 個主要景點 · 今晚住 ${d.lodging}</small></div><div class="map-route-chain">${route.map((p,i)=>`<button type="button" data-map-context-place="${p.name}"><b>${i+1}</b><span>${p.name}</span></button>${i<route.length-1?icon("chevron-right"):""}`).join("")}</div>`;
+    const routeNote=dayNumber===2?"先玩哪條支線依觀光車分流；諾日朗是換乘中心。":dayNumber===7?"NX387 機場尚未確認，地圖只顯示已確認的住宿、車站與重慶終點。":`${route.length} 個停靠點 · ${sightCount} 個主要景點 · 今晚住 ${d.lodging}`;
+    box.innerHTML=`<div class="map-context-title"><span>D${dayNumber+1} · ${d.date} 星期${d.weekday} · ${dayTypeLabels[d.tone]}</span><strong>${d.title}</strong><small>${routeNote}</small></div><div class="map-route-chain">${route.map((p,i)=>`<button type="button" data-map-context-place="${p.name}"><b>${i+1}</b><span>${p.name}</span></button>${i<route.length-1?icon("chevron-right"):""}`).join("")}</div>`;
   }
   refreshIcons();
 }
@@ -283,9 +235,9 @@ function initMap(){
   travelMap=L.map("travelMap",{zoomControl:false,scrollWheelZoom:true,tap:false}).setView([31.2,104.2],7);
   const tiles=L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',crossOrigin:true});
   tiles.addTo(travelMap);
-  L.control.zoom({position:"bottomright"}).addTo(travelMap);markerLayer=L.layerGroup().addTo(travelMap);routeLayer=L.layerGroup().addTo(travelMap);
+  L.control.zoom({position:"bottomright"}).addTo(travelMap);markerLayer=L.layerGroup().addTo(travelMap);
   qsa("#travelMap .leaflet-control-attribution a").forEach(a=>{a.target="_blank";a.rel="noreferrer";});
-  travelMap.on("popupopen",()=>{refreshIcons();const b=qs("[data-popup-save]");if(b)b.addEventListener("click",()=>toggleSaved(b.dataset.popupSave),{once:true});});
+  travelMap.on("popupopen",refreshIcons);
   const resizeMap=()=>{if(qs("#mapDetails")?.open)travelMap?.invalidateSize({pan:false});};
   if("ResizeObserver" in window)new ResizeObserver(resizeMap).observe(qs("#travelMap"));
   window.addEventListener("orientationchange",()=>setTimeout(refreshMapLayout,250));
@@ -301,12 +253,8 @@ function refreshMapLayout(){
 }
 function renderMapData(fit=false){
   const visible=visiblePlaces();renderMapContext();renderMapList(visible);if(!travelMap||!markerLayer)return;
-  markerLayer.clearLayers();routeLayer.clearLayers();mapMarkers=new Map();
+  markerLayer.clearLayers();mapMarkers=new Map();
   visible.forEach(p=>{const m=L.marker([p.lat,p.lng],{icon:markerIcon(p),title:p.name,riseOnHover:true}).bindPopup(popupMarkup(p));m.on("click",()=>setActiveList(p.name));m.addTo(markerLayer);mapMarkers.set(p.name,m);});
-  if(mapDay!=="all"){
-    const points=routePlacesForDay(Number(mapDay)).map(p=>[p.lat,p.lng]);
-    if(points.length>1){L.polyline(points,{color:"#ffffff",weight:8,opacity:.8}).addTo(routeLayer);L.polyline(points,{color:"#e76f3d",weight:4,opacity:1,dashArray:"10 8"}).addTo(routeLayer);}
-  }
   refreshIcons();
   if(fit&&qs("#mapDetails")?.open)fitVisibleMap();
 }
@@ -321,15 +269,10 @@ function fitVisibleMap(){if(!travelMap)return;const p=visiblePlaces();if(!p.leng
 function focusPlace(name){const p=mapPlaces.find(x=>x.name===name);if(!p)return;mapFilter="all";mapDay=String(activeDay);mapQuery="";qs("#mapSearch").value="";qs("#mapDaySelect").value=mapDay;qsa("[data-map-filter]").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter==="all"));qsa("[data-map-day]").forEach(b=>b.classList.toggle("active",b.dataset.mapDay===mapDay));if(!travelMap)initMap();renderMapData(false);setTimeout(()=>{if(travelMap){travelMap.invalidateSize();travelMap.setView([p.lat,p.lng],14,{animate:true});mapMarkers.get(name)?.openPopup();setActiveList(name);}},420);}
 function setMapDay(day){mapDay=String(day);if(mapDay!=="all"){mapQuery="";mapFilter="all";qs("#mapSearch").value="";qsa("[data-map-filter]").forEach(b=>b.classList.toggle("active",b.dataset.mapFilter==="all"));}qsa("[data-map-day]").forEach(b=>b.classList.toggle("active",b.dataset.mapDay===mapDay));qs("#mapDaySelect").value=mapDay;renderMapData(true);}
 function updateCountdown(){const countdown=qs("#countdown");if(!countdown)return;const days=Math.ceil((new Date("2026-09-04T00:00:00+08:00")-new Date())/86400000);countdown.textContent=days>0?`倒數 ${days} 天`:days===0?"今天出發":"旅程已開始";}
-function renderDrawer(){const list=[...saved].map(n=>mapPlaces.find(p=>p.name===n)).filter(Boolean);qs("#drawerEmpty").hidden=!!list.length;qs("#drawerSaved").hidden=!list.length;qs("#drawerSaved").innerHTML=list.map(p=>`<div class="drawer-place"><div><strong>${p.name}</strong><span>${p.area} · ${p.stay}</span></div><button type="button" data-drawer-remove="${p.name}" aria-label="移除${p.name}">${icon("x")}</button></div>`).join("");refreshIcons();}
-function openDrawer(){renderDrawer();qs("#drawerBackdrop").hidden=false;requestAnimationFrame(()=>qs("#drawerBackdrop").classList.add("show"));qs("#tripDrawer").classList.add("open");qs("#tripDrawer").setAttribute("aria-hidden","false");document.body.classList.add("drawer-open");}
-function closeDrawer(){qs("#drawerBackdrop").classList.remove("show");qs("#tripDrawer").classList.remove("open");qs("#tripDrawer").setAttribute("aria-hidden","true");document.body.classList.remove("drawer-open");setTimeout(()=>qs("#drawerBackdrop").hidden=true,260);}
-
 dayTabs.addEventListener("click",e=>{const b=e.target.closest("[data-day]");if(b)selectDay(b.dataset.day);});
 qs("#allDaysGrid")?.addEventListener("click",e=>{const b=e.target.closest("[data-overview-day]");if(b)selectDay(b.dataset.overviewDay,true);});
 qs("#mobileDaySelect").addEventListener("change",e=>selectDay(e.target.value));
 qs("#mapDaySelect").addEventListener("change",e=>setMapDay(e.target.value));
-document.addEventListener("click",e=>{const a=e.target.closest("[data-focus-place]");if(a){qs("#mapDetails").open=true;focusPlace(a.dataset.focusPlace);}});
 qs("#mapContext").addEventListener("click",e=>{const b=e.target.closest("[data-map-context-place]");if(!b||!travelMap)return;const p=mapPlaces.find(x=>x.name===b.dataset.mapContextPlace);if(!p)return;travelMap.setView([p.lat,p.lng],14,{animate:true});mapMarkers.get(p.name)?.openPopup();setActiveList(p.name);});
 qs("#mapPlaceList").addEventListener("click",e=>{const b=e.target.closest("[data-map-place]");if(!b||!travelMap)return;const p=mapPlaces.find(x=>x.name===b.dataset.mapPlace);travelMap.setView([p.lat,p.lng],14,{animate:true});mapMarkers.get(p.name)?.openPopup();setActiveList(p.name);});
 qsa("[data-map-filter]").forEach(b=>b.addEventListener("click",()=>{mapFilter=b.dataset.mapFilter;qsa("[data-map-filter]").forEach(x=>x.classList.toggle("active",x===b));renderMapData(true);}));
@@ -345,18 +288,6 @@ qs("#mapSearch").addEventListener("input",e=>{
   renderMapData(true);
 });
 qs("#clearMapSearch").addEventListener("click",()=>{qs("#mapSearch").value="";mapQuery="";setMapDay(activeDay);qs("#mapSearch").focus();});qs("#fitMap").addEventListener("click",fitVisibleMap);
-qs(".saved-button").addEventListener("click",openDrawer);qs("#closeDrawer").addEventListener("click",closeDrawer);qs("#drawerBackdrop").addEventListener("click",closeDrawer);document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDrawer();});
-qs("#drawerSaved").addEventListener("click",e=>{const b=e.target.closest("[data-drawer-remove]");if(b)toggleSaved(b.dataset.drawerRemove);});
-qs("#clearSaved").addEventListener("click",()=>{if(!saved.size)return showToast("收藏目前是空的");saved.clear();writeStoredValue("sichuan-saved","[]");qs("#savedCount").textContent="0";renderMapData(false);renderDrawer();showToast("已清空收藏");});
-qs("#copyPlan").addEventListener("click",async()=>{const list=saved.size?[...saved].map(n=>`・${n}`).join("\n"):"・尚未收藏地點";const text=`四川八日行程｜成都・九寨溝｜2026/09/04–09/11\n\n收藏地點\n${list}`;try{await navigator.clipboard.writeText(text);showToast("旅行摘要已複製");}catch{showToast("瀏覽器未允許複製");}});
-qs("#copyDayGuide").addEventListener("click",async()=>{
-  const day=itineraries[activeDay],guide=dayGuides[activeDay];
-  const steps=day.items.map((item,i)=>`${i+1}. ${item[0]}｜${item[1]}\n${item[2]}`).join("\n\n");
-  const facts=guide.facts.map(f=>`・${f[1]}：${f[2]}`).join("\n");
-  const text=`DAY ${activeDay+1}｜${day.date} 星期${day.weekday}｜${day.title}\n今晚住宿：${day.lodging}\n體力：${guide.effort}\n\n${guide.summary}\n\n${steps}\n\n當日提醒\n${facts}\n\n${guide.spot[0]}\n${guide.spot[1]}`;
-  try{await navigator.clipboard.writeText(text);showToast("今天的摘要已複製");}catch{showToast("瀏覽器未允許複製");}
-});
-qs("#toggleLargeGuide").addEventListener("click",()=>{qs("#parentGuide").classList.toggle("large-guide");showToast(qs("#parentGuide").classList.contains("large-guide")?"介紹文字已放大":"介紹文字已恢復");});
 function setParentMode(on){document.body.classList.toggle("parent-mode",on);qs("#parentMode").classList.toggle("active",on);qs("#parentMode").setAttribute("aria-pressed",String(on));writeStoredValue("sichuan-parent-mode",String(on));}
 qs("#parentMode").addEventListener("click",()=>{const on=!document.body.classList.contains("parent-mode");setParentMode(on);showToast(on?"已開啟大字閱讀":"已關閉大字閱讀");});
 function updateReadiness(){const checks=qsa("[data-check]"),done=checks.filter(i=>i.checked).length,total=checks.length,pct=total?Math.round(done/total*100):0;const percent=qs("#readinessPercent"),text=qs("#readinessText"),ring=qs("#readinessRing");if(percent)percent.textContent=`${pct}%`;if(text)text.textContent=`${done}／${total} 已完成`;if(ring)ring.style.setProperty("--progress",`${pct*3.6}deg`);}
@@ -367,6 +298,6 @@ window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredIns
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=43").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=48").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
-setParentMode(readStoredValue("sichuan-parent-mode","false")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);
+setParentMode(readStoredValue("sichuan-parent-mode","false")==="true");renderAllDays();renderDays();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);

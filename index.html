@@ -8,17 +8,17 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="description" content="2026 年 9 月 4 日至 11 日，成都、九寨溝、黃龍、都江堰與青城山 8 天旅行行程。">
   <title>四川八日行程｜成都・九寨溝</title>
-  <link rel="manifest" href="manifest.webmanifest?v=47">
+  <link rel="manifest" href="manifest.webmanifest?v=48">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=47">
-  <link rel="stylesheet" href="styles.css?v=47">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=48">
+  <link rel="stylesheet" href="styles.css?v=48">
 </head>
 <body>
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="回到頁首"><span class="brand-mark">川</span><span>四川八日行程</span></a>
-    <div class="header-actions"><button class="parent-mode-button" id="parentMode" type="button" aria-label="切換大字閱讀" aria-pressed="false"><i data-lucide="glasses"></i><span>大字</span></button><button class="icon-button saved-button" type="button" aria-label="查看收藏" data-tooltip="我的收藏"><i data-lucide="heart"></i><span id="savedCount">0</span></button></div>
+    <div class="header-actions"><button class="parent-mode-button" id="parentMode" type="button" aria-label="切換大字閱讀" aria-pressed="false"><i data-lucide="glasses"></i><span>大字</span></button></div>
   </header>
 
   <main>
@@ -31,9 +31,8 @@
 
     <section class="parent-guide-section simple-section" id="guide">
       <details class="simple-expand" id="guideDetails">
-        <summary><span><small>需要時再看</small><strong>當日景點介紹與照片</strong><em>重點、體力提醒與備案</em></span><i data-lucide="chevron-down"></i></summary>
+        <summary><span><small>需要時再看</small><strong>當日提醒與備案</strong><em>證件、體力與下雨替代方式</em></span><i data-lucide="chevron-down"></i></summary>
         <div class="simple-expand-body">
-          <div class="guide-title-row" hidden><div></div><div class="guide-actions"><button type="button" id="copyDayGuide"><i data-lucide="copy"></i> 複製當日摘要</button><button type="button" id="toggleLargeGuide"><i data-lucide="type"></i> 放大文字</button></div></div>
           <div class="parent-guide-card" id="parentGuide" aria-live="polite"></div>
         </div>
       </details>
@@ -44,7 +43,7 @@
         <summary><span><small>需要導航再開</small><strong>當日路線地圖</strong><em>會跟著上方日期同步</em></span><i data-lucide="chevron-down"></i></summary>
         <div class="simple-expand-body">
       <div class="map-heading">
-        <div><p class="eyebrow">交通與景點位置</p><h2>每天走哪一段</h2><p>按 D1–D8 顯示當天路線；點景點可查看說明、收藏或開啟導航。</p></div>
+        <div><p class="eyebrow">交通與景點位置</p><h2>每天走哪一段</h2><p>按 D1–D8 顯示當天停靠點；點地點可查看說明或開啟導航。</p></div>
         <div class="map-search-wrap"><i data-lucide="search"></i><input id="mapSearch" type="search" placeholder="搜尋九寨溝、青城山、車站…" aria-label="搜尋地圖地點"><button id="clearMapSearch" type="button" aria-label="清除搜尋" data-tooltip="清除"><i data-lucide="x"></i></button></div>
       </div>
       <div class="map-toolbar">
@@ -54,23 +53,23 @@
       </div>
       <div class="map-context" id="mapContext" aria-live="polite"></div>
       <div class="map-shell"><div id="travelMap" aria-label="成都與九寨溝互動旅遊地圖"></div><aside class="map-panel" aria-label="地圖地點清單"><div class="map-panel-head"><strong id="mapResultCount">0 個地點</strong><button id="fitMap" type="button"><i data-lucide="scan"></i> 顯示全部</button></div><div id="mapPlaceList" class="map-place-list"></div><div id="mapEmpty" class="map-empty" hidden><i data-lucide="map-pin-off"></i><strong>找不到符合的地點</strong><span>換個關鍵字或清除篩選試試看。</span></div></aside></div>
-      <div class="map-legend"><span><i class="legend-marker sight">景</i>景點</span><span><i class="legend-marker transport">車</i>機場／車站</span><span><i class="legend-marker stay">住</i>住宿區</span><small>數字是當日順序；橘色虛線只連接停靠點，不代表實際道路。</small></div>
+      <div class="map-legend"><span><i class="legend-marker sight">景</i>景點</span><span><i class="legend-marker transport">車</i>機場／車站</span><span><i class="legend-marker stay">住</i>住宿區</span><small>數字是當日停靠順序；實際路線請按「開啟導航」。</small></div>
         </div>
       </details>
     </section>
 
     <section class="prepare-section" id="prepare">
-      <div class="prepare-copy"><p class="eyebrow">出發前完成</p><h2>剩餘預約、住宿與行李</h2><p>已完成的票券已移出清單；班次、入園與接車時間仍保留在每日行程。</p></div>
+      <div class="prepare-copy"><p class="eyebrow">出發前完成</p><h2>只看剩下要處理的事</h2><p>已訂項目不重複列；最先完成 9/11 航班與高鐵銜接，再處理成都門票。</p></div>
       <div class="checklist" id="checklist">
         <details class="ticket-checklist-panel">
-          <summary><span class="ticket-summary-icon"><i data-lucide="tickets"></i></span><div><strong>尚需處理</strong><small>3 項必要・1 項可選</small></div><i data-lucide="chevron-down" class="ticket-summary-arrow"></i></summary>
+          <summary><span class="ticket-summary-icon"><i data-lucide="tickets"></i></span><div><strong>尚需處理</strong><small>1 項立即・2 項門票・1 項可選</small></div><i data-lucide="chevron-down" class="ticket-summary-arrow"></i></summary>
           <div class="ticket-checklist-body">
             <p class="ticket-shared-note"><strong>只剩未完成項目</strong><span>購票時逐字核對每位旅客的證件姓名與號碼；已買好的票券不用在這裡重複勾選。</span></p>
-            <label><input type="checkbox" data-check="dufu-v41"><span></span><div><div class="ticket-date"><b>開放後購買</b><em>使用 9/10</em></div><strong>杜甫草堂門票</strong><small>9 月常規 09:00–18:00、17:00 停止售票；全票 ¥50。60 歲以上港澳台長者持台胞證原件換免費票，另外兩位成人購票。</small></div></label>
-            <label><input type="checkbox" data-check="wuhou"><span></span><div><div class="ticket-date"><b>開放後購買</b><em>使用 9/10</em></div><strong>成都武侯祠門票</strong><small>官方 09:00–18:00、17:00 停止入館；全票 ¥50。60 歲以上港澳台長者持台胞證原件換免費票，另外兩位成人購票。</small></div></label>
-            <label><input type="checkbox" data-check="sichuan-opera"><span></span><div><div class="ticket-date"><b>可選加碼</b><em>使用 9/10</em></div><strong>錦江劇場完整川劇演出票</strong><small>9/8 套票 B 已送約 20 分鐘短演出；仍想看約 70 分鐘完整劇場版才訂 20:00 場，確認相鄰座位與退改規則，19:20 抵達取票。</small></div></label>
             <label><input type="checkbox" data-check="chengdu-chongqing-train-v41"><span></span><div><div class="ticket-date"><b>先確認機場</b><em>使用 9/11</em></div><strong>成都東 → 重慶北高鐵</strong><small>先核對爸媽 NX387 是從 TFU 或 CTU、報到時間與航廈，再選你能安全銜接且 21:00 前抵達重慶的班次；不要先猜機場。</small></div></label>
-            <nav class="ticket-links" aria-label="購票入口與說明"><span>尚需使用的入口</span><a href="https://www.12306.cn/" target="_blank" rel="noreferrer">12306</a><a href="https://www.cddfct.cn/go-c20.htm" target="_blank" rel="noreferrer">杜甫草堂</a><a href="https://whpwm.cdwuhouci.cn/index" target="_blank" rel="noreferrer">武侯祠</a><a href="https://www.klook.com/zh-TW/activity/153876-chengdu-jinjiang-theater-sichuan-opera-show/" target="_blank" rel="noreferrer">完整川劇</a><a href="https://kc09393.github.io/chongqing-trip-2026/" target="_blank" rel="noreferrer">下一站重慶</a></nav>
+            <label><input type="checkbox" data-check="dufu-v41"><span></span><div><div class="ticket-date"><b>開放後購買</b><em>使用 9/10</em></div><strong>杜甫草堂門票</strong><small>全票 ¥50；媽媽帶台胞證原件到現場詢問 60 歲以上免票。</small></div></label>
+            <label><input type="checkbox" data-check="wuhou"><span></span><div><div class="ticket-date"><b>開放後購買</b><em>使用 9/10</em></div><strong>成都武侯祠門票</strong><small>全票 ¥50；媽媽同樣帶台胞證原件詢問長者免票。</small></div></label>
+            <label><input type="checkbox" data-check="sichuan-opera"><span></span><div><div class="ticket-date"><b>可選加碼</b><em>使用 9/10</em></div><strong>錦江劇場完整川劇</strong><small>9/8 已含短演出；仍想看約 70 分鐘完整版本才買，不是必要項目。</small></div></label>
+            <nav class="ticket-links" aria-label="購票入口與說明"><span>購票入口</span><a href="https://www.12306.cn/" target="_blank" rel="noreferrer">12306</a><a href="https://www.cddfct.cn/go-c20.htm" target="_blank" rel="noreferrer">杜甫草堂</a><a href="https://whpwm.cdwuhouci.cn/index" target="_blank" rel="noreferrer">武侯祠</a></nav>
           </div>
         </details>
         <details class="ticket-checklist-panel lodging-panel">
@@ -83,7 +82,7 @@
           </div>
         </details>
         <label><input type="checkbox" data-check="airport-ride-v42"><span></span><div><strong>機場用車不用買接駁票</strong><small>9/4 抵達後直接叫滴滴／官方計程車；9/11 確認 TFU 或 CTU 後，前一晚可預約六座車</small></div></label>
-        <label><input type="checkbox" data-check="altitude"><span></span><div><strong>高原保暖與常用藥</strong><small>薄羽絨或防風外套、雨具、防曬、舒服鞋與個人處方藥</small></div></label>
+        <label><input type="checkbox" data-check="altitude"><span></span><div><strong>高原保暖、雨具與常用藥</strong><small>9/2 預報顯示黃龍偏冷、九寨溝與都江堰有雨機率；帶防風保暖外套、雨衣、防滑鞋、防曬與個人處方藥</small></div></label>
         <label><input type="checkbox" data-check="flight"><span></span><div><strong>9/11 家人分流文件</strong><small>核對爸媽 NX387 的 TFU／CTU、航廈與報到時間；你的台胞證、成渝高鐵票與重慶住宿另放一組</small></div></label>
       </div>
     </section>
@@ -92,21 +91,14 @@
 
   <footer><a class="brand" href="#top"><span class="brand-mark">川</span><span>四川八日行程</span></a><p>2026/09/04—09/11 · 成都・九寨溝</p><button type="button" class="back-top" aria-label="回到頁首" data-tooltip="回到頁首"><i data-lucide="arrow-up"></i></button></footer>
 
-  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
-  <aside class="trip-drawer" id="tripDrawer" aria-label="我的四川收藏" aria-hidden="true">
-    <div class="drawer-head"><div><span>旅行地點</span><h2>我的收藏</h2></div><button type="button" id="closeDrawer" aria-label="關閉收藏"><i data-lucide="x"></i></button></div>
-    <div class="drawer-summary"><span>2026/09/04</span><strong>8 天 7 夜</strong></div>
-    <div id="drawerSaved" class="drawer-saved"></div><div id="drawerEmpty" class="drawer-empty"><i data-lucide="heart"></i><strong>還沒有收藏地點</strong><p>在互動地圖按下愛心，地點就會集中在這裡。</p></div>
-    <div class="drawer-actions"><button type="button" id="copyPlan"><i data-lucide="copy"></i> 複製旅行摘要</button><button type="button" id="clearSaved"><i data-lucide="trash-2"></i> 清空收藏</button></div>
-  </aside>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <nav class="mobile-nav" aria-label="手機導覽">
     <a href="#route"><i data-lucide="calendar-days"></i><span>行程</span></a>
     <a href="#map"><i data-lucide="map"></i><span>地圖</span></a>
     <a href="#prepare"><i data-lucide="list-checks"></i><span>清單</span></a>
   </nav>
-  <script src="assets/vendor/lucide.min.js?v=47"></script>
-  <script src="assets/vendor/leaflet/leaflet.js?v=47"></script>
-  <script src="app.js?v=47"></script>
+  <script src="assets/vendor/lucide.min.js?v=48"></script>
+  <script src="assets/vendor/leaflet/leaflet.js?v=48"></script>
+  <script src="app.js?v=48"></script>
 </body>
 </html>
