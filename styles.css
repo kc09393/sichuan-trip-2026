@@ -22,7 +22,7 @@ svg { width: 19px; height: 19px; stroke-width: 1.8; }
 
 .site-header {
   height: 72px; padding: 0 clamp(20px, 5vw, 76px); display: flex; align-items: center; justify-content: space-between;
-  position: absolute; inset: 0 0 auto; z-index: 10; color: white; border-bottom: 1px solid rgba(255,255,255,.2);
+  position: sticky; top: 0; z-index: 60; color: white; border-bottom: 1px solid rgba(255,255,255,.16);
 }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: .08em; }
 .brand-mark { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid currentColor; font-family: "Noto Serif TC", serif; }
@@ -584,7 +584,9 @@ body{
 /* Header */
 .site-header{
   height:76px;
-  background:linear-gradient(180deg,rgba(5,20,31,.32),rgba(5,20,31,0));
+  background:rgba(7,22,34,.97);
+  box-shadow:0 8px 28px rgba(4,18,30,.16);
+  backdrop-filter:blur(14px);
 }
 
 .brand{
@@ -1064,7 +1066,7 @@ body{
 }
 
 .route-section{
-  padding-top:76px;
+  padding-top:38px;
   padding-bottom:62px;
 }
 
@@ -1309,7 +1311,7 @@ body{
   }
 
   .route-section{
-    padding:52px 16px 38px;
+    padding:18px 16px 38px;
   }
 
   .route-section .section-heading{
