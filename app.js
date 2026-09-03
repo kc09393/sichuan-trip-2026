@@ -52,12 +52,13 @@ const itineraries = [
     ["16:30–18:30","錦里・提早吃晚餐","武侯祠旁直接步行進錦里；若已訂劇場，18:30 準時叫車離開。","武侯祠・錦里"],
     ["19:20・若有預訂","錦江劇場《川劇秀・傳奇變臉》","這是可選的完整劇場版，不是必買；提前約 40 分鐘抵達取票，預計 20:00–21:10 演出，場次以票面通知為準。","錦江劇場"]
   ]},
-  { date:"9/11", weekday:"五", title:"送機・前往重慶（機場待核對）", city:"成都 → 重慶", lodging:"重慶", tone:"move", note:"現在就打開爸媽 NX387 電子票，確認出發機場、航廈與報到時間；TFU 與 CTU 方向不同。確認後才能買你的成都東 → 重慶北高鐵，今天不排景點。", items:[
+  { date:"9/11", weekday:"五", title:"天府機場送機・前往重慶", city:"成都 → 重慶", lodging:"重慶", tone:"move", note:"爸媽 NX387 已確認由成都天府機場 TFU T1 於 15:50 起飛。11:15 前從公寓叫六座滴滴出發，目標 12:45 前抵達；爸媽完成報到並進安檢後，你再前往成都東站，成渝高鐵選 16:30 後較安全。", items:[
     ["08:30–09:30","早餐・最後補給","公寓不含早餐，在附近吃飯並買水與車上需要的小點心；不前往排隊名店。","璽悅·瀾庭度假公寓"],
-    ["09:30–11:00","整理行李・核對兩段交通","先確認爸媽 NX387 的出發機場是 TFU 還是 CTU、報到時間與航廈；再確認你當天成都東到重慶的高鐵訂單。","璽悅·瀾庭度假公寓"],
-    ["依航班報到時間","退房・陪爸媽前往票面機場","全員帶齊證件與行李，依電子票機場代碼前往；未確認前不要自行假設是雙流或天府。",""],
-    ["爸媽進安檢後","前往成都東站","你與爸媽在安檢口分開，再預留至少 60–90 分鐘前往成都東站、進站安檢與候車。","成都東站"],
-    ["下午至傍晚","成都東 → 重慶北・辦入住","車票需在確認爸媽機場與報到時間後購買；優先少轉乘、抵達重慶不晚於 21:00 的班次。","重慶北站"]
+    ["09:30–10:45","整理行李・完成退房","爸媽的護照、台胞證與兩段登機資料放一起；你的台胞證、成渝高鐵票與重慶行李分開清點。","璽悅·瀾庭度假公寓"],
+    ["最晚 11:15","公寓 → 成都天府機場 T1","三人帶行李叫六座滴滴，目標 12:30–12:45 抵達；不要走成 9/4 使用的雙流機場。","成都天府國際機場 T1"],
+    ["12:45–13:45","爸媽報到・托運・進安檢","NX387 於 15:50 起飛。櫃檯確認行李是否直掛高雄，並取得澳門轉機兩段登機資訊。","成都天府國際機場 T1"],
+    ["約 13:45","你從天府機場前往成都東站","爸媽進入安檢後再分開；你帶自己的行李叫車，預留約 60–90 分鐘前往成都東站。","成都東站"],
+    ["建議 16:30 後","成都東 → 重慶北・辦入住","選直達、少轉乘且 21:00 前抵達重慶北的班次；至少提早 45–60 分鐘到站安檢候車。","重慶北站"]
   ]}
 ];
 
@@ -114,14 +115,14 @@ const dayGuides = [
     ["clock-3","控制每段時間","杜甫草堂 2 小時、人民公園 1 小時多、寬窄巷子 1 小時、武侯祠 2 小時；不要為了拍照拖延後面的入館時間。"],
     ["clock-3","完整劇場版是加碼","9/8 已看川劇短演出；只有仍想看約 70 分鐘完整版本才買票。買票後才需 18:30 前吃完晚餐、19:20 抵達取票。"],
     ["utensils","吃飯安排","人民公園附近簡單午餐，晚餐提早在錦里解決；不要排需要久候的餐廳。"],
-    ["luggage","看完直接回飯店","演出結束後直接叫車回飯店，完成全員行李、爸媽航廈與你的成渝高鐵確認。"]
+    ["luggage","看完直接回飯店","演出結束後直接叫車回飯店，完成全員行李、預約隔天前往 TFU T1 的六座車，並確認你的成渝高鐵。"]
   ],spot:["成都文化西線看什麼","杜甫草堂看唐詩與園林，人民公園體驗蓋碗茶，寬窄巷子看老街，武侯祠理解蜀漢歷史；四段主題不同，錦里主要留給晚餐。"]},
-  {effort:"移動日・先確認機場",summary:"成都早餐 → 整理與退房 → 陪爸媽到票面機場 → 你前往成都東站 → 高鐵到重慶。上午不新增景點。",facts:[
-    ["badge-alert","先確認 TFU／CTU","NX387 的成都出發機場與航廈仍待電子票確認；天府與雙流方向完全不同，這是 9/11 最先要確定的資訊。"],
-    ["car-taxi-front","成都到機場不用買接駁票","確認機場後，前一晚可在滴滴預約六座車；白天也能當場叫車，不必另外預付旅遊平台的機場接送。"],
-    ["train-front","成渝高鐵現在確認","9/11 車票已在售；先依爸媽報到時間反推班次，優先成都東上車、抵達重慶北且不晚於 21:00。"],
+  {effort:"移動日・航班已確認",summary:"成都早餐 → 11:15 前退房出發 → TFU T1 送機 → 你前往成都東站 → 16:30 後高鐵到重慶。上午不新增景點。",facts:[
+    ["badge-check","爸媽航班已確認","NX387：9/11 成都天府機場 TFU T1 15:50 → 澳門 18:15；轉 NX658 21:35 → 高雄 23:00。"],
+    ["car-taxi-front","11:15 前叫車出發","三人帶行李由公寓叫六座滴滴到天府機場 T1，目標 12:45 前抵達；不需要另買旅遊平台接駁。"],
+    ["train-front","成渝高鐵選 16:30 後","爸媽進安檢後，你再由 TFU 前往成都東；選直達重慶北且 21:00 前抵達的班次，保留機場與車站緩衝。"],
     ["luggage","行李分開清點","爸媽的護照／台胞證、登機資料與托運物品放一起；你的台胞證、高鐵訂單與前往重慶的行李另外確認。"],
-    ["route","安檢口後再分開","先陪爸媽完成報到並送到安檢口；之後你才前往成都東站。機場尚未確認前，不鎖死高鐵班次。"]
+    ["route","澳門轉機有 3 小時 20 分","爸媽抵澳門 18:15、下一班 21:35；在成都櫃檯先確認行李是否直掛高雄與第二段登機證。"]
   ],spot:["成都到重慶交接","這天四川行程在成都收尾，晚間抵達重慶後直接辦入住。重慶景點從 9/12 開始，9/11 不需要再塞景點。"]}
 ];
 
@@ -133,16 +134,17 @@ const dayFallbacks=[
   "若遇大雨、道路預警或任何人腿腳不適，立即告知導遊並提高索道、觀光車與扶梯使用比例；夜景自由活動可縮短，但集合時間不能錯過。",
   "若 9/8 太晚回飯店，就睡到中午；先刪文殊院，只保留下午春熙路／IFS 吃飯與補給，甚至整天休息也可以。",
   "若落後超過 1 小時，先刪寬窄巷子或縮短人民公園；武侯祠要在 17:00 前入館，演出票買好後則以 19:20 抵達錦江劇場為底線。",
-  "若爸媽機場或報到時間尚未確認，就先不要鎖死高鐵班次；9/11 不加景點，以送機與安全抵達重慶為唯一優先。"
+  "若前往 TFU 遇嚴重塞車，先確保爸媽準時報到；你改買更晚的成渝高鐵。9/11 不加景點，以送機與安全抵達重慶為唯一優先。"
 ];
 
 const mapPlaces = [
-  {name:"成都雙流機場",area:"成都・雙流",desc:"9/4 抵達使用的機場；9/11 爸媽的出發機場仍須依 NX387 電子票確認，不可直接沿用。",lat:30.5785,lng:103.9471,type:"transport",days:[0],stay:"9/4 抵達 CTU",icon:"plane"},
+  {name:"成都雙流機場",area:"成都・雙流",desc:"9/4 搭 NX388 於 14:40 抵達成都雙流機場 CTU T1；這不是 9/11 爸媽回程使用的機場。",lat:30.5785,lng:103.9471,type:"transport",days:[0],stay:"9/4 14:40 抵達 CTU T1",icon:"plane"},
+  {name:"成都天府國際機場 T1",area:"成都・簡陽",desc:"爸媽 9/11 搭 NX387，由 TFU T1 於 15:50 起飛前往澳門；三人由公寓最晚 11:15 叫車出發，目標 12:45 前抵達。",lat:30.3125,lng:104.4413,type:"transport",days:[7],stay:"9/11 12:45 前抵達・15:50 起飛",icon:"plane"},
   {name:"龍之夢瑞峯公寓酒店",area:"成華區・嘉陵江路 8 號-D",desc:"成都東站店已確認，9/4 一晚實付 TWD 988。飯店位於成都東站東廣場一側，步行約 5–10 分鐘；帶行李第一次找路需多留時間。",lat:30.6328,lng:104.1427,type:"stay",days:[0,1],stay:"9/4 入住・9/5 退房・共 1 晚",icon:"bed-double"},
   {name:"東郊記憶",area:"成華區・建設南支路",desc:"第一晚唯一彈性加碼；完成入住且全員有精神才叫滴滴前往，散步拍照並在附近吃晚餐。航班延誤或入住較晚就直接取消。",lat:30.6717,lng:104.1213,type:"sight",days:[0],stay:"9/4 約 18:45–20:45・免預約",icon:"camera"},
   {name:"璽悅·瀾庭度假公寓",area:"青羊區・東華門街・騾馬市站",desc:"9/7 至 9/11 連住四晚；富力史丹尼國際公寓 A 座一樓，距騾馬市地鐵站約 300 公尺。位於三環內，可銜接 9/8 飯店接送。",lat:30.671634,lng:104.07562,type:"stay",days:[3,4,5,6,7],stay:"9/7 入住・9/11 退房・共 4 晚",icon:"bed-double"},
   {name:"成都IFS",area:"春熙路商圈",desc:"春熙路、太古里與 IFS 相鄰；9/9 下午依體力散步、吃飯與拍屋頂熊貓。",lat:30.6543,lng:104.0815,type:"sight",days:[5],stay:"9/9 下午彈性停留",icon:"shopping-bag"},
-  {name:"成都東站",area:"成華區",desc:"9/5 搭 C6362 前往黃龍九寨；9/11 陪爸媽進安檢後，再由此搭高鐵前往重慶。",lat:30.6289,lng:104.1403,type:"transport",days:[1,3,7],stay:"至少提早 45–60 分鐘",icon:"train-front"},
+  {name:"成都東站",area:"成華區",desc:"9/5 搭 C6362 前往黃龍九寨；9/11 爸媽在 TFU T1 進安檢後，你再到此搭 16:30 後的高鐵前往重慶。",lat:30.6289,lng:104.1403,type:"transport",days:[1,3,7],stay:"至少提早 45–60 分鐘",icon:"train-front"},
   {name:"重慶北站",area:"重慶・渝北區",desc:"9/11 四川段行程終點；抵達後前往解放碑住宿區，景點從隔天開始。",lat:29.6083,lng:106.5508,type:"transport",days:[7],stay:"優先 21:00 前抵達",icon:"train-front"},
   {name:"黃龍九寨站",area:"松潘・川主寺",desc:"9/5 轉 11:40 接駁先遊黃龍；9/7 搭已購買的 C5794 於 13:08 回成都。",lat:32.6530,lng:103.6089,type:"transport",days:[1,3],stay:"接駁轉乘點",icon:"train-front"},
   {name:"Yuji 嶼季海韻酒店",area:"溝口彭豐村／天堂口",desc:"9/5、9/6 連住兩晚；三張單人床、三份早餐，步行約 10–15 分鐘到九寨溝景區入口。",lat:33.2676,lng:103.9188,type:"stay",days:[1,2,3],stay:"9/5 入住・9/7 退房・兩晚共 ¥475",icon:"bed-double"},
@@ -224,7 +226,7 @@ function renderMapContext(){
     box.innerHTML=`<div class="map-context-title"><span>${icon("map")} 8 天全覽</span><strong>成都與川西主要地點</strong><small>先選日期查看當天順序，或依顏色辨認景點、交通與住宿。</small></div><div class="map-context-hint">${icon("mouse-pointer-click")} 點地圖標記或右側清單查看說明</div>`;
   }else{
     const dayNumber=Number(mapDay),d=itineraries[dayNumber],route=routePlacesForDay(dayNumber),sightCount=route.filter(p=>p.type==="sight").length;
-    const routeNote=dayNumber===2?"先玩哪條支線依觀光車分流；諾日朗是換乘中心。":dayNumber===7?"NX387 機場尚未確認，地圖只顯示已確認的住宿、車站與重慶終點。":`${route.length} 個停靠點 · ${sightCount} 個主要景點 · 今晚住 ${d.lodging}`;
+    const routeNote=dayNumber===2?"先玩哪條支線依觀光車分流；諾日朗是換乘中心。":dayNumber===7?"已確認 TFU T1：公寓送機後，你再前往成都東站搭高鐵到重慶北。":`${route.length} 個停靠點 · ${sightCount} 個主要景點 · 今晚住 ${d.lodging}`;
     box.innerHTML=`<div class="map-context-title"><span>D${dayNumber+1} · ${d.date} 星期${d.weekday} · ${dayTypeLabels[d.tone]}</span><strong>${d.title}</strong><small>${routeNote}</small></div><div class="map-route-chain">${route.map((p,i)=>`<button type="button" data-map-context-place="${p.name}"><b>${i+1}</b><span>${p.name}</span></button>${i<route.length-1?icon("chevron-right"):""}`).join("")}</div>`;
   }
   refreshIcons();
@@ -298,6 +300,6 @@ window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredIns
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=48").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=49").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("sichuan-parent-mode","false")==="true");renderAllDays();renderDays();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);
