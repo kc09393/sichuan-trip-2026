@@ -701,6 +701,11 @@ body{
   border-color:rgba(231,111,61,.18);
 }
 
+.day-tab.done:not(.active){
+  color:#376f62;
+  background:rgba(55,111,98,.07);
+}
+
 .eight-days .day-tab{
   min-width:138px;
 }
@@ -727,6 +732,24 @@ body{
 .timeline-item::before{
   width:10px;
   height:10px;
+}
+
+.timeline-item.completed::before{
+  background:#3a7d6c;
+  box-shadow:0 0 0 6px rgba(58,125,108,.11);
+}
+
+.timeline-item.completed time{
+  color:#3a7d6c;
+}
+
+.completed-summary{
+  background:linear-gradient(135deg,rgba(58,125,108,.08),rgba(255,255,255,.5));
+}
+
+.effort-pill.done{
+  color:#2f6f60;
+  background:rgba(58,125,108,.11);
 }
 
 .timeline-item h3{

@@ -1,7 +1,7 @@
 {
-  "name": "四川八日行程｜成都・九寨溝",
-  "short_name": "四川行程",
-  "description": "2026/09/04—09/11 成都、九寨溝與川西旅行行程",
+  "name": "四川八日旅程｜行程與紀錄",
+  "short_name": "四川旅程",
+  "description": "2026/09/04—09/11 成都、九寨溝與川西的旅遊紀錄及每日行程",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#fbf8f2",
