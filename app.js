@@ -1,8 +1,8 @@
 const itineraries = [
-  { date:"9/4", weekday:"五", title:"抵達成都・東郊記憶", city:"成都", lodging:"龍之夢瑞峯公寓酒店", tone:"arrival", done:true, record:"實際完成：抵達成都、入住成都東站旁飯店，晚上前往東郊記憶，為這趟旅程留下第一站紀錄。", items:[
+  { date:"9/4", weekday:"五", title:"抵達成都・東郊記憶", city:"成都", lodging:"龍之夢瑞峯公寓酒店", tone:"arrival", done:true, record:"旅遊紀錄：抵達成都、入住成都東站旁飯店，晚上前往東郊記憶，為這趟旅程留下第一站紀錄。", items:[
     ["14:40","抵達成都雙流機場 CTU","領行李後前往飯店；先休息、補水，不急著開始跑景點。","成都雙流機場"],
     ["約 17:00–18:00","龍之夢瑞峯公寓酒店 Check-in","地址為成華區嘉陵江路 8 號-D；14:00 後可入住。訂單已付款 TWD 988，9/4 18:00 前可免費取消，之後不退款。","龍之夢瑞峯公寓酒店"],
-    ["晚上・已完成","東郊記憶・夜間散步","實際前往東郊記憶，逛紅磚廠房與夜間街區，完成第一天的成都散步行程。","東郊記憶"],
+    ["晚上","東郊記憶・夜間散步","前往東郊記憶，逛紅磚廠房與夜間街區，留下第一天的成都散步紀錄。","東郊記憶"],
     ["回房後","整理隔天行李・早睡","整理台胞證、動車票、接駁訂單、保暖衣物、早餐與水，準備隔天前往黃龍。","龍之夢瑞峯公寓酒店"]
   ]},
   { date:"9/5", weekday:"六", title:"成都 → 黃龍 → 九寨溝", city:"黃龍", lodging:"Yuji 嶼季海韻酒店", tone:"hard", done:true, record:"旅遊紀錄：從成都東搭車前往黃龍九寨站，遊覽黃龍後轉往九寨溝住宿。", items:[
@@ -20,14 +20,14 @@ const itineraries = [
     ["12:30–15:30","完成另一條上支線","照同一原則只看兩個代表景點，再搭觀光車回諾日朗，不多走無必要的長棧道。","長海・五彩池"],
     ["15:30–17:15","諾日朗瀑布 → 出園","看完諾日朗瀑布，樹正溝只加犀牛海或樹正群海一處；爸媽累了就從諾日朗直接搭往溝口／出口的觀光車。","諾日朗瀑布"]
   ]},
-  { date:"9/7", weekday:"一", title:"返回成都・天府廣場與寬窄巷子", city:"成都", lodging:"璽悅·瀾庭度假公寓", tone:"move", done:true, record:"實際完成：從九寨溝返回成都並入住公寓，晚上去了天府廣場與寬窄巷子；9/10 不再重複安排寬窄巷子。", items:[
+  { date:"9/7", weekday:"一", title:"返回成都・天府廣場與寬窄巷子", city:"成都", lodging:"璽悅·瀾庭度假公寓", tone:"move", done:true, record:"旅遊紀錄：從九寨溝返回成都並入住公寓，晚上去了天府廣場與寬窄巷子。", items:[
     ["依接人通知","早餐、退房並在飯店等車","確認證件、動車票與接駁憑證；早餐 07:00 開始，若師傅提早抵達就前一晚詢問能否準備簡便早餐。","Yuji 嶼季海韻酒店"],
     ["以通知為準","飯店 → 黃龍九寨站","三人搭 7–9 座商務拼車銜接 13:08 高鐵；從 Yuji 飯店接人，車程約 2–3 小時。","黃龍九寨站"],
     ["建議 11:30 前","抵達黃龍九寨站・吃東西","抵站後先清點行李、吃東西和上洗手間；12:35 前完成安檢。若司機預估晚於 11:30 抵站，立即聯絡供應商。","黃龍九寨站"],
     ["13:08–15:14","C5794 黃龍九寨 → 成都東","三人帶購票時使用的台胞證原件；抵達後直接叫車前往公寓。","成都東站"],
     ["16:00 後","璽悅·瀾庭度假公寓 Check-in","地址：青羊區東華門街富力史丹尼國際公寓 A 座一樓。先確認房間無菸味、清潔與洗衣機，並休息至少 45 分鐘。","璽悅·瀾庭度假公寓"],
-    ["傍晚・已完成","天府廣場・夜景","實際前往天府廣場，在成都中心散步並看夜景。","天府廣場"],
-    ["晚上・已完成","寬窄巷子","實際加走寬窄巷子；已納入旅遊紀錄，9/10 的成都文化線不再重複。","寬窄巷子"],
+    ["傍晚","天府廣場・夜景","前往天府廣場，在成都中心散步並看夜景。","天府廣場"],
+    ["晚上","寬窄巷子","晚上加走寬窄巷子，逛成都最具代表性的歷史街區之一。","寬窄巷子"],
     ["回公寓後","確認明日接車・準備雨具","留意供應商通知；若仍沒收到 9/8 接車時間，立即從 Trip.com 訂單主動聯絡。","璽悅·瀾庭度假公寓"]
   ]},
   { date:"9/8", weekday:"二", title:"青城山＋都江堰夜遊", city:"青城山・都江堰", lodging:"璽悅·瀾庭度假公寓", tone:"hard", done:true, record:"旅遊紀錄：參加套票 B 一日團，從青城山前山一路走到都江堰，最後用灌縣古城與南橋夜景收尾，是八天裡內容最滿的一天。", items:[
@@ -38,9 +38,9 @@ const itineraries = [
     ["入夜","灌縣古城・南橋夜景","夜裡走逛灌縣古城，在南橋看水面燈光與藍眼淚夜景，替長長的一日遊收尾。","南橋"],
     ["深夜","返回成都","結束約十五小時的一日團，回到成都公寓休息。","璽悅·瀾庭度假公寓"]
   ]},
-  { date:"9/9", weekday:"三", title:"三星堆・春熙路與川劇", city:"廣漢 → 成都", lodging:"璽悅·瀾庭度假公寓", tone:"city", done:true, record:"實際完成：上午參觀三星堆博物館，下午約 16:00 回到春熙路；晚餐後分頭行動，你自己逛街，爸媽去看川劇。", items:[
+  { date:"9/9", weekday:"三", title:"三星堆・春熙路與川劇", city:"廣漢 → 成都", lodging:"璽悅·瀾庭度假公寓", tone:"city", done:true, record:"旅遊紀錄：上午參觀三星堆博物館，下午約 16:00 回到春熙路；晚餐後分頭行動，你自己逛街，爸媽去看川劇。", items:[
     ["07:30–約 09:00","成都出發・前往三星堆","依一日遊安排在成都上車，車程約 1.5 小時；抵達後跟著導遊進館。","三星堆博物館"],
-    ["上午至下午・已完成","三星堆博物館","跟著導覽看古蜀文明，重點包括青銅縱目面具、青銅大立人、金面具與青銅神樹。","三星堆博物館"],
+    ["上午至下午","三星堆博物館","跟著導覽看古蜀文明，重點包括青銅縱目面具、青銅大立人、金面具與青銅神樹。","三星堆博物館"],
     ["約 16:00","返回成都・春熙路下車","結束三星堆行程後回到成都，在春熙路一帶解散。","成都IFS"],
     ["下午至晚餐","春熙路・太古里・IFS","一家人先在商圈散步、逛街與吃晚餐，感受成都最熱鬧的城市一面。","成都IFS"],
     ["晚餐後・分頭行動","你逛街・爸媽看川劇","晚餐後各自選喜歡的活動：你留在商圈逛街，爸媽去看川劇，結束後再回公寓。","璽悅·瀾庭度假公寓"]
@@ -54,8 +54,8 @@ const itineraries = [
     ["夜裡","回公寓・旅行最後一晚","回房整理一家人的行李，結束三人在成都的最後一個完整夜晚。","璽悅·瀾庭度假公寓"]
   ]},
   { date:"9/11", weekday:"五", title:"成都隨意走走・家人分流", city:"成都 → 重慶", lodging:"重慶", tone:"move", done:true, record:"今日紀錄：早上沒有安排景點，就在成都隨意亂晃。爸媽已經自行前往天府機場，你沒有同行；一家三口的四川旅程在這裡收尾，接著由你獨自續往重慶。", items:[
-    ["早上・已完成","成都最後的自由散步","沒有刻意跑景點，隨意吃點東西、走走看看，讓四川八日旅程自然收尾。","璽悅·瀾庭度假公寓"],
-    ["上午・已完成","爸媽已自行前往天府機場","爸媽已經出發前往成都天府機場 T1；你沒有一起去機場，三人的行程在成都正式分流。","成都天府國際機場 T1"],
+    ["早上","成都最後的自由散步","沒有刻意跑景點，隨意吃點東西、走走看看，讓四川八日旅程自然收尾。","璽悅·瀾庭度假公寓"],
+    ["上午","爸媽自行前往天府機場","爸媽出發前往成都天府機場 T1；你沒有一起去機場，三人的行程在成都正式分流。","成都天府國際機場 T1"],
     ["中午前後","退房・整理自己的行李","從成都公寓退房後，只帶自己的行李與證件繼續下一段旅程。","璽悅·瀾庭度假公寓"],
     ["接下來","你獨自前往重慶","四川回憶在成都結束；高鐵班次與抵達車站以你的最終票面為準，不在公開網站留下訂單資料。","成都東站"]
   ]}
@@ -142,11 +142,11 @@ const mapPlaces = [
   {name:"成都雙流機場",area:"成都・雙流",desc:"9/4 搭 NX388 於 14:40 抵達成都雙流機場 CTU T1；這不是 9/11 爸媽回程使用的機場。",lat:30.5785,lng:103.9471,type:"transport",days:[0],stay:"9/4 14:40 抵達 CTU T1",icon:"plane"},
   {name:"成都天府國際機場 T1",area:"成都・簡陽",desc:"9/11 爸媽自行前往 TFU T1 搭 NX387；你沒有同行，三人的四川旅程在成都分流。",lat:30.3125,lng:104.4413,type:"transport",days:[7],stay:"9/11 爸媽返程",icon:"plane"},
   {name:"龍之夢瑞峯公寓酒店",area:"成華區・嘉陵江路 8 號-D",desc:"成都東站店已確認，9/4 一晚實付 TWD 988。飯店位於成都東站東廣場一側，步行約 5–10 分鐘；帶行李第一次找路需多留時間。",lat:30.6328,lng:104.1427,type:"stay",days:[0,1],stay:"9/4 入住・9/5 退房・共 1 晚",icon:"bed-double"},
-  {name:"東郊記憶",area:"成華區・建設南支路",desc:"9/4 晚上實際走訪；抵達成都並入住後，前往紅磚廠房與夜間街區散步。",lat:30.6717,lng:104.1213,type:"sight",days:[0],stay:"9/4 已完成・旅遊紀錄",icon:"camera"},
+  {name:"東郊記憶",area:"成華區・建設南支路",desc:"9/4 晚上實際走訪；抵達成都並入住後，前往紅磚廠房與夜間街區散步。",lat:30.6717,lng:104.1213,type:"sight",days:[0],stay:"9/4 旅遊紀錄",icon:"camera"},
   {name:"璽悅·瀾庭度假公寓",area:"青羊區・東華門街・騾馬市站",desc:"9/7 至 9/11 連住四晚；富力史丹尼國際公寓 A 座一樓，距騾馬市地鐵站約 300 公尺。位於三環內，可銜接 9/8 飯店接送。",lat:30.671634,lng:104.07562,type:"stay",days:[3,4,5,6,7],stay:"9/7 入住・9/11 退房・共 4 晚",icon:"bed-double"},
-  {name:"天府廣場",area:"青羊區・成都中心",desc:"9/7 返回成都並入住公寓後實際走訪，在廣場周邊吃飯、散步並看夜景。",lat:30.6573,lng:104.0658,type:"sight",days:[3],stay:"9/7 已完成・旅遊紀錄",icon:"sparkles"},
-  {name:"寬窄巷子",area:"青羊區・長順街一帶",desc:"9/7 晚上實際加走的景點，已納入旅遊紀錄；9/10 不再重複安排。",lat:30.6695,lng:104.0590,type:"sight",days:[3],stay:"9/7 已完成・旅遊紀錄",icon:"camera"},
-  {name:"三星堆博物館",area:"德陽廣漢・三星堆鎮",desc:"9/9 上午實際參觀，跟導覽看青銅縱目面具、大立人、金面具與青銅神樹。",lat:31.0059,lng:104.2195,type:"sight",days:[5],stay:"9/9 上午已完成・旅遊紀錄",icon:"landmark"},
+  {name:"天府廣場",area:"青羊區・成都中心",desc:"9/7 返回成都並入住公寓後實際走訪，在廣場周邊吃飯、散步並看夜景。",lat:30.6573,lng:104.0658,type:"sight",days:[3],stay:"9/7 旅遊紀錄",icon:"sparkles"},
+  {name:"寬窄巷子",area:"青羊區・長順街一帶",desc:"9/7 晚上實際加走的景點，已納入旅遊紀錄；9/10 不再重複安排。",lat:30.6695,lng:104.0590,type:"sight",days:[3],stay:"9/7 旅遊紀錄",icon:"camera"},
+  {name:"三星堆博物館",area:"德陽廣漢・三星堆鎮",desc:"9/9 上午實際參觀，跟導覽看青銅縱目面具、大立人、金面具與青銅神樹。",lat:31.0059,lng:104.2195,type:"sight",days:[5],stay:"9/9 上午・旅遊紀錄",icon:"landmark"},
   {name:"成都IFS",area:"春熙路商圈",desc:"9/9 約 16:00 抵達；春熙路、太古里與 IFS 相鄰，先一起逛街吃晚餐，之後你留下自由逛。",lat:30.6543,lng:104.0815,type:"sight",days:[5],stay:"9/9 16:00 起・晚餐後自由逛",icon:"shopping-bag"},
   {name:"成都東站",area:"成華區",desc:"9/5 從這裡搭 C6362 前往黃龍九寨；9/11 再由你獨自從成都出發，續往重慶。",lat:30.6289,lng:104.1403,type:"transport",days:[1,3,7],stay:"四川段的出發與告別",icon:"train-front"},
   {name:"重慶北站",area:"重慶・渝北區",desc:"四川八日回憶之後的新旅程入口；實際抵達車站仍以最終高鐵票面為準。",lat:29.6083,lng:106.5508,type:"transport",days:[7],stay:"下一段：重慶",icon:"train-front"},
@@ -188,8 +188,8 @@ const refreshIcons=()=>{if(window.lucide)window.lucide.createIcons();};
 
 function showToast(message){toast.textContent=message;toast.classList.add("show");clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>toast.classList.remove("show"),1800);}
 function renderDays(){
-  dayTabs.innerHTML=itineraries.map((d,i)=>`<button class="day-tab ${d.done?"done":""} ${i===activeDay?"active":""}" role="tab" aria-selected="${i===activeDay}" data-day="${i}"><span>${d.done?"✓ ":""}DAY ${i+1} · ${d.date}</span><strong>${d.title}</strong></button>`).join("");
-  qs("#mobileDaySelect").innerHTML=itineraries.map((d,i)=>`<option value="${i}" ${i===activeDay?"selected":""}>${d.done?"✓ ":""}D${i+1}｜${d.date}｜${d.title}</option>`).join("");
+  dayTabs.innerHTML=itineraries.map((d,i)=>`<button class="day-tab ${i===activeDay?"active":""}" role="tab" aria-selected="${i===activeDay}" data-day="${i}"><span>DAY ${i+1} · ${d.date}</span><strong>${d.title}</strong></button>`).join("");
+  qs("#mobileDaySelect").innerHTML=itineraries.map((d,i)=>`<option value="${i}" ${i===activeDay?"selected":""}>D${i+1}｜${d.date}｜${d.title}</option>`).join("");
   qs("#mapDaySelect").innerHTML=`<option value="all">全部 8 天</option>${itineraries.map((d,i)=>`<option value="${i}">D${i+1}｜${d.date}｜${d.title}</option>`).join("")}`;
   qs("#mapDaySelect").value=mapDay;
   qsa("[data-map-day]").forEach(b=>b.classList.toggle("active",b.dataset.mapDay===mapDay));
@@ -207,25 +207,8 @@ function renderTimeline(){
   const d=itineraries[activeDay];
   const sightCount=routePlacesForDay(activeDay).filter(p=>p.type==="sight").length;
   qs("#dayOverview").className=`day-overview ${d.tone}`;
-  qs("#dayOverview").innerHTML=`<div><span>${d.date} 星期${d.weekday}</span><h3>${d.title}</h3><div class="day-tags"><b>${d.done?"已完成・旅遊紀錄":dayTypeLabels[d.tone]}</b><b>${sightCount} 個主要景點</b></div></div><p>${d.record||d.note}</p><div class="lodging-badge">${icon("bed-double")}<span>${d.done?"當晚住宿":"今晚住宿"}</span><strong>${d.lodging}</strong></div>`;
-  timeline.innerHTML=d.items.map((item,i)=>`<article class="timeline-item ${d.done?"completed":""}" style="animation-delay:${i*60}ms"><time>${d.done?"✓ ":""}${item[0]}</time><h3>${item[1]}</h3><p>${item[2]}</p>${mapPlaces.some(p=>p.name===item[3])?`<a href="https://uri.amap.com/search?keyword=${encodeURIComponent(item[3]+" 四川")}" target="_blank" rel="noreferrer">${d.done?"查看位置":"開啟導航"} ${icon("external-link")}</a>`:""}</article>`).join("");
-  renderParentGuide();
-  refreshIcons();
-}
-function renderParentGuide(){
-  const day=itineraries[activeDay],guide=dayGuides[activeDay];
-  qs("#parentGuide").className="parent-guide-card";
-  if(day.done){
-    qs("#parentGuide").innerHTML=`<div class="guide-summary completed-summary"><div><span>DAY ${activeDay+1} · ${day.date} 星期${day.weekday}</span><h3>這一天已收進旅遊紀錄</h3><p>${day.record}</p></div><div class="effort-pill done"><small>旅程狀態</small><strong>已完成</strong></div></div>`;
-    refreshIcons();
-    return;
-  }
-  qs("#parentGuide").innerHTML=`
-    <div class="guide-summary"><div><span>DAY ${activeDay+1} · ${day.date} 星期${day.weekday}</span><h3>${day.title}</h3><p>${guide.summary}</p></div><div class="effort-pill"><small>今日體力</small><strong>${guide.effort}</strong></div></div>
-    <div class="guide-body guide-compact">
-      <div class="guide-facts">${guide.facts.map(f=>`<div class="guide-fact">${icon(f[0])}<div><strong>${f[1]}</strong><span>${f[2]}</span></div></div>`).join("")}</div>
-      <div class="plan-b"><span>${icon("route-off")} 累了或下雨</span><p>${dayFallbacks[activeDay]}</p></div>
-    </div>`;
+  qs("#dayOverview").innerHTML=`<div><span>${d.date} 星期${d.weekday}</span><h3>${d.title}</h3><div class="day-tags"><b>旅行紀錄</b>${sightCount?`<b>${sightCount} 個主要景點</b>`:""}</div></div><p>${d.record||d.note}</p><div class="lodging-badge">${icon("bed-double")}<span>當晚住宿</span><strong>${d.lodging}</strong></div>`;
+  timeline.innerHTML=d.items.map((item,i)=>`<article class="timeline-item" style="animation-delay:${i*60}ms"><time>${item[0]}</time><h3>${item[1]}</h3><p>${item[2]}</p>${mapPlaces.some(p=>p.name===item[3])?`<a href="https://uri.amap.com/search?keyword=${encodeURIComponent(item[3]+" 四川")}" target="_blank" rel="noreferrer">查看位置 ${icon("external-link")}</a>`:""}</article>`).join("");
   refreshIcons();
 }
 function routePlacesForDay(day){const result=[];itineraries[day].items.forEach(item=>{const p=mapPlaces.find(x=>x.name===item[3]);if(p&&!result.includes(p))result.push(p);});return result;}
@@ -240,7 +223,7 @@ function renderMapContext(){
   }else{
     const dayNumber=Number(mapDay),d=itineraries[dayNumber],route=routePlacesForDay(dayNumber),sightCount=route.filter(p=>p.type==="sight").length;
     const routeNote=dayNumber===2?"兩條上支線都在諾日朗轉換，這是九寨溝當天最重要的換乘記憶。":dayNumber===7?"家庭分流：爸媽前往 TFU T1，你沒有同行；你由成都續往重慶，兩條不是同一路線。":`${route.length} 個停靠點 · ${sightCount} 個主要景點 · 這晚住 ${d.lodging}`;
-    box.innerHTML=`<div class="map-context-title"><span>D${dayNumber+1} · ${d.date} 星期${d.weekday} · ${d.done?"已完成・旅遊紀錄":dayTypeLabels[d.tone]}</span><strong>${d.title}</strong><small>${routeNote}</small></div><div class="map-route-chain">${route.map((p,i)=>`<button type="button" data-map-context-place="${p.name}"><b>${i+1}</b><span>${p.name}</span></button>${i<route.length-1?icon("chevron-right"):""}`).join("")}</div>`;
+    box.innerHTML=`<div class="map-context-title"><span>D${dayNumber+1} · ${d.date} 星期${d.weekday} · 旅行紀錄</span><strong>${d.title}</strong><small>${routeNote}</small></div><div class="map-route-chain">${route.map((p,i)=>`<button type="button" data-map-context-place="${p.name}"><b>${i+1}</b><span>${p.name}</span></button>${i<route.length-1?icon("chevron-right"):""}`).join("")}</div>`;
   }
   refreshIcons();
 }
@@ -313,6 +296,6 @@ window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredIns
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=56").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=57").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("sichuan-parent-mode","false")==="true");renderAllDays();renderDays();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);

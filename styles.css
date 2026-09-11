@@ -361,6 +361,12 @@ h1 { font-size: clamp(52px, 6.8vw, 96px); text-wrap: balance; }
 .memory-copy { max-width: 920px; margin: 0 auto 38px; }
 .memory-copy > p:not(.eyebrow) { color: rgba(255,255,255,.8); line-height: 1.9; max-width: 720px; margin: 22px 0 0; }
 .memory-copy .eyebrow { color: #351b13; }
+.memory-stat { max-width: 920px; margin: 0 auto 14px; padding: 24px 26px; display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; color: var(--ink); background: #f7e3d7; border-radius: 18px; }
+.memory-stat > svg { width: 30px; height: 30px; color: var(--orange); }
+.memory-stat div { min-width: 0; }
+.memory-stat span { display: block; color: #9d4a2c; font-size: 10px; font-weight: 800; letter-spacing: .13em; }
+.memory-stat strong { display: block; margin-top: 4px; font-family: "Noto Serif TC", serif; font-size: clamp(26px,3vw,38px); }
+.memory-stat p { margin: 7px 0 0; color: #665a53; font-size: 13px; line-height: 1.7; }
 .memory-grid { max-width: 920px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
 .memory-grid article { min-width: 0; padding: 26px; border: 1px solid rgba(255,255,255,.26); background: rgba(255,255,255,.1); border-radius: 18px; }
 .memory-grid article > svg { width: 25px; height: 25px; margin-bottom: 22px; color: #351b13; }
@@ -1458,6 +1464,12 @@ body{
 
   .memory-grid article{
     padding:22px;
+  }
+
+  .memory-stat{
+    padding:20px;
+    grid-template-columns:1fr;
+    gap:10px;
   }
 
   .mobile-nav{
