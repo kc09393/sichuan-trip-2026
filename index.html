@@ -8,13 +8,13 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="description" content="2026 年 9 月 4 日至 11 日，一家三口走過成都、九寨溝、黃龍、青城山與都江堰的八日旅行回憶。">
   <title>四川八日回憶｜成都・九寨溝</title>
-  <link rel="icon" href="assets/app-icon.svg?v=57" type="image/svg+xml">
-  <link rel="manifest" href="manifest.webmanifest?v=57">
+  <link rel="icon" href="assets/app-icon.svg?v=58" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest?v=58">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=57">
-  <link rel="stylesheet" href="styles.css?v=57">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=58">
+  <link rel="stylesheet" href="styles.css?v=58">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -32,10 +32,10 @@
 
     <section class="map-section simple-section" id="map">
       <details class="simple-expand map-expand" id="mapDetails">
-        <summary><span><small>八天足跡</small><strong>旅行回憶地圖</strong><em>跟著上方日期回看當天走過的地方</em></span><i data-lucide="chevron-down"></i></summary>
+        <summary><span><small>8 天路線</small><strong>行程地圖</strong><em>依日期查看當天去過的地方</em></span><i data-lucide="chevron-down"></i></summary>
         <div class="simple-expand-body">
       <div class="map-heading">
-        <div><p class="eyebrow">景點與移動足跡</p><h2>每天走過哪一段</h2><p>按 D1–D8 回看當天停靠點；點地點可查看這趟旅程留下的紀錄。</p></div>
+        <div><p class="eyebrow">景點與交通</p><h2>每日路線</h2><p>按 D1–D8 查看當天停靠點；點地點可查看位置。</p></div>
         <div class="map-search-wrap"><i data-lucide="search"></i><input id="mapSearch" type="search" placeholder="搜尋九寨溝、青城山、車站…" aria-label="搜尋地圖地點"><button id="clearMapSearch" type="button" aria-label="清除搜尋" data-tooltip="清除"><i data-lucide="x"></i></button></div>
       </div>
       <div class="map-toolbar">
@@ -51,12 +51,12 @@
     </section>
 
     <section class="memory-section" id="memories">
-      <div class="memory-copy"><p class="eyebrow">這趟旅行留下的</p><h2>八天，不只是把景點走完</h2><p>一家三口從成都走進川西山水，也看見古蜀、道教與老成都的日常。計畫一路調整，真正值得留下的是一起走過的那幾天。</p></div>
-      <div class="memory-stat" aria-label="旅行步行紀錄"><i data-lucide="footprints"></i><div><span>9/4–9/10 步行紀錄</span><strong>平均 20,497 步／天</strong><p>從高原彩池、九寨棧道一路走到成都街頭，這趟四川真的用雙腳留下了足跡。</p></div></div>
+      <div class="memory-copy"><p class="eyebrow">行程摘要</p><h2>這趟去了哪些地方</h2><p>8 天走訪成都、黃龍、九寨溝、青城山、都江堰與三星堆。</p></div>
+      <div class="memory-stat" aria-label="旅行步行紀錄"><i data-lucide="footprints"></i><div><span>9/4–9/10 步行紀錄</span><strong>平均 20,497 步／天</strong><p>數據來自手機健康 App 的週間統計。</p></div></div>
       <div class="memory-grid">
-        <article><i data-lucide="mountain-snow"></i><span>川西山水</span><strong>黃龍與九寨溝</strong><p>彩池、海子、瀑布與高原山景，是這趟旅程最遠也最難忘的一段。</p></article>
-        <article><i data-lucide="landmark"></i><span>文明與工程</span><strong>三星堆・青城山・都江堰</strong><p>從古蜀青銅器到兩千多年仍在運作的水利工程，一天一種完全不同的四川。</p></article>
-        <article><i data-lucide="footprints"></i><span>成都日常</span><strong>廣場、巷子、公園與夜景</strong><p>東郊記憶、春熙路、人民公園與錦江沿岸，留下自由散步與家人分頭探索的片段。</p></article>
+        <article><i data-lucide="mountain-snow"></i><span>自然景區</span><strong>黃龍與九寨溝</strong><p>主要看彩池、海子、瀑布與高原山景。</p></article>
+        <article><i data-lucide="landmark"></i><span>文化景點</span><strong>三星堆・青城山・都江堰</strong><p>參觀古蜀文物、道教建築與都江堰水利工程。</p></article>
+        <article><i data-lucide="footprints"></i><span>成都市區</span><strong>廣場、巷子、公園與夜景</strong><p>去過東郊記憶、春熙路、人民公園與錦江沿岸。</p></article>
       </div>
     </section>
 
@@ -67,11 +67,11 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <nav class="mobile-nav" aria-label="手機導覽">
     <a href="#route"><i data-lucide="calendar-days"></i><span>行程</span></a>
-    <a href="#memories"><i data-lucide="heart"></i><span>回憶</span></a>
+    <a href="#memories"><i data-lucide="layout-grid"></i><span>摘要</span></a>
     <a href="#map"><i data-lucide="map"></i><span>足跡</span></a>
   </nav>
-  <script src="assets/vendor/lucide.min.js?v=57"></script>
-  <script src="assets/vendor/leaflet/leaflet.js?v=57"></script>
-  <script src="app.js?v=57"></script>
+  <script src="assets/vendor/lucide.min.js?v=58"></script>
+  <script src="assets/vendor/leaflet/leaflet.js?v=58"></script>
+  <script src="app.js?v=58"></script>
 </body>
 </html>

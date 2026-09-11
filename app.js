@@ -1,8 +1,8 @@
 const itineraries = [
-  { date:"9/4", weekday:"五", title:"抵達成都・東郊記憶", city:"成都", lodging:"龍之夢瑞峯公寓酒店", tone:"arrival", done:true, record:"旅遊紀錄：抵達成都、入住成都東站旁飯店，晚上前往東郊記憶，為這趟旅程留下第一站紀錄。", items:[
+  { date:"9/4", weekday:"五", title:"抵達成都・東郊記憶", city:"成都", lodging:"龍之夢瑞峯公寓酒店", tone:"arrival", done:true, record:"旅遊紀錄：抵達成都、入住成都東站旁飯店，晚上前往東郊記憶。", items:[
     ["14:40","抵達成都雙流機場 CTU","領行李後前往飯店；先休息、補水，不急著開始跑景點。","成都雙流機場"],
     ["約 17:00–18:00","龍之夢瑞峯公寓酒店 Check-in","地址為成華區嘉陵江路 8 號-D；14:00 後可入住。訂單已付款 TWD 988，9/4 18:00 前可免費取消，之後不退款。","龍之夢瑞峯公寓酒店"],
-    ["晚上","東郊記憶・夜間散步","前往東郊記憶，逛紅磚廠房與夜間街區，留下第一天的成都散步紀錄。","東郊記憶"],
+    ["晚上","東郊記憶・夜間散步","逛紅磚廠房、展演空間與夜間街區。","東郊記憶"],
     ["回房後","整理隔天行李・早睡","整理台胞證、動車票、接駁訂單、保暖衣物、早餐與水，準備隔天前往黃龍。","龍之夢瑞峯公寓酒店"]
   ]},
   { date:"9/5", weekday:"六", title:"成都 → 黃龍 → 九寨溝", city:"黃龍", lodging:"Yuji 嶼季海韻酒店", tone:"hard", done:true, record:"旅遊紀錄：從成都東搭車前往黃龍九寨站，遊覽黃龍後轉往九寨溝住宿。", items:[
@@ -32,8 +32,8 @@ const itineraries = [
   ]},
   { date:"9/8", weekday:"二", title:"青城山＋都江堰夜遊", city:"青城山・都江堰", lodging:"璽悅·瀾庭度假公寓", tone:"hard", done:true, record:"旅遊紀錄：參加套票 B 一日團，從青城山前山一路走到都江堰，最後用灌縣古城與南橋夜景收尾，是八天裡內容最滿的一天。", items:[
     ["清晨","成都公寓接人出發","一早由公寓上門接載，跟團前往青城山與都江堰；這天不用搬行李，晚上仍回成都住。","璽悅·瀾庭度假公寓"],
-    ["上午","青城山前山","跟著導遊走訪青城山前山，在山林與道教建築之間慢慢往上，是和九寨溝完全不同的綠意。","青城山前山"],
-    ["中午","午餐・川劇短演出","行程中穿插短版川劇、變臉與地方表演，成為山水行程之外的小驚喜。","青城山前山"],
+    ["上午","青城山前山","跟著導遊走訪青城山前山，參觀山林步道與道教建築。","青城山前山"],
+    ["中午","午餐・川劇短演出","行程中觀看短版川劇、變臉與地方表演。","青城山前山"],
     ["下午","都江堰景區","跟著導覽認識魚嘴、飛沙堰與寶瓶口，看兩千多年前的水利設計如何持續運作。","都江堰景區"],
     ["入夜","灌縣古城・南橋夜景","夜裡走逛灌縣古城，在南橋看水面燈光與藍眼淚夜景，替長長的一日遊收尾。","南橋"],
     ["深夜","返回成都","結束約十五小時的一日團，回到成都公寓休息。","璽悅·瀾庭度假公寓"]
@@ -54,10 +54,10 @@ const itineraries = [
     ["夜裡","回公寓・旅行最後一晚","回房整理一家人的行李，結束三人在成都的最後一個完整夜晚。","璽悅·瀾庭度假公寓"]
   ]},
   { date:"9/11", weekday:"五", title:"成都隨意走走・家人分流", city:"成都 → 重慶", lodging:"重慶", tone:"move", done:true, record:"今日紀錄：早上沒有安排景點，就在成都隨意亂晃。爸媽已經自行前往天府機場，你沒有同行；一家三口的四川旅程在這裡收尾，接著由你獨自續往重慶。", items:[
-    ["早上","成都最後的自由散步","沒有刻意跑景點，隨意吃點東西、走走看看，讓四川八日旅程自然收尾。","璽悅·瀾庭度假公寓"],
+    ["早上","成都自由活動","沒有安排景點，在市區吃東西、隨意走走。","璽悅·瀾庭度假公寓"],
     ["上午","爸媽自行前往天府機場","爸媽出發前往成都天府機場 T1；你沒有一起去機場，三人的行程在成都正式分流。","成都天府國際機場 T1"],
     ["中午前後","退房・整理自己的行李","從成都公寓退房後，只帶自己的行李與證件繼續下一段旅程。","璽悅·瀾庭度假公寓"],
-    ["接下來","你獨自前往重慶","四川回憶在成都結束；高鐵班次與抵達車站以你的最終票面為準，不在公開網站留下訂單資料。","成都東站"]
+    ["接下來","你獨自前往重慶","退房後搭高鐵前往重慶；班次與抵達車站以最終票面為準。","成都東站"]
   ]}
 ];
 
@@ -296,6 +296,6 @@ window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredIns
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=57").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=58").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("sichuan-parent-mode","false")==="true");renderAllDays();renderDays();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);
