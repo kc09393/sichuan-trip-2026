@@ -85,7 +85,7 @@ h1 { font-size: clamp(52px, 6.8vw, 96px); text-wrap: balance; }
 
 .section { padding: 130px clamp(24px, 8vw, 130px); }
 .section-heading { display: flex; justify-content: space-between; gap: 50px; align-items: end; max-width: 1180px; margin: 0 auto 55px; }
-.section-heading h2, .food-intro h2, .prepare-copy h2 { font-size: clamp(40px, 5vw, 66px); }
+.section-heading h2, .food-intro h2, .memory-copy h2 { font-size: clamp(40px, 5vw, 66px); }
 .section-heading > p { max-width: 440px; margin: 0; color: var(--muted); line-height: 1.8; }
 .day-tabs { max-width: 1180px; margin: auto; display: flex; gap: 0; border-bottom: 1px solid var(--line); overflow-x: auto; }
 .day-tabs { scrollbar-width: none; }
@@ -357,10 +357,16 @@ h1 { font-size: clamp(52px, 6.8vw, 96px); text-wrap: balance; }
 .budget-key span:nth-child(3) i { background: #7eafc4; }
 .budget-key span:nth-child(4) i { background: #d6c68d; }
 
-.prepare-section { padding: 110px clamp(24px, 8vw, 130px); background: #d7653b; color: white; display: grid; grid-template-columns: .85fr 1.15fr; gap: 9vw; }
-.prepare-copy > p:not(.eyebrow) { color: rgba(255,255,255,.74); line-height: 1.9; max-width: 470px; margin: 28px 0; }
-.prepare-copy .eyebrow { color: #351b13; }
-.prepare-copy > a { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,.5); padding-bottom: 5px; }
+.memory-section { padding: 110px clamp(24px, 8vw, 130px); background: #d7653b; color: white; }
+.memory-copy { max-width: 920px; margin: 0 auto 38px; }
+.memory-copy > p:not(.eyebrow) { color: rgba(255,255,255,.8); line-height: 1.9; max-width: 720px; margin: 22px 0 0; }
+.memory-copy .eyebrow { color: #351b13; }
+.memory-grid { max-width: 920px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+.memory-grid article { min-width: 0; padding: 26px; border: 1px solid rgba(255,255,255,.26); background: rgba(255,255,255,.1); border-radius: 18px; }
+.memory-grid article > svg { width: 25px; height: 25px; margin-bottom: 22px; color: #351b13; }
+.memory-grid article span { display: block; color: rgba(255,255,255,.7); font-size: 10px; font-weight: 800; letter-spacing: .14em; }
+.memory-grid article strong { display: block; margin-top: 7px; font-family: "Noto Serif TC", serif; font-size: 21px; line-height: 1.45; }
+.memory-grid article p { margin: 13px 0 0; color: rgba(255,255,255,.78); font-size: 13px; line-height: 1.75; }
 .checklist { border-top: 1px solid rgba(255,255,255,.3); }
 .checklist label { display: grid; grid-template-columns: 28px 1fr; gap: 16px; padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,.3); cursor: pointer; }
 .checklist input { position: absolute; opacity: 0; pointer-events: none; }
@@ -430,7 +436,7 @@ body.parent-mode .parent-guide-card .guide-fact span, body.parent-mode .parent-g
   .timeline-item { padding: 22px 0 22px 28px; border-left: 1px solid var(--line); }
   .timeline-item::before { top: 29px; left: -5px; }
   .place-grid { grid-template-columns: 1fr 1fr; }
-  .food-section, .prepare-section { grid-template-columns: 1fr; }
+  .food-section, .memory-section { grid-template-columns: 1fr; }
   .day-overview { grid-template-columns: 1fr 1.7fr; }
   .lodging-badge { grid-column: 1 / -1; border-left: 0; border-top: 1px solid var(--line); padding: 17px 0 0; }
   .map-heading { align-items: start; flex-direction: column; }
@@ -471,7 +477,7 @@ body.parent-mode .parent-guide-card .guide-fact span, body.parent-mode .parent-g
   .all-days-grid { display: flex; gap: 9px; overflow-x: auto; margin: 28px -18px 0 0; padding-right: 18px; scroll-snap-type: x mandatory; scrollbar-width: none; }
   .all-days-grid::-webkit-scrollbar { display: none; }
   .overview-day { flex: 0 0 185px; min-height: 138px; scroll-snap-align: start; }
-  .section, .dark-section, .food-section, .prepare-section, .budget-section, .booking-section, .parent-guide-section { padding: 72px 18px; }
+  .section, .dark-section, .food-section, .memory-section, .budget-section, .booking-section, .parent-guide-section { padding: 72px 18px; }
   .map-section { padding: 82px 14px 70px; }
   .map-heading { padding: 0 8px; }
   .map-heading h2 { font-size: 36px; }
@@ -504,7 +510,7 @@ body.parent-mode .parent-guide-card .guide-fact span, body.parent-mode .parent-g
   .day-overview { grid-template-columns: 1fr; margin-top: 14px; padding: 23px 20px; gap: 17px; }
   .day-overview > p { font-size: 13px; }
   .lodging-badge { grid-column: auto; }
-  .section-heading h2, .food-intro h2, .prepare-copy h2 { font-size: 36px; }
+  .section-heading h2, .food-intro h2, .memory-copy h2 { font-size: 36px; }
   .section-heading > p { font-size: 13px; }
   .eight-days .day-tab { min-width: 122px; padding-block: 15px; }
   .place-grid { grid-template-columns: 1fr; }
@@ -530,7 +536,7 @@ body.parent-mode .parent-guide-card .guide-fact span, body.parent-mode .parent-g
   .booking-card h3 { margin-top: 24px; }
   footer { flex-direction: column; align-items: flex-start; }
   footer .back-top { align-self: flex-end; }
-  #route, #guide, #map, #booking, #prepare { scroll-margin-top: 12px; }
+  #route, #guide, #map, #booking, #memories { scroll-margin-top: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -935,7 +941,7 @@ body{
   .parent-guide-section,
   .map-section,
   .booking-section,
-  .prepare-section{
+  .memory-section{
     padding-left:18px;
     padding-right:18px;
   }
@@ -1235,26 +1241,24 @@ body{
   min-height:500px;
 }
 
-.prepare-section{
+.memory-section{
   margin-top:18px;
   padding-top:72px;
   padding-bottom:82px;
-  grid-template-columns:1fr;
-  gap:34px;
 }
 
-.prepare-copy,
-.prepare-section .checklist{
+.memory-copy,
+.memory-grid{
   width:100%;
-  max-width:880px;
+  max-width:920px;
   margin:0 auto;
 }
 
-.prepare-copy h2{
+.memory-copy h2{
   font-size:clamp(34px,4.5vw,52px);
 }
 
-.prepare-copy>p:not(.eyebrow){
+.memory-copy>p:not(.eyebrow){
   margin:16px 0 0;
 }
 
@@ -1434,19 +1438,26 @@ body{
     height:390px;
   }
 
-  .prepare-section{
+  .memory-section{
     margin-top:8px;
     padding:58px 16px 76px;
-    gap:24px;
   }
 
-  .prepare-copy h2{
+  .memory-copy h2{
     font-size:32px;
   }
 
-  .prepare-copy>p:not(.eyebrow){
+  .memory-copy>p:not(.eyebrow){
     font-size:13px;
     line-height:1.7;
+  }
+
+  .memory-grid{
+    grid-template-columns:1fr;
+  }
+
+  .memory-grid article{
+    padding:22px;
   }
 
   .mobile-nav{

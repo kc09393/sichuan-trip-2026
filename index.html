@@ -6,18 +6,19 @@
   <meta name="theme-color" content="#0c2031">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="description" content="2026 年 9 月 4 日至 11 日，成都、九寨溝、黃龍、都江堰與青城山 8 天旅遊紀錄與每日行程。">
-  <title>四川八日旅程｜行程與紀錄</title>
-  <link rel="manifest" href="manifest.webmanifest?v=55">
+  <meta name="description" content="2026 年 9 月 4 日至 11 日，一家三口走過成都、九寨溝、黃龍、青城山與都江堰的八日旅行回憶。">
+  <title>四川八日回憶｜成都・九寨溝</title>
+  <link rel="icon" href="assets/app-icon.svg?v=56" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest?v=56">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=55">
-  <link rel="stylesheet" href="styles.css?v=55">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=56">
+  <link rel="stylesheet" href="styles.css?v=56">
 </head>
 <body>
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="回到頁首"><span class="brand-mark">川</span><span>四川八日旅程</span></a>
+    <a class="brand" href="#top" aria-label="回到頁首"><span class="brand-mark">川</span><span>四川八日回憶</span></a>
     <div class="header-actions"><button class="parent-mode-button" id="parentMode" type="button" aria-label="切換大字閱讀" aria-pressed="false"><i data-lucide="glasses"></i><span>大字</span></button></div>
   </header>
 
@@ -31,7 +32,7 @@
 
     <section class="parent-guide-section simple-section" id="guide">
       <details class="simple-expand" id="guideDetails">
-        <summary><span><small>需要時再看</small><strong>旅遊紀錄與當日提醒</strong><em>過去看紀錄，接下來看證件、體力與雨天備案</em></span><i data-lucide="chevron-down"></i></summary>
+        <summary><span><small>想回味時再開</small><strong>這一天的小記</strong><em>每天實際走過的路與留下的故事</em></span><i data-lucide="chevron-down"></i></summary>
         <div class="simple-expand-body">
           <div class="parent-guide-card" id="parentGuide" aria-live="polite"></div>
         </div>
@@ -40,10 +41,10 @@
 
     <section class="map-section simple-section" id="map">
       <details class="simple-expand map-expand" id="mapDetails">
-        <summary><span><small>需要導航再開</small><strong>當日路線地圖</strong><em>會跟著上方日期同步</em></span><i data-lucide="chevron-down"></i></summary>
+        <summary><span><small>八天足跡</small><strong>旅行回憶地圖</strong><em>跟著上方日期回看當天走過的地方</em></span><i data-lucide="chevron-down"></i></summary>
         <div class="simple-expand-body">
       <div class="map-heading">
-        <div><p class="eyebrow">交通與景點位置</p><h2>每天走哪一段</h2><p>按 D1–D8 顯示當天停靠點；點地點可查看說明或開啟導航。</p></div>
+        <div><p class="eyebrow">景點與移動足跡</p><h2>每天走過哪一段</h2><p>按 D1–D8 回看當天停靠點；點地點可查看這趟旅程留下的紀錄。</p></div>
         <div class="map-search-wrap"><i data-lucide="search"></i><input id="mapSearch" type="search" placeholder="搜尋九寨溝、青城山、車站…" aria-label="搜尋地圖地點"><button id="clearMapSearch" type="button" aria-label="清除搜尋" data-tooltip="清除"><i data-lucide="x"></i></button></div>
       </div>
       <div class="map-toolbar">
@@ -53,49 +54,32 @@
       </div>
       <div class="map-context" id="mapContext" aria-live="polite"></div>
       <div class="map-shell"><div id="travelMap" aria-label="成都與九寨溝互動旅遊地圖"></div><aside class="map-panel" aria-label="地圖地點清單"><div class="map-panel-head"><strong id="mapResultCount">0 個地點</strong><button id="fitMap" type="button"><i data-lucide="scan"></i> 顯示全部</button></div><div id="mapPlaceList" class="map-place-list"></div><div id="mapEmpty" class="map-empty" hidden><i data-lucide="map-pin-off"></i><strong>找不到符合的地點</strong><span>換個關鍵字或清除篩選試試看。</span></div></aside></div>
-      <div class="map-legend"><span><i class="legend-marker sight">景</i>景點</span><span><i class="legend-marker transport">車</i>機場／車站</span><span><i class="legend-marker stay">住</i>住宿區</span><small>數字是當日停靠順序；實際路線請按「開啟導航」。</small></div>
+      <div class="map-legend"><span><i class="legend-marker sight">景</i>景點</span><span><i class="legend-marker transport">車</i>機場／車站</span><span><i class="legend-marker stay">住</i>住宿區</span><small>數字是當日足跡順序；需要時仍可按「查看位置」開啟地圖。</small></div>
         </div>
       </details>
     </section>
 
-    <section class="prepare-section" id="prepare">
-      <div class="prepare-copy"><p class="eyebrow">接下來要完成</p><h2>只看剩下要處理的事</h2><p>今天只處理杜甫草堂門票；成都東至重慶北高鐵已到出發前一天，今晚一定完成。</p></div>
-      <div class="checklist" id="checklist">
-        <details class="ticket-checklist-panel">
-          <summary><span class="ticket-summary-icon"><i data-lucide="tickets"></i></span><div><strong>尚需處理</strong><small>1 項交通・1 項門票</small></div><i data-lucide="chevron-down" class="ticket-summary-arrow"></i></summary>
-          <div class="ticket-checklist-body">
-            <p class="ticket-shared-note"><strong>只剩未完成項目</strong><span>購票時逐字核對每位旅客的證件姓名與號碼；已買好的票券不用在這裡重複勾選。</span></p>
-            <label><input type="checkbox" data-check="chengdu-chongqing-train-v41"><span></span><div><div class="ticket-date"><b>今晚一定完成</b><em>使用 9/11</em></div><strong>成都東 → 重慶北高鐵</strong><small>爸媽 NX387 已確認由 TFU T1 於 15:50 起飛；你送爸媽進安檢後再前往成都東，建議選約 17:00 後直達且 21:00 前抵達重慶北的班次。</small></div></label>
-            <label><input type="checkbox" data-check="dufu-v41"><span></span><div><div class="ticket-date"><b>現在可處理</b><em>使用 9/10</em></div><strong>杜甫草堂門票</strong><small>全票 ¥50；爸爸為 60 歲以上長者，帶台胞證原件到現場換取免費票，另外兩位成人購買全票。</small></div></label>
-            <nav class="ticket-links" aria-label="購票入口與說明"><span>購票入口</span><a href="https://www.12306.cn/" target="_blank" rel="noreferrer">12306</a><a href="https://www.cddfct.cn/go-c20.htm" target="_blank" rel="noreferrer">杜甫草堂</a></nav>
-          </div>
-        </details>
-        <details class="ticket-checklist-panel lodging-panel">
-          <summary><span class="ticket-summary-icon"><i data-lucide="bed-double"></i></span><div><strong>住宿地址</strong><small>三段住宿均已安排・需要時再查看</small></div><i data-lucide="chevron-down" class="ticket-summary-arrow"></i></summary>
-          <div class="lodging-panel-body">
-            <article class="lodging-zone"><div class="lodging-zone-head"><b>9/4 成都東站</b><em>住 1 晚</em></div><strong>龍之夢瑞峯公寓酒店（成都東站店）</strong><small>地址：成華區嘉陵江路 8 號-D。14:00 後入住、12:00 前退房；位於東廣場一側，帶行李步行至成都東站約 5–10 分鐘，第一次找路多留 10–15 分鐘。</small></article>
-            <article class="lodging-zone"><div class="lodging-zone-head"><b>9/5–9/7 九寨溝</b><em>住 2 晚</em></div><strong>Yuji 嶼季海韻酒店（九寨溝景區店）</strong><small>地址：漳扎鎮彭豐村1組33號。三張單人床、三份早餐；步行約 10–15 分鐘到景區入口。入住前確認 2 樓安靜無菸、通風良好，避開頂樓與廚房。</small></article>
-            <article class="lodging-zone"><div class="lodging-zone-head"><b>9/7–9/11 成都中心・已確認</b><em>住 4 晚</em></div><strong>璽悅·瀾庭度假公寓（成都春熙路天府廣場店）</strong><small>地址：青羊區東華門街富力史丹尼國際公寓 A 座一樓。淺陌·流觴觀影雙床房，2 張大床、56㎡、無早餐；距騾馬市地鐵站約 300 公尺。9/7 18:00 前可免費取消。</small></article>
-            <p class="lodging-proof"><i data-lucide="badge-check"></i><span><strong>成都公寓入住前一天聯絡</strong> 確認台胞證入住、房內洗衣機、無菸處理、高樓層安靜房與晚到入口；訂單編號及 PIN 不放在公開網站。</span></p>
-          </div>
-        </details>
-        <label><input type="checkbox" data-check="airport-ride-v42"><span></span><div><strong>9/11 天府機場用車</strong><small>最晚 11:15 從公寓叫六座滴滴前往 TFU T1，目標 12:45 前抵達；不要走成雙流機場</small></div></label>
-        <label><input type="checkbox" data-check="flight"><span></span><div><strong>9/11 家人分流文件</strong><small>爸媽 NX387：TFU T1 15:50 起飛；護照、台胞證及兩段登機資料放一起，你的台胞證、成渝高鐵票與重慶住宿另放一組</small></div></label>
+    <section class="memory-section" id="memories">
+      <div class="memory-copy"><p class="eyebrow">這趟旅行留下的</p><h2>八天，不只是把景點走完</h2><p>一家三口從成都走進川西山水，也看見古蜀、道教與老成都的日常。計畫一路調整，真正值得留下的是一起走過的那幾天。</p></div>
+      <div class="memory-grid">
+        <article><i data-lucide="mountain-snow"></i><span>川西山水</span><strong>黃龍與九寨溝</strong><p>彩池、海子、瀑布與高原山景，是這趟旅程最遠也最難忘的一段。</p></article>
+        <article><i data-lucide="landmark"></i><span>文明與工程</span><strong>三星堆・青城山・都江堰</strong><p>從古蜀青銅器到兩千多年仍在運作的水利工程，一天一種完全不同的四川。</p></article>
+        <article><i data-lucide="footprints"></i><span>成都日常</span><strong>廣場、巷子、公園與夜景</strong><p>東郊記憶、春熙路、人民公園與錦江沿岸，留下自由散步與家人分頭探索的片段。</p></article>
       </div>
     </section>
 
   </main>
 
-  <footer><a class="brand" href="#top"><span class="brand-mark">川</span><span>四川八日旅程</span></a><p>2026/09/04—09/11 · 行程與旅遊紀錄</p><button type="button" class="back-top" aria-label="回到頁首" data-tooltip="回到頁首"><i data-lucide="arrow-up"></i></button></footer>
+  <footer><a class="brand" href="#top"><span class="brand-mark">川</span><span>四川八日回憶</span></a><p>2026/09/04—09/11 · 一家三口的四川旅行紀錄</p><button type="button" class="back-top" aria-label="回到頁首" data-tooltip="回到頁首"><i data-lucide="arrow-up"></i></button></footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <nav class="mobile-nav" aria-label="手機導覽">
     <a href="#route"><i data-lucide="calendar-days"></i><span>行程</span></a>
-    <a href="#map"><i data-lucide="map"></i><span>地圖</span></a>
-    <a href="#prepare"><i data-lucide="list-checks"></i><span>清單</span></a>
+    <a href="#memories"><i data-lucide="heart"></i><span>回憶</span></a>
+    <a href="#map"><i data-lucide="map"></i><span>足跡</span></a>
   </nav>
-  <script src="assets/vendor/lucide.min.js?v=55"></script>
-  <script src="assets/vendor/leaflet/leaflet.js?v=55"></script>
-  <script src="app.js?v=55"></script>
+  <script src="assets/vendor/lucide.min.js?v=56"></script>
+  <script src="assets/vendor/leaflet/leaflet.js?v=56"></script>
+  <script src="app.js?v=56"></script>
 </body>
 </html>

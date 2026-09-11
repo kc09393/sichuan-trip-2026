@@ -30,39 +30,34 @@ const itineraries = [
     ["晚上・已完成","寬窄巷子","實際加走寬窄巷子；已納入旅遊紀錄，9/10 的成都文化線不再重複。","寬窄巷子"],
     ["回公寓後","確認明日接車・準備雨具","留意供應商通知；若仍沒收到 9/8 接車時間，立即從 Trip.com 訂單主動聯絡。","璽悅·瀾庭度假公寓"]
   ]},
-  { date:"9/8", weekday:"二", title:"青城山＋都江堰夜遊", city:"青城山・都江堰", lodging:"璽悅·瀾庭度假公寓", tone:"hard", note:"套票 B 含兩景區門票與人工精講、川劇短演出、灌縣古城及藍眼淚夜景。07:00 為集合基準，接人時間以 9/7 晚上通知為準；山區遇雨就多用索道、觀光車與扶梯。", items:[
-    ["前一晚 20:00 後","確認接車通知","供應商會確認公寓地址與實際接人時間；若 22:00 前仍沒收到通知，主動從 Trip.com 訂單聯絡客服。","璽悅·瀾庭度假公寓"],
-    ["約 06:00 起・通知為準","公寓免費接人","集合基準為 07:00，接人可能提前約 1 小時。不用退房、不帶大件行李；三人帶訂票使用的有效證件原件、水、零食與防滑鞋。","璽悅·瀾庭度假公寓"],
-    ["上午・約 3–3.5 小時","青城山前山","套票 B 為專業導遊人工講解；走建福宮、月城湖、上清宮與老君閣方向。索道、觀光車與耳機依現場公示另付，建議爸媽全部使用。","青城山前山"],
-    ["中午","自行午餐・川劇短演出","套票 B 名稱沒有標示含餐，先按自費午餐準備；行程贈送約 20 分鐘川劇、變臉、武術或雜技演出。","青城山前山"],
-    ["下午・約 3 小時","都江堰景區人工精講","由導遊帶看玉壘閣、二王廟、安瀾索橋、魚嘴、飛沙堰與寶瓶口；觀景扶梯、觀光車及耳機另付。","都江堰景區"],
-    ["入夜・約 2 小時","南橋藍眼淚・灌縣古城","自由觀看南橋燈光、逛灌縣古城並視時間打卡仰天窩；記住集合位置與時間，不離隊太遠。","南橋"],
-    ["約 22:00–22:30","返回成都","實際下車位置與時間受交通及當日團務影響，以導遊通知為準；抵達後直接休息，隔天不排早起行程。","璽悅·瀾庭度假公寓"]
+  { date:"9/8", weekday:"二", title:"青城山＋都江堰夜遊", city:"青城山・都江堰", lodging:"璽悅·瀾庭度假公寓", tone:"hard", done:true, record:"旅遊紀錄：參加套票 B 一日團，從青城山前山一路走到都江堰，最後用灌縣古城與南橋夜景收尾，是八天裡內容最滿的一天。", items:[
+    ["清晨","成都公寓接人出發","一早由公寓上門接載，跟團前往青城山與都江堰；這天不用搬行李，晚上仍回成都住。","璽悅·瀾庭度假公寓"],
+    ["上午","青城山前山","跟著導遊走訪青城山前山，在山林與道教建築之間慢慢往上，是和九寨溝完全不同的綠意。","青城山前山"],
+    ["中午","午餐・川劇短演出","行程中穿插短版川劇、變臉與地方表演，成為山水行程之外的小驚喜。","青城山前山"],
+    ["下午","都江堰景區","跟著導覽認識魚嘴、飛沙堰與寶瓶口，看兩千多年前的水利設計如何持續運作。","都江堰景區"],
+    ["入夜","灌縣古城・南橋夜景","夜裡走逛灌縣古城，在南橋看水面燈光與藍眼淚夜景，替長長的一日遊收尾。","南橋"],
+    ["深夜","返回成都","結束約十五小時的一日團，回到成都公寓休息。","璽悅·瀾庭度假公寓"]
   ]},
-  { date:"9/9", weekday:"三", title:"三星堆・春熙路與川劇", city:"廣漢 → 成都", lodging:"璽悅·瀾庭度假公寓", tone:"city", record:"旅遊紀錄（進行中）：上午已參觀三星堆博物館；約 16:00 回到春熙路，晚餐後你自己逛街、爸媽看川劇。", items:[
+  { date:"9/9", weekday:"三", title:"三星堆・春熙路與川劇", city:"廣漢 → 成都", lodging:"璽悅·瀾庭度假公寓", tone:"city", done:true, record:"實際完成：上午參觀三星堆博物館，下午約 16:00 回到春熙路；晚餐後分頭行動，你自己逛街，爸媽去看川劇。", items:[
     ["07:30–約 09:00","成都出發・前往三星堆","依一日遊安排在成都上車，車程約 1.5 小時；抵達後跟著導遊進館。","三星堆博物館"],
     ["上午至下午・已完成","三星堆博物館","跟著導覽看古蜀文明，重點包括青銅縱目面具、青銅大立人、金面具與青銅神樹。","三星堆博物館"],
-    ["約 15:30–16:00","返回成都・春熙路下車","依行程約 15:30 在春熙路解散；預計 16:00 左右開始逛春熙路、太古里與 IFS。","成都IFS"],
-    ["16:00–晚餐","春熙路・太古里・IFS","先一起散步、拍 IFS 屋頂熊貓，再在商圈吃晚餐；需要休息時直接進商場。","成都IFS"],
-    ["晚餐後・分頭行動","你逛街・爸媽看川劇","你留在春熙路商圈自由逛街；爸媽依票面時間與地址前往川劇演出，結束後各自叫車回公寓。","璽悅·瀾庭度假公寓"]
+    ["約 16:00","返回成都・春熙路下車","結束三星堆行程後回到成都，在春熙路一帶解散。","成都IFS"],
+    ["下午至晚餐","春熙路・太古里・IFS","一家人先在商圈散步、逛街與吃晚餐，感受成都最熱鬧的城市一面。","成都IFS"],
+    ["晚餐後・分頭行動","你逛街・爸媽看川劇","晚餐後各自選喜歡的活動：你留在商圈逛街，爸媽去看川劇，結束後再回公寓。","璽悅·瀾庭度假公寓"]
   ]},
-  { date:"9/10", weekday:"四", title:"人民公園慢遊・錦江夜景", city:"成都", lodging:"璽悅·瀾庭度假公寓", tone:"city", record:"今日紀錄（進行中）：上午走杜甫草堂，人民公園預計停留至 17:30；文殊院與武侯祠依本人意願取消，傍晚再接望平街及錦江夜景。", items:[
-    ["10:00","公寓出發・叫車前往杜甫草堂","帶三人的台胞證原件、行動電源、水和摺疊傘；直接叫車前往正門，不再繞去文殊院。","璽悅·瀾庭度假公寓"],
-    ["約 10:30–12:30","杜甫草堂","走大廨、詩史堂、柴門、工部祠、茅屋與紅牆花徑主線；官方 09:00–18:00 開放、17:00 停止售票。","杜甫草堂"],
-    ["12:30–12:50","叫車前往人民公園","定位人民公園少城路入口或鐘水餃人民公園總店；抵達後先吃午餐。","人民公園"],
-    ["約 12:50–17:30","人民公園・午餐與慢慢喝茶","先在園內鐘水餃吃午餐，再到鶴鳴茶社喝蓋碗茶、散步、看看相親角與老成都日常；今天就安心待到 17:30。","人民公園"],
-    ["17:30–約 18:05","叫車前往望平街","傍晚尖峰預留約 30–35 分鐘，定位望平街／望平坊；抵達後先找晚餐，不再塞其他景點。","望平街・猛追灣"],
-    ["約 18:05–19:20","望平街・猛追灣晚餐","在望平街或香香巷選不用久候的餐廳，飯後沿河稍微逛店拍照，等燈景亮起。","望平街・猛追灣"],
-    ["19:20–21:00","錦江夜遊步行線","由望平街經東門碼頭、合江亭走到安順廊橋，全程約 2 公里；不用買遊船，爸媽累了可在合江亭前叫車。","安順廊橋"],
-    ["約 21:15 後","回公寓整理行李","從安順廊橋叫車回房，完成三人的行李分裝，確認爸媽 9/11 TFU T1 送機資料，以及你的成都東至重慶高鐵。","璽悅·瀾庭度假公寓"]
+  { date:"9/10", weekday:"四", title:"人民公園慢遊・錦江夜景", city:"成都", lodging:"璽悅·瀾庭度假公寓", tone:"city", done:true, record:"旅遊紀錄：上午慢慢出發走杜甫草堂，下午把時間留給人民公園；傍晚前往望平街，再沿錦江看成都夜色。文殊院與武侯祠最後沒有安排。", items:[
+    ["約 10:00","從公寓慢慢出發","沒有早起趕行程，睡飽後再出門，直接前往杜甫草堂。","璽悅·瀾庭度假公寓"],
+    ["上午","杜甫草堂","走進杜甫在成都的生活記憶，沿茅屋、詩史堂與紅牆花徑慢慢參觀。","杜甫草堂"],
+    ["中午至 17:30","人民公園・午餐與喝茶","把整個下午留在人民公園：吃午餐、喝蓋碗茶、散步，也看成都人自在過日子的樣子。","人民公園"],
+    ["傍晚","望平街・猛追灣","離開人民公園後前往望平街，在濱水街區吃飯、逛店並等夜景亮起。","望平街・猛追灣"],
+    ["晚上","錦江沿岸・安順廊橋","沿錦江往東門碼頭、合江亭與安順廊橋方向散步；完整走法約 3–3.5 公里。","安順廊橋"],
+    ["夜裡","回公寓・旅行最後一晚","回房整理一家人的行李，結束三人在成都的最後一個完整夜晚。","璽悅·瀾庭度假公寓"]
   ]},
-  { date:"9/11", weekday:"五", title:"天府機場送機・前往重慶", city:"成都 → 重慶", lodging:"重慶", tone:"move", note:"爸媽 NX387 已確認由成都天府機場 TFU T1 於 15:50 起飛。11:15 前從公寓叫六座滴滴出發，目標 12:45 前抵達；爸媽完成報到並進安檢後，你再前往成都東站，成渝高鐵建議選 17:00 後較安全。", items:[
-    ["08:30–09:30","早餐・最後補給","公寓不含早餐，在附近吃飯並買水與車上需要的小點心；不前往排隊名店。","璽悅·瀾庭度假公寓"],
-    ["09:30–10:45","整理行李・完成退房","爸媽的護照、台胞證與兩段登機資料放一起；你的台胞證、成渝高鐵票與重慶行李分開清點。","璽悅·瀾庭度假公寓"],
-    ["最晚 11:15","公寓 → 成都天府機場 T1","三人帶行李叫六座滴滴，目標 12:30–12:45 抵達；不要走成 9/4 使用的雙流機場。","成都天府國際機場 T1"],
-    ["12:45–13:45","爸媽報到・托運・進安檢","NX387 於 15:50 起飛。櫃檯確認行李是否直掛高雄，並取得澳門轉機兩段登機資訊。","成都天府國際機場 T1"],
-    ["約 13:45","你從天府機場前往成都東站","爸媽進入安檢後再分開；你帶自己的行李叫車，預留約 60–90 分鐘前往成都東站。","成都東站"],
-    ["建議 17:00 後","成都東 → 重慶北・辦入住","選直達、少轉乘且 21:00 前抵達重慶北的班次；17:00 左右比 16:30 更有送機與塞車緩衝，至少提早 45–60 分鐘到站安檢候車。","重慶北站"]
+  { date:"9/11", weekday:"五", title:"成都隨意走走・家人分流", city:"成都 → 重慶", lodging:"重慶", tone:"move", done:true, record:"今日紀錄：早上沒有安排景點，就在成都隨意亂晃。爸媽已經自行前往天府機場，你沒有同行；一家三口的四川旅程在這裡收尾，接著由你獨自續往重慶。", items:[
+    ["早上・已完成","成都最後的自由散步","沒有刻意跑景點，隨意吃點東西、走走看看，讓四川八日旅程自然收尾。","璽悅·瀾庭度假公寓"],
+    ["上午・已完成","爸媽已自行前往天府機場","爸媽已經出發前往成都天府機場 T1；你沒有一起去機場，三人的行程在成都正式分流。","成都天府國際機場 T1"],
+    ["中午前後","退房・整理自己的行李","從成都公寓退房後，只帶自己的行李與證件繼續下一段旅程。","璽悅·瀾庭度假公寓"],
+    ["接下來","你獨自前往重慶","四川回憶在成都結束；高鐵班次與抵達車站以你的最終票面為準，不在公開網站留下訂單資料。","成都東站"]
   ]}
 ];
 
@@ -120,18 +115,16 @@ const dayGuides = [
     ["route","文殊院與武侯祠都取消","今天只保留真正想看的杜甫草堂，下午改走人民公園與錦江濱水街區，不再追博物館。"],
     ["ticket-check","今天只需杜甫草堂門票","武侯祠已取消，不要再買票；爸爸 60 歲以上帶台胞證原件換免費票，另外兩位成人購買杜甫草堂全票。"],
     ["cloud-rain","夜遊保留彈性","帶摺疊傘；若路面濕滑，就從望平街或合江亭直接叫車到安順廊橋，不勉強走完全程。"],
-    ["footprints","夜遊約 2 公里","望平街經東門碼頭、合江亭到安順廊橋約 1.5–2 小時；路線平坦，爸媽累了就在東門碼頭或合江亭叫車。"],
+    ["footprints","完整夜遊約 3–3.5 公里","望平街經東門碼頭、合江亭到安順廊橋，若再延伸九眼橋約需 1.5–2 小時；路線平坦，可依體力縮短。"],
     ["route-off","不再排川劇與重複景點","爸媽 9/9 晚上已看川劇；天府廣場、寬窄巷子與春熙路也都走過，今天全部不重複。"],
     ["utensils","人民公園待到 17:30 沒問題","下午沒有閉館趕場；17:30 再叫車去望平街，吃完晚餐後正好接夜景。"],
     ["luggage","約 21:15 回房整理","夜景後直接叫車回公寓，完成全員行李、確認隔天前往 TFU T1 的六座車，並處理你的成渝高鐵。"]
   ],spot:["人民公園想待到 17:30","可以。後段不取消，只把望平街改成晚餐加短逛，再沿錦江走到安順廊橋；若爸媽累了，就在合江亭前叫車縮短。"]},
-  {effort:"移動日・航班已確認",summary:"成都早餐 → 11:15 前退房出發 → TFU T1 送機 → 你前往成都東站 → 建議 17:00 後高鐵到重慶。上午不新增景點。",facts:[
-    ["badge-check","爸媽航班已確認","NX387：9/11 成都天府機場 TFU T1 15:50 → 澳門 18:15；轉 NX658 21:35 → 高雄 23:00。"],
-    ["car-taxi-front","11:15 前叫車出發","三人帶行李由公寓叫六座滴滴到天府機場 T1，目標 12:45 前抵達；不需要另買旅遊平台接駁。"],
-    ["train-front","成渝高鐵建議 17:00 後","爸媽進安檢後，你再由 TFU 前往成都東；選直達重慶北且 21:00 前抵達的班次，17:00 左右比 16:30 更有緩衝。"],
-    ["luggage","行李分開清點","爸媽的護照／台胞證、登機資料與托運物品放一起；你的台胞證、高鐵訂單與前往重慶的行李另外確認。"],
-    ["route","澳門轉機有 3 小時 20 分","爸媽抵澳門 18:15、下一班 21:35；在成都櫃檯先確認行李是否直掛高雄與第二段登機證。"]
-  ],spot:["成都到重慶交接","這天四川行程在成都收尾，晚間抵達重慶後直接辦入住。重慶景點從 9/12 開始，9/11 不需要再塞景點。"]}
+  {effort:"四川旅程收尾",summary:"早上在成都隨意走走；爸媽自行前往天府機場，你留在成都，接著獨自續往重慶。",facts:[
+    ["footprints","早上沒有趕景點","最後半天順著當下的心情亂晃，沒有為了填滿時間再塞景點。"],
+    ["plane","爸媽已自行去機場","爸媽已前往成都天府機場 T1；你沒有同行，網站不再顯示送機待辦。"],
+    ["train-front","下一段由你自己出發","四川家庭旅程在成都收尾，之後轉為你的重慶個人旅程；實際班次只以票面為準。"]
+  ],spot:["八天的最後一頁","不追景點的早晨也是旅行的一部分。送爸媽離開後，這一頁停在成都，下一頁從重慶開始。"]}
 ];
 
 const dayFallbacks=[
@@ -142,12 +135,12 @@ const dayFallbacks=[
   "若遇大雨、道路預警或任何人腿腳不適，立即告知導遊並提高索道、觀光車與扶梯使用比例；夜景自由活動可縮短，但集合時間不能錯過。",
   "若三星堆回程晚於 16:30，就直接在春熙路吃飯；爸媽依票面時間優先前往川劇，你的逛街時間往後順延即可。",
   "17:30 離開人民公園後，若爸媽腳累，就在望平街吃完晚餐直接叫車到合江亭或安順廊橋；若下雨明顯則看完廊橋後直接回公寓。",
-  "若前往 TFU 遇嚴重塞車，先確保爸媽準時報到；你改買更晚的成渝高鐵。9/11 不加景點，以送機與安全抵達重慶為唯一優先。"
+  "四川八日家庭旅程已收尾；後續重慶交通以實際出票資訊為準。"
 ];
 
 const mapPlaces = [
   {name:"成都雙流機場",area:"成都・雙流",desc:"9/4 搭 NX388 於 14:40 抵達成都雙流機場 CTU T1；這不是 9/11 爸媽回程使用的機場。",lat:30.5785,lng:103.9471,type:"transport",days:[0],stay:"9/4 14:40 抵達 CTU T1",icon:"plane"},
-  {name:"成都天府國際機場 T1",area:"成都・簡陽",desc:"爸媽 9/11 搭 NX387，由 TFU T1 於 15:50 起飛前往澳門；三人由公寓最晚 11:15 叫車出發，目標 12:45 前抵達。",lat:30.3125,lng:104.4413,type:"transport",days:[7],stay:"9/11 12:45 前抵達・15:50 起飛",icon:"plane"},
+  {name:"成都天府國際機場 T1",area:"成都・簡陽",desc:"9/11 爸媽自行前往 TFU T1 搭 NX387；你沒有同行，三人的四川旅程在成都分流。",lat:30.3125,lng:104.4413,type:"transport",days:[7],stay:"9/11 爸媽返程",icon:"plane"},
   {name:"龍之夢瑞峯公寓酒店",area:"成華區・嘉陵江路 8 號-D",desc:"成都東站店已確認，9/4 一晚實付 TWD 988。飯店位於成都東站東廣場一側，步行約 5–10 分鐘；帶行李第一次找路需多留時間。",lat:30.6328,lng:104.1427,type:"stay",days:[0,1],stay:"9/4 入住・9/5 退房・共 1 晚",icon:"bed-double"},
   {name:"東郊記憶",area:"成華區・建設南支路",desc:"9/4 晚上實際走訪；抵達成都並入住後，前往紅磚廠房與夜間街區散步。",lat:30.6717,lng:104.1213,type:"sight",days:[0],stay:"9/4 已完成・旅遊紀錄",icon:"camera"},
   {name:"璽悅·瀾庭度假公寓",area:"青羊區・東華門街・騾馬市站",desc:"9/7 至 9/11 連住四晚；富力史丹尼國際公寓 A 座一樓，距騾馬市地鐵站約 300 公尺。位於三環內，可銜接 9/8 飯店接送。",lat:30.671634,lng:104.07562,type:"stay",days:[3,4,5,6,7],stay:"9/7 入住・9/11 退房・共 4 晚",icon:"bed-double"},
@@ -155,8 +148,8 @@ const mapPlaces = [
   {name:"寬窄巷子",area:"青羊區・長順街一帶",desc:"9/7 晚上實際加走的景點，已納入旅遊紀錄；9/10 不再重複安排。",lat:30.6695,lng:104.0590,type:"sight",days:[3],stay:"9/7 已完成・旅遊紀錄",icon:"camera"},
   {name:"三星堆博物館",area:"德陽廣漢・三星堆鎮",desc:"9/9 上午實際參觀，跟導覽看青銅縱目面具、大立人、金面具與青銅神樹。",lat:31.0059,lng:104.2195,type:"sight",days:[5],stay:"9/9 上午已完成・旅遊紀錄",icon:"landmark"},
   {name:"成都IFS",area:"春熙路商圈",desc:"9/9 約 16:00 抵達；春熙路、太古里與 IFS 相鄰，先一起逛街吃晚餐，之後你留下自由逛。",lat:30.6543,lng:104.0815,type:"sight",days:[5],stay:"9/9 16:00 起・晚餐後自由逛",icon:"shopping-bag"},
-  {name:"成都東站",area:"成華區",desc:"9/5 搭 C6362 前往黃龍九寨；9/11 爸媽在 TFU T1 進安檢後，你再到此搭建議 17:00 後的高鐵前往重慶。",lat:30.6289,lng:104.1403,type:"transport",days:[1,3,7],stay:"至少提早 45–60 分鐘",icon:"train-front"},
-  {name:"重慶北站",area:"重慶・渝北區",desc:"9/11 四川段行程終點；抵達後前往解放碑住宿區，景點從隔天開始。",lat:29.6083,lng:106.5508,type:"transport",days:[7],stay:"優先 21:00 前抵達",icon:"train-front"},
+  {name:"成都東站",area:"成華區",desc:"9/5 從這裡搭 C6362 前往黃龍九寨；9/11 再由你獨自從成都出發，續往重慶。",lat:30.6289,lng:104.1403,type:"transport",days:[1,3,7],stay:"四川段的出發與告別",icon:"train-front"},
+  {name:"重慶北站",area:"重慶・渝北區",desc:"四川八日回憶之後的新旅程入口；實際抵達車站仍以最終高鐵票面為準。",lat:29.6083,lng:106.5508,type:"transport",days:[7],stay:"下一段：重慶",icon:"train-front"},
   {name:"黃龍九寨站",area:"松潘・川主寺",desc:"9/5 轉 11:40 接駁先遊黃龍；9/7 搭已購買的 C5794 於 13:08 回成都。",lat:32.6530,lng:103.6089,type:"transport",days:[1,3],stay:"接駁轉乘點",icon:"train-front"},
   {name:"Yuji 嶼季海韻酒店",area:"溝口彭豐村／天堂口",desc:"9/5、9/6 連住兩晚；三張單人床、三份早餐，步行約 10–15 分鐘到九寨溝景區入口。",lat:33.2676,lng:103.9188,type:"stay",days:[1,2,3],stay:"9/5 入住・9/7 退房・兩晚共 ¥475",icon:"bed-double"},
   {name:"九寨溝景區入口",area:"九寨溝縣",desc:"9/6 建議 07:45 抵達，依已選的 08:00–10:00 時段準備入園。",lat:33.2601,lng:103.9187,type:"sight",days:[2],stay:"完整一天",icon:"ticket-check"},
@@ -246,7 +239,7 @@ function renderMapContext(){
     box.innerHTML=`<div class="map-context-title"><span>${icon("map")} 8 天全覽</span><strong>成都與川西主要地點</strong><small>先選日期查看當天順序，或依顏色辨認景點、交通與住宿。</small></div><div class="map-context-hint">${icon("mouse-pointer-click")} 點地圖標記或右側清單查看說明</div>`;
   }else{
     const dayNumber=Number(mapDay),d=itineraries[dayNumber],route=routePlacesForDay(dayNumber),sightCount=route.filter(p=>p.type==="sight").length;
-    const routeNote=dayNumber===2?"先玩哪條支線依觀光車分流；諾日朗是換乘中心。":dayNumber===7?"已確認 TFU T1：公寓送機後，你再前往成都東站搭高鐵到重慶北。":`${route.length} 個停靠點 · ${sightCount} 個主要景點 · 今晚住 ${d.lodging}`;
+    const routeNote=dayNumber===2?"兩條上支線都在諾日朗轉換，這是九寨溝當天最重要的換乘記憶。":dayNumber===7?"家庭分流：爸媽前往 TFU T1，你沒有同行；你由成都續往重慶，兩條不是同一路線。":`${route.length} 個停靠點 · ${sightCount} 個主要景點 · 這晚住 ${d.lodging}`;
     box.innerHTML=`<div class="map-context-title"><span>D${dayNumber+1} · ${d.date} 星期${d.weekday} · ${d.done?"已完成・旅遊紀錄":dayTypeLabels[d.tone]}</span><strong>${d.title}</strong><small>${routeNote}</small></div><div class="map-route-chain">${route.map((p,i)=>`<button type="button" data-map-context-place="${p.name}"><b>${i+1}</b><span>${p.name}</span></button>${i<route.length-1?icon("chevron-right"):""}`).join("")}</div>`;
   }
   refreshIcons();
@@ -315,11 +308,11 @@ qs("#parentMode").addEventListener("click",()=>{const on=!document.body.classLis
 function updateReadiness(){const checks=qsa("[data-check]"),done=checks.filter(i=>i.checked).length,total=checks.length,pct=total?Math.round(done/total*100):0;const percent=qs("#readinessPercent"),text=qs("#readinessText"),ring=qs("#readinessRing");if(percent)percent.textContent=`${pct}%`;if(text)text.textContent=`${done}／${total} 已完成`;if(ring)ring.style.setProperty("--progress",`${pct*3.6}deg`);}
 const savedCheckState=readStoredJSON("sichuan-checklist",{}),checkState=savedCheckState&&typeof savedCheckState==="object"&&!Array.isArray(savedCheckState)?savedCheckState:{};qsa("[data-check]").forEach(i=>{i.checked=!!checkState[i.dataset.check];i.addEventListener("change",()=>{checkState[i.dataset.check]=i.checked;writeStoredValue("sichuan-checklist",JSON.stringify(checkState));updateReadiness();});});
 
-qs("#shareTrip")?.addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"四川八日旅程｜行程與紀錄",text:"2026/09/04—09/11 四川八日旅遊紀錄與接下來行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
+qs("#shareTrip")?.addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"四川八日回憶｜成都・九寨溝",text:"2026/09/04—09/11 一家三口的四川旅行紀錄",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstallPrompt=e;});
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=55").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=56").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("sichuan-parent-mode","false")==="true");renderAllDays();renderDays();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);
