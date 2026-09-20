@@ -1,4 +1,4 @@
-const CACHE_NAME = "sichuan-eight-day-memories-v59";
+const CACHE_NAME = "sichuan-eight-day-memories-v60";
 const APP_SHELL = [
   "./",
   "./index.html",
